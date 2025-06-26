@@ -1,4 +1,4 @@
-# README #
+# README
 
 ### Clarity related repository data
 * Successive xml/txt files that carry Basespace Clarity LIMS configuration changes. (config_slicer)
