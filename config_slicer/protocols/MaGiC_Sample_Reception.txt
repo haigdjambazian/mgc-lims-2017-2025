@@ -1,0 +1,32 @@
+# Generated from https://bravoprodapp.genome.mcgill.ca/ at Tue Nov 05 16:41:55 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Sample Name,\
+Waiting
+
+# Manifest for Process Types
+ProcessTypes=\
+MaGiC Samples Reception
+
+# Manifest for Protocols
+Protocols=\
+MaGiC Sample Reception
+

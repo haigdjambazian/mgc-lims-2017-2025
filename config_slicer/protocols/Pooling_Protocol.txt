@@ -1,0 +1,47 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Tue Jan 14 20:02:17 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Tube
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Conc. Units,\
+Concentration,\
+Go To Next Step,\
+Index Cycles,\
+Library Volume (ul),\
+Library Volume To Use (ul),\
+Number of Sample in Pool,\
+Pool Volume (ul),\
+Pooling Fraction,\
+Pooling Group,\
+Pooling QC,\
+Sample Name,\
+Size (bp),\
+Volume QC,\
+Waiting
+
+# Manifest for Process Types
+ProcessTypes=\
+Library Normalization for Pooling,\
+Library Pool
+
+# Manifest for Protocols
+Protocols=\
+Pooling Protocol
+

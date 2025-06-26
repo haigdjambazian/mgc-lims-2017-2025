@@ -1,0 +1,54 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Tue Mar 10 13:21:56 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+384 well plate,\
+96 well plate,\
+Tube
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Conc. Units,\
+Concentration,\
+LIMS ID (Derived Sample),\
+Library Volume (ul),\
+Sample Name,\
+Size (bp),\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260/280 ratio,\
+Conc. Units,\
+Concentration,\
+File,\
+FileURI,\
+Molarity (nmol/L),\
+Region,\
+Size (bp),\
+Size at Max (bp),\
+Volume Used (ul)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0,\
+CaliperGX QC 5.0 McGill 1.0,\
+qPCR QC 5.0 McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+Library Validation QC McGill 1.0
+

@@ -1,0 +1,99 @@
+# Generated from https://bravoprodapp.genome.mcgill.ca/ at Tue Nov 05 16:57:37 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Strip Tube,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+Ad2.1,\
+Ad2.10,\
+Ad2.11,\
+Ad2.12,\
+Ad2.13,\
+Ad2.14,\
+Ad2.15,\
+Ad2.16,\
+Ad2.17,\
+Ad2.18,\
+Ad2.19,\
+Ad2.2,\
+Ad2.20,\
+Ad2.21,\
+Ad2.22,\
+Ad2.23,\
+Ad2.24,\
+Ad2.3,\
+Ad2.4,\
+Ad2.5,\
+Ad2.6,\
+Ad2.7,\
+Ad2.8,\
+Ad2.9,\
+Index_1,\
+Index_10,\
+Index_11,\
+Index_12,\
+Index_13,\
+Index_14,\
+Index_15,\
+Index_16,\
+Index_18,\
+Index_19,\
+Index_2,\
+Index_20,\
+Index_21,\
+Index_22,\
+Index_23,\
+Index_25,\
+Index_27,\
+Index_3,\
+Index_4,\
+Index_5,\
+Index_6,\
+Index_7,\
+Index_8,\
+Index_9,\
+Nextera ATAC series,\
+TruSeq LT McGill
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+ChIP-Seq Mark,\
+Library Volume (ul),\
+Sample Name,\
+Sample Volume (ul),\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+Conc. Units,\
+Concentration
+
+# Manifest for Process Types
+ProcessTypes=\
+ChIP-Seq,\
+ChIPmentation,\
+DNA Gel QC McGill 1.0,\
+Lysis and Sonication,\
+Qubit QC (DNA) 5.0
+
+# Manifest for Protocols
+Protocols=\
+ChIP-Seq Protocol
+

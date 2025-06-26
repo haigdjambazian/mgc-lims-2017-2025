@@ -1,0 +1,1258 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="384 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>24</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>16</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Tube">
+  <is-tube>true</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Area/Room</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Box</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Box1</preset>
+  <preset>Box2</preset>
+  <preset>Box3</preset>
+  <preset>Box4</preset>
+  <preset>Box5</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <preset>M</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Floor</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>2</preset>
+  <preset>3</preset>
+  <preset>4</preset>
+  <preset>5</preset>
+  <preset>6</preset>
+  <preset>7</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Freezer</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Room2304_Freezer-20-001</preset>
+  <preset>Room2304_Freezer-20-002</preset>
+  <preset>Room2304_Freezer-20-003</preset>
+  <preset>2ndFlCage_Freezer-80-001</preset>
+  <preset>Room2304_Fridge-001</preset>
+  <preset>Room2304_Fridge-002</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Sample Tag</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Shelf</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <min-value>1.0</min-value>
+  <max-value>10.0</max-value>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Size (bp)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ResultFileUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>A260/280 ratio</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>File</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="URI">
+  <name>FileURI</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Molarity (nmol/L)</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Region</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50-4500</preset>
+  <preset>40-5000</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Size (bp)</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Size at Max (bp)</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Volume Used (ul)</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</ResultFileUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Aggregate QC (Library Validation) 5.0">
+  <field-definition name="Bioanalyzer QC (DNA) 5.0"/>
+  <field-definition name="CaliperGX QC 5.0"/>
+  <field-definition name="CaliperGX QC 5.0 McGill 1.0"/>
+  <field-definition name="Copy task / Source Step"/>
+  <field-definition name="Copy task 1 - Source Field"/>
+  <field-definition name="Copy task 1 - Source Step"/>
+  <field-definition name="Copy task 2 - Source Field"/>
+  <field-definition name="Copy task 2 - Source Step"/>
+  <field-definition name="Copy task 3 - Source Field"/>
+  <field-definition name="Copy task 3 - Source Step"/>
+  <field-definition name="NanoDrop QC (DNA) 5.0"/>
+  <field-definition name="PicoGreen QC (DNA) 5.0"/>
+  <field-definition name="Qubit QC (DNA) 5.0"/>
+  <field-definition name="Tapestation QC (DNA) 5.0"/>
+  <field-definition name="qPCR QC 5.0"/>
+  <field-definition name="qPCR QC 5.0 McGill 1.0"/>
+  <parameter name="Aggregate QC Flags and Copy Fields">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2:http} -u {username} -p {password} script:setUDF -f 'Progress' -t '//input/@uri-&gt;//sample/@uri' -v 'Library preparation and QC validation complete' script:aggregateQC -c 'true' -a 'true' -log {compoundOutputFileLuid0} -aggregatelog {compoundOutputFileLuid1} -copylog {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Aggregation Script Log,QC Flag Aggregation Log,QC UDF Copy Log}</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Conc. Units"/>
+    <field-definition name="A260/280 ratio"/>
+    <field-definition name="Size (bp)"/>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">AGV</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">REAGENT</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">AG</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">2b. Library Validation QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="CaliperGX QC 5.0 McGill 1.0">
+  <field-definition name="Criteria 1 - Operator"/>
+  <field-definition name="Criteria 1 - Source Data Field"/>
+  <field-definition name="Criteria 1 - Threshold Value"/>
+  <field-definition name="Criteria 2 - Operator"/>
+  <field-definition name="Criteria 2 - Source Data Field"/>
+  <field-definition name="Criteria 2 - Threshold Value"/>
+  <parameter name="0.Generate Driver File">
+    <string>bash -c "/opt/gls/clarity/bin/java -cp /opt/gls/clarity/extensions/ngs-common/v5/EPP/DriverFileGenerator.jar driver_file_generator -i {processURI:v2:http} -u {username} -p {password} -t /opt/gls/clarity/customextensions/Templates/CaliperGX_template_McGill_3_0.csv  -o {compoundOutputFileLuid0}.csv -l {compoundOutputFileLuid1}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1.Parse CaliperGX CSV">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2} -u {username} -p {password} script:parseCSV -inputFile {compoundOutputFileLuid2} -log {compoundOutputFileLuid3} -headerRow '1' -separator 'comma' -containerName 'Plate Name' -wellPosition 'Well Label' -measurementUDFMap 'Concentration::Region[50-4500] Conc. (ng/ul)' -measurementUDFMap 'Size (bp)::Region[50-4500] Size [BP]' -measurementUDFMap 'Size at Max (bp)::Region[50-4500] Size at Maximum [BP]' -measurementUDFMap 'Molarity (nmol/L)::Region[50-4500] Molarity (nmol/l)' -matchOutput 'true' -relaxed 'true' script:assignQC -log {compoundOutputFileLuid4} -qcResult {compoundOutputFileLuid5}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2.CheckAttachedFIle">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/checkFilesAreAttached.py -s {stepURI} -u {username} -p {password} -f {compoundOutputFileLuid6} "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3.Attach ElectroGrams and Images">
+    <string>bash -c -l "/usr/bin/python /opt/gls/clarity/customextensions/Caliper/upload_Caliper_data.py -s {stepURI:v2} -u {username} -p {password} -l '{compoundOutputFileLuids}'   &gt; {compoundOutputFileLuid3}_image_att_log.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Size (bp)"/>
+    <field-definition name="Molarity (nmol/L)"/>
+    <field-definition name="Size at Max (bp)"/>
+    <field-definition name="Region"/>
+    <field-definition name="File"/>
+    <field-definition name="FileURI"/>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>7</number-of-outputs>
+    <output-name>{LIST:Driver File,Driver File Log,CaliperGX WellTable (CSV required),CaliperGX Parsing Log File,QC Assignment Log File,QC Assignment Report,CaliperGX Report}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">CAL</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">CA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">1. DNA Initial QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Library Batch">
+  <parameter name="0. Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Auto Exit libVolume update">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2} -u {username} -p {password} script:evaluateDynamicExpression -exp 'input.::Library Volume (ul):: = input.::Library Volume (ul):: - output.::Library Volume (ul)::;' -log {compoundOutputFileLuid0}" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Auto Copy InputToOutput">
+    <string> bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2} -u {username} -p {password} script:evaluateDynamicExpression -exp 'if (input.hasValue(::Sample Tag::)) {output.::Sample Tag:: = input.::Sample Tag::} else {output.::Sample Tag::=::N/A::} ; if (input.hasValue(::Library Volume (ul)::)) {output.::Library Volume (ul):: = input.::Library Volume (ul)::} else {output.::Library Volume (ul)::=::-99::};' -log {compoundOutputFileLuid0}" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Library Volume (ul)"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{LIST:Log File}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">LIB</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LI</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="qPCR QC 5.0 McGill 1.0">
+  <field-definition name="Criteria 1 - Operator"/>
+  <field-definition name="Criteria 1 - Source Data Field"/>
+  <field-definition name="Criteria 1 - Threshold Value"/>
+  <field-definition name="Criteria 2 - Operator"/>
+  <field-definition name="Criteria 2 - Source Data Field"/>
+  <field-definition name="Criteria 2 - Threshold Value"/>
+  <parameter name="0.Create Excel driver file">
+    <string>bash -l -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/qPCR/qPCR_create_csv_file.py  -user_psw {username}:{password} -stepURI_v2 {stepURI:v2}    -fileLUIDs '{compoundOutputFileLuids}' -artifactType 'ResultFile'  -containerSource 'output'  &gt;{compoundOutputFileLuid0}.csv &amp;&amp; /opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar script:convertToExcel     -i {stepURI:v2:http}     -u {username}    -p {password}    -logFileLIMSID {compoundOutputFileLuid1}   -srcLIMSID {compoundOutputFileLuid0}     -destLIMSID {compoundOutputFileLuid0}   -worksheet 'Samples' -updateFileName '/opt/gls/clarity/customextensions/Templates/am3_qPCR_Template_v1.1.1_LIMS.xlsx' -q ‘true’ "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Volume Adjustment">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -excludeControls true -exp ' input.::Library Volume (ul):: =  input.::Library Volume (ul)::-output.::Volume Used (ul):: ' -log {compoundOutputFileLuid3}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Assign QC flags">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2:http} -u {username} -p {password} script:assignQC -log {compoundOutputFileLuid1} -qcResult {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. AutoExit calculation">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2} -u {username} -p {password} script:evaluateDynamicExpression -exp 'input.::Library Volume (ul):: = input.::Library Volume (ul):: - 2;' -log {compoundOutputFileLuid0}" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="4. Check the File Attachments">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/checkFilesAreAttached.py -s {stepURI} -u {username} -p {password} -f {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="5. CheckFile and AutoExit Calculation">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/checkFilesAreAttached.py -s {stepURI} -u {username} -p {password} -f {compoundOutputFileLuid2} &amp;&amp; /opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2} -u {username} -p {password} script:evaluateDynamicExpression -exp 'input.::Library Volume (ul):: = input.::Library Volume (ul):: - 2;' -log {compoundOutputFileLuid1}" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName} qPCR</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Conc. Units"/>
+    <field-definition name="Size (bp)"/>
+    <field-definition name="Volume Used (ul)"/>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>SharedResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Excel Driver file,Assignment Log File,qPCR Report File (Excel)}</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Conc. Units"/>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">QPV</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">REAGENT</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">QP</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">2b. Library Validation QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display the UDF information associated with all the outputs</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 1 - Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>qPCR QC 5.0 McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 1 - Source Field</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <preset>Size (bp)</preset>
+  <preset>Library Concentration (nM)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 2 - Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>qPCR QC 5.0 McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 2 - Source Field</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <preset>Size (bp)</preset>
+  <preset>Library Concentration (nM)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 3 - Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>qPCR QC 5.0 McGill 1.0</preset>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 3 - Source Field</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <preset>Size (bp)</preset>
+  <preset>Library Concentration (nM)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Bioanalyzer QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>NanoDrop QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PicoGreen QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>qPCR QC 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Qubit QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Tapestation QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task / Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>CaliperGX QC 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>CaliperGX QC 5.0 McGill 1.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>qPCR QC 5.0 McGill 1.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Source Data Field</name>
+  <attach-to-name>CaliperGX QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Operator</name>
+  <attach-to-name>CaliperGX QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 1 - Threshold Value</name>
+  <attach-to-name>CaliperGX QC 5.0 McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Source Data Field</name>
+  <attach-to-name>CaliperGX QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Size (bp)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Operator</name>
+  <attach-to-name>CaliperGX QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 2 - Threshold Value</name>
+  <attach-to-name>CaliperGX QC 5.0 McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Source Data Field</name>
+  <attach-to-name>qPCR QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Operator</name>
+  <attach-to-name>qPCR QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 1 - Threshold Value</name>
+  <attach-to-name>qPCR QC 5.0 McGill 1.0</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Source Data Field</name>
+  <attach-to-name>qPCR QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Operator</name>
+  <attach-to-name>qPCR QC 5.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 2 - Threshold Value</name>
+  <attach-to-name>qPCR QC 5.0 McGill 1.0</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<ProcessTemplates>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Tapestation Values</name>
+  <type>Aggregate QC (Library Validation) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">Tapestation QC (DNA) 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">Tapestation QC (DNA) 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Field">Size (bp)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Step">CaliperGX QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>qPCR QC 5.0 McGill 1.0</name>
+  <type>Aggregate QC (Library Validation) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">qPCR QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">qPCR QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Field">Size (bp)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Step">qPCR QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Caliper Defaults</name>
+  <type>CaliperGX QC 5.0 McGill 1.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Criteria 1 - Operator">&gt;=</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Criteria 1 - Source Data Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Criteria 1 - Threshold Value">0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Criteria 2 - Operator">&gt;=</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Criteria 2 - Source Data Field">Size (bp)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Criteria 2 - Threshold Value">300</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+	</ProcessTemplates>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="65" name="Library Batch">
+  <steps>
+    <step name="Library Batch">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>Library Batch</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Sample Tag"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Floor"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Area/Room"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Freezer"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Shelf"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Box"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Print barcodes"/>
+        <epp-trigger status="RECORD_DETAILS" point="AFTER" type="AUTOMATIC" name="1. Auto Exit libVolume update"/>
+        <epp-trigger type="MANUAL" name="2. Auto Copy InputToOutput"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="66" name="Library Validation QC McGill 1.0">
+  <steps>
+    <step name="qPCR QC 5.0 McGill 1.0">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>qPCR QC 5.0 McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+        <container-type>384 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Conc. Units"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Volume Used (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Size (bp)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0.Create Excel driver file"/>
+        <epp-trigger type="UNUSED" name="1. Volume Adjustment"/>
+        <epp-trigger type="UNUSED" name="2. Assign QC flags"/>
+        <epp-trigger type="UNUSED" name="3. AutoExit calculation"/>
+        <epp-trigger type="UNUSED" name="4. Check the File Attachments"/>
+        <epp-trigger status="RECORD_DETAILS" point="AFTER" type="AUTOMATIC" name="5. CheckFile and AutoExit Calculation"/>
+      </epp-triggers>
+    </step>
+    <step name="CaliperGX QC 5.0 McGill 1.0">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>CaliperGX QC 5.0 McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>384 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Source Data Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Operator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Threshold Value"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Source Data Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Operator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Threshold Value"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="FileURI"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Molarity (nmol/L)"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Region"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Size (bp)"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Size at Max (bp)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="Caliper Defaults" name="defaultProcessTemplate"/>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="column" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0.Generate Driver File"/>
+        <epp-trigger type="MANUAL" name="1.Parse CaliperGX CSV"/>
+        <epp-trigger status="RECORD_DETAILS" point="AFTER" type="AUTOMATIC" name="2.CheckAttachedFIle"/>
+        <epp-trigger type="MANUAL" name="3.Attach ElectroGrams and Images"/>
+      </epp-triggers>
+    </step>
+    <step name="Aggregate QC (Library Validation) 5.0">
+      <protocol-step-index>3</protocol-step-index>
+      <process-type>Aggregate QC (Library Validation) 5.0</process-type>
+      <permitted-containers>
+        <container-type>Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 1 - Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 1 - Source Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 2 - Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 2 - Source Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 3 - Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 3 - Source Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Bioanalyzer QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="NanoDrop QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="PicoGreen QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="qPCR QC 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Qubit QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Tapestation QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task / Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="CaliperGX QC 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="CaliperGX QC 5.0 McGill 1.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="qPCR QC 5.0 McGill 1.0"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Conc. Units"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Size (bp)"/>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="Aggregate QC Flags and Copy Fields"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="qc" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+	<Workflows>
+<wkfcnf:workflow xmlns:wkfcnf="http://genologics.com/ri/workflowconfiguration" status="PENDING" name="LibQC">
+  <protocols>
+    <protocol name="Library Batch"/>
+    <protocol name="Library Validation QC McGill 1.0"/>
+  </protocols>
+</wkfcnf:workflow>
+	</Workflows>
+</config>

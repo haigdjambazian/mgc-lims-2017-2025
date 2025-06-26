@@ -1,0 +1,26 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Fri Nov 20 00:13:44 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.2.0.7
+ConfigSlicerVersion=3.2.0.7
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Conc. Units,\
+Concentration,\
+Size (bp)
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260/280 ratio,\
+Conc. Units,\
+Concentration,\
+Size (bp)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0
+
+# Manifest for Protocols
+Protocols=\
+MGI Library Validation QC McGill 1.0
+

@@ -1,0 +1,50 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Mon May 06 19:34:23 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Tube
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Conc. Units,\
+Concentration,\
+Sample Name,\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+Barcode,\
+Conc. Units,\
+Concentration,\
+File
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (DNA) 5.0,\
+DNA Gel QC McGill 1.0,\
+DNA Samples QC,\
+Tecan SPARK PicoGreen QC (DNA) McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+CarrierTube_to_Plate,\
+DNA Initial QC McGill
+
+# Manifest for Workflows
+Workflows=\
+DNA_Initial_QC_McGill_Carrier_WF
+

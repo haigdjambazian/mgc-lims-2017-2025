@@ -1,0 +1,2887 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Patterned Flow Cell">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Strip Tube">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Tube">
+  <is-tube>true</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ControlTypes>
+<ctrltp:control-type xmlns:ctrltp="http://genologics.com/ri/controltype" name="PhiX v3">
+  <supplier>Illumina</supplier>
+  <catalogue-number>FC-110-3001</catalogue-number>
+  <website>http://www.illumina.com/products/phix_control_v3.ilmn</website>
+  <archived>false</archived>
+  <single-step>false</single-step>
+</ctrltp:control-type>
+	</ControlTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Aligned R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Aligned R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Bases &gt;=Q30 R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Bases &gt;=Q30 R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Error Rate R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Error Rate R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Intensity Cycle 20 R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Intensity Cycle 20 R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Phasing R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Phasing R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Prephasing R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% Prephasing R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>%PF R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>%PF R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Adapter (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Aligned Bases On Target (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Aligned Dup. Rate (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Avg Q Score R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Avg Q Score R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Avg. Qual</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Bases</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Bases Covered at 100x (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Bases Covered at 10x (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Bases Covered at 25x (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Bases Covered at 50x (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Bases Covered at 75x (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Bed</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Primer Set</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Run Recipe</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Chimeras (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr1 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr10 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr11 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr12 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr13 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr14 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr15 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr16 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr17 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr18 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr19 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr2 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr20 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr21 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr22 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr3 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr4 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr5 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr6 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr7 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr8 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chr9 Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chrM Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chrX Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>chrY Normalized Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cluster Density (K/mm^2) R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cluster Density (K/mm^2) R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters on Index in Lane (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters on Index in Lane from Target (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters PF R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters PF R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters Raw R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Clusters Raw R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Data Release</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Dup. Rate (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Expected Sample Tag Name</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Flowcell ID</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Freemix Number of SNP</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Freemix Value</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>i5 Adapter</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>i7 Adapter</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Intensity Cycle 1 R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Intensity Cycle 1 R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Lane Fraction</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>6</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Loading Conc. (pM)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Mapped Insert Size (mean)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Mapped Insert Size (median)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Mapped Insert Size (std. dev.)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Mean Coverage</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Normalized conc. (nM)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>On Bait Bases from On Target Bases (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>PF Reads Aligned All</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>PF Reads Aligned All (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>PF Reads Aligned R1 (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>PF Reads Aligned R2 (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Processing Folder Name</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>R1 PhiX Rate from Total (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>R1 Top Blast Hit Name</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>R1 Top Blast Hit Rate (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>R2 PhiX Rate from Total (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>R2 Top Blast Hit Name</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Reference</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Run Count</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Run Folder Name</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Run ID</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Top Sample Tag Name</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Top Sample Tag Name Match</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Top Sample Tag Rate from All Detected (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Top Sample Tag Rate from Total (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Workflow</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Yield PF (Gb) R1</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Yield PF (Gb) R2</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Cluster Generation (HiSeq X) 1.0 McGill 1.0">
+  <field-definition name="Adapter"/>
+  <field-definition name="Adapter Read 2"/>
+  <field-definition name="ExAmp Box Lot"/>
+  <field-definition name="Experiment Name"/>
+  <field-definition name="Flowcell ID"/>
+  <field-definition name="Flowcell Lot"/>
+  <field-definition name="HiSeq Used"/>
+  <field-definition name="Index 1"/>
+  <field-definition name="Index 2"/>
+  <field-definition name="Manifold"/>
+  <field-definition name="Mask Adapter"/>
+  <field-definition name="Mask Adapter Read 2"/>
+  <field-definition name="NaOH 2N"/>
+  <field-definition name="PE Clusters Kit"/>
+  <field-definition name="PhiX v3"/>
+  <field-definition name="Read 1 Cycles"/>
+  <field-definition name="Read 2 Cycles"/>
+  <field-definition name="Run Counter"/>
+  <field-definition name="SBS Kit (Box -20C)"/>
+  <field-definition name="SBS Kit (Box Room Temp.)"/>
+  <field-definition name="Sequencer Side"/>
+  <field-definition name="Start Date"/>
+  <field-definition name="Workflow"/>
+  <field-definition name="cBot Cartridge"/>
+  <field-definition name="cBot Primer Set"/>
+  <field-definition name="cBot Reagent Kit"/>
+  <field-definition name="cBot Reagent Kit ID"/>
+  <field-definition name="cBot Run Recipe"/>
+  <field-definition name="cBot Used"/>
+  <parameter name="Generate bcl2fastq Sample Sheet">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -u {username} -p {password} -i {processURI:v2} script:setUDF -f 'Progress' -t '//input/@uri-&gt;//sample/@uri' -v 'Library ready for sequencing' script:initArtifactUDFs &amp;&amp; /opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/Illumina_HiSeqX/v1/EPP/hiseqx-extensions.jar script:generate_bcl2fastq_sample_sheet -u {username} -p {password} -i {processURI:v2} -c {compoundOutputFileLuid1} -e {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="% Aligned R1"/>
+    <field-definition name="% Aligned R2"/>
+    <field-definition name="% Bases &gt;=Q30 R1"/>
+    <field-definition name="% Bases &gt;=Q30 R2"/>
+    <field-definition name="% Error Rate R1"/>
+    <field-definition name="% Error Rate R2"/>
+    <field-definition name="Intensity Cycle 1 R1"/>
+    <field-definition name="Intensity Cycle 1 R2"/>
+    <field-definition name="Yield PF (Gb) R1"/>
+    <field-definition name="Yield PF (Gb) R2"/>
+    <field-definition name="% Intensity Cycle 20 R1"/>
+    <field-definition name="% Intensity Cycle 20 R2"/>
+    <field-definition name="% Phasing R1"/>
+    <field-definition name="% Phasing R2"/>
+    <field-definition name="% Prephasing R1"/>
+    <field-definition name="% Prephasing R2"/>
+    <field-definition name="%PF R1"/>
+    <field-definition name="%PF R2"/>
+    <field-definition name="Avg Q Score R1"/>
+    <field-definition name="Avg Q Score R2"/>
+    <field-definition name="cBot Primer Set"/>
+    <field-definition name="cBot Run Recipe"/>
+    <field-definition name="Cluster Density (K/mm^2) R1"/>
+    <field-definition name="Cluster Density (K/mm^2) R2"/>
+    <field-definition name="Clusters PF R1"/>
+    <field-definition name="Clusters PF R2"/>
+    <field-definition name="Clusters Raw R1"/>
+    <field-definition name="Clusters Raw R2"/>
+    <field-definition name="Loading Conc. (pM)"/>
+    <field-definition name="Workflow"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Lab Tracking Form,bcl2fastq Sample Sheet,bcl2fastq Sample Sheet Generation Log}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">SBS</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">GEL_SPOT</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">Patterned Flow Cell</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">SB</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">3. Illumina SBS</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display the UDF information associated with all the outputs</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Create Strip Tube (HiSeq X) 1.0">
+  <field-definition name="Patterned Cluster Mix 1 (PCX1) Barcode"/>
+  <field-definition name="Patterned Cluster Mix 2 (PCX2) Barcode"/>
+  <field-definition name="Patterned Cluster Mix 3 (PCX3) Barcode"/>
+  <field-definition name="Resuspension Buffer (RSB) Barcode"/>
+  <parameter name="0. Create Excel file">
+    <string>bash -l -c "/usr/bin/python3.5      /opt/gls/clarity/customextensions/HiSeq/HiSeq_create_tube_excel.py     -user_psw {username}:{password} -stepURI_v2 {stepURI:v2}     -attachFilesLUIDs='{compoundOutputFileLuids}' | tee /opt/gls/clarity/ai/temp/create_tube.csv {compoundOutputFileLuid0}_for_excel.csv &gt;&gt;/dev/null &amp;&amp; /opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar script:convertToExcel     -i {stepURI:v2:http}     -u {username}    -p {password}  -logFileLIMSID {compoundOutputFileLuid2}   -inputFileName  '/opt/gls/clarity/ai/temp/create_tube.csv'    -destLIMSID {compoundOutputFileLuid1}   -worksheet 'LibraryDataEntry'  -updateFileName '/opt/gls/clarity/customextensions/Templates/HSX4000_Run_JANUSv3_5_3_Template_2018_08_27_.xlsm' -q 'true' "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Create Excel (NO polling NO replicas)">
+    <string>bash -l -c "/usr/bin/python3.5      /opt/gls/clarity/customextensions/HiSeq/HiSeq_create_NO_poll_tube_excel.py     -user_psw {username}:{password} -stepURI_v2 {stepURI:v2}     -attachFilesLUIDs='{compoundOutputFileLuids}' | tee /opt/gls/clarity/ai/temp/create_tube.csv {compoundOutputFileLuid0}_for_excel.csv &gt;&gt;/dev/null &amp;&amp; /opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar script:convertToExcel     -i {stepURI:v2:http}     -u {username}    -p {password}  -logFileLIMSID {compoundOutputFileLuid2}   -inputFileName  '/opt/gls/clarity/ai/temp/create_tube.csv'    -destLIMSID {compoundOutputFileLuid1}   -worksheet 'LibraryDataEntry'  -updateFileName '/opt/gls/clarity/customextensions/Templates/HSX4000_Run_JANUSv3_5_3_Template_2018_08_27_.xlsm' -q 'true' "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Update Library Volume">
+    <string>bash -c -l "/usr/bin/python3.5  /opt/gls/clarity/customextensions/NovaSeq/parse_excel_libnorm_file.py -u {username} -p {password} -s {stepURI:v2} -l '{compoundOutputFileLuids}'  -i {compoundOutputFileLuid3} &gt; {compoundOutputFileLuid2}_log.txt "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. Check the File Attachment">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/checkFilesAreAttached.py -s {stepURI} -u {username} -p {password} -f {compoundOutputFileLuid3}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="4. CheckFIleAttachment and Update Lib Volume">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/checkFilesAreAttached.py -s {stepURI} -u {username} -p {password} -f {compoundOutputFileLuid3} &amp;&amp; /usr/bin/python3.5  /opt/gls/clarity/customextensions/NovaSeq/parse_excel_libnorm_file.py -u {username} -p {password} -s {stepURI:v2} -l '{compoundOutputFileLuids}'  -i {compoundOutputFileLuid3} &gt; {compoundOutputFileLuid2}_log.txt "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>VariableByInput</variability-type>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>4</number-of-outputs>
+    <output-name>{LIST:CSV file for pipeline,Excel file for pipeline,Log file,Excel file for LIMS}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">CRE</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">CR</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Illumina Sequencing (HiSeq X) 1.0 McGill 1.1">
+  <field-definition name="Comments"/>
+  <field-definition name="Control Lane"/>
+  <field-definition name="Experiment Name"/>
+  <field-definition name="Failed Data IDs (csv)"/>
+  <field-definition name="Finish Date"/>
+  <field-definition name="Flow Cell ID"/>
+  <field-definition name="Flow Cell Position"/>
+  <field-definition name="Flow Cell Version"/>
+  <field-definition name="HiSeq Used"/>
+  <field-definition name="Index 1 (i7) Primer Mix (HP12) Barcode"/>
+  <field-definition name="Index 1 Read Cycles"/>
+  <field-definition name="Index 2 Read Cycles"/>
+  <field-definition name="Output Folder"/>
+  <field-definition name="Patterned Amplification Mix (PAM) Barcode"/>
+  <field-definition name="Patterned Amplification Premix (PPM) Barcode"/>
+  <field-definition name="Patterned Cleavage Mix (PCM) Barcode"/>
+  <field-definition name="Patterned Denaturation Reagent (PDR) Barcode"/>
+  <field-definition name="Patterned Incorporation Mix (PIM) Barcode"/>
+  <field-definition name="Patterned Linearization Mix 2 (PLM2) Barcode"/>
+  <field-definition name="Patterned Resynthesis Mix (PRM) Barcode"/>
+  <field-definition name="Patterned SBS Buffer 1 (PB1) Barcode"/>
+  <field-definition name="Patterned SBS Buffer 2 (PB2) Barcode (x3)"/>
+  <field-definition name="Patterned Scan Mix (PSM) Barcode"/>
+  <field-definition name="Read 1 Cycles"/>
+  <field-definition name="Read 2 Cycles"/>
+  <field-definition name="Read 2 Primer Mix (HP11) Barcode"/>
+  <field-definition name="Report File"/>
+  <field-definition name="Run ID"/>
+  <field-definition name="Run Processing Status"/>
+  <field-definition name="Run Type"/>
+  <field-definition name="SBS Kit (Box -20C)"/>
+  <field-definition name="SBS Kit (Box Room Temp.)"/>
+  <field-definition name="SBS Kit Lot #"/>
+  <field-definition name="SBS Kit Type"/>
+  <field-definition name="Status"/>
+  <field-definition name="Wash Buffer (PW1) Barcode"/>
+  <field-definition name="cBot Used"/>
+  <parameter name="0. Check run status">
+    <string>bash -c  " /usr/bin/python3.5      /opt/gls/clarity/customextensions/Illumina/IlluminaSeq_create_status_request.py     -user_psw={username}:{password}  -stepURI_v2={stepURI:v2}  | tee  {compoundOutputFileLuid9}_{processLuid}_status_request.txt /opt/gls/clarity/ai/{processLuid}_status_request.txt &gt;&gt;/dev/null &amp;&amp; /usr/bin/python3.5      /opt/gls/clarity/customextensions/Illumina/IlluminaSeq_run_status.py  -d /Research/hiseqX -i/opt/gls/clarity/ai/{processLuid}_status_request.txt -o {compoundOutputFileLuid10} -f /opt/gls/clarity/ai/temp/temp_dbupload.txt &amp;&amp; /usr/bin/python /opt/gls/clarity/customextensions/Illumina/upload_IlluminaSeq_report.py  -u {username} -p {password} -s {stepURI:v2}     -l '{compoundOutputFileLuids}'   -t /opt/gls/clarity/ai/temp/temp_dbupload.txt  -g hiseq &gt; {compoundOutputFileLuid8}_log.txt "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Create file for pipeline">
+    <string>bash -c  " /usr/bin/python3.5      /opt/gls/clarity/customextensions/HiSeq/HiSeq_create_cluster_excel.py     -user_psw={username}:{password}  -stepURI_v2={stepURI:v2}     -attachFilesLUIDs='{compoundOutputFileLuids} '   &gt; {compoundOutputFileLuid6}_{processLuid}_samples.txt"
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Create file for pipeline (NO Pooling/replicas)">
+    <string>bash -c  " /usr/bin/python3.5      /opt/gls/clarity/customextensions/HiSeq/HiSeq_create_excel_file_IS_rb_mLib_io.py     -user_psw={username}:{password}  -stepURI_v2={stepURI:v2}     -attachFilesLUIDs='{compoundOutputFileLuids} '   &gt; {compoundOutputFileLuid6}_{processLuid}_samples.txt"
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. Assign analysis report">
+    <string> bash -c  " /usr/bin/python /opt/gls/clarity/customextensions/Illumina/upload_IlluminaSeq_report.py  -u {username} -p {password} -s {stepURI:v2}    -i {compoundOutputFileLuid7}   -l '{compoundOutputFileLuids}'  -g hiseq  &gt; {compoundOutputFileLuid8}_log.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="4.Apply Fail Data">
+    <string> bash -l -c "/usr/bin/python /opt/gls/clarity/customextensions/Illumina/upload_failed_samples_IlluminaSeq.py  -u {username} -p {password} -s {stepURI:v2}     -g hiseq &gt; {compoundOutputFileLuid8}.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="5.Run Processing UDF validation">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2} -u {username} -p {password} script:evaluateDynamicExpression -exp 'if ( !step.::Run Processing Status::.matches(::Complete::)){fail ( ::Run is not completed. Please wait and try again.:: ) }' -log {compoundOutputFileLuid8} -t true " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>11</number-of-outputs>
+    <output-name>{LIST:Illumina Run Report,Link to Run Folder,Run Parameters,Run Info,First Base Report,Lab Tracking Form,Samples for Pipeline(TAB v.4),Analysis report from pipeline (TAB v4),Log file,Run Status Request,Run Status Info}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">SBS</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">GEL_SPOT</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">SB</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">3. Illumina SBS</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Library Normalization (HiSeq X) 1.0 McGill 1.4">
+  <field-definition name="Library volume (uL) transferred to DESTINATION plate"/>
+  <field-definition name="Maximum Library Volume Threshold (ul)"/>
+  <field-definition name="Maximum destination container volume (uL)"/>
+  <field-definition name="Normalized conc. (nM)"/>
+  <field-definition name="Plate Barcode: Diluted Cluster Template (DCT)"/>
+  <field-definition name="Target Concentration (nM)"/>
+  <field-definition name="Target Volume (ul)"/>
+  <parameter name="Copy Library Volume">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'output.::Library Volume (ul)::=input.::Library Volume (ul):: ' -log {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Create Normalization CSV">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -u {username} -p {password} -i {processURI:v2} script:initArtifactUDFs script:normalizationBufferVolumes -c {compoundOutputFileLuid1}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Test 1">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t true -h false -exp 'output.::Library Concentration (nM):: = input.::Concentration:: ; output.::Library Volume To Use (ul):: = (step.::Target Concentration (nM):: * step.::Target Volume (ul)::) / input.::Concentration:: ; output.::Diluent Volume (ul):: = step.::Target Volume (ul):: - output.::Library Volume To Use (ul):: ; if (output.::Library Volume To Use (ul):: &gt; step.::Maximum Library Volume Threshold (ul)::) {output.::Denaturation Sample Volume (ul):: = step.::Target Concentration (nM):: / input.::Concentration:: * 4.36} else {output.::Denaturation Sample Volume (ul):: = 4.36} ;  if (output.::Library Volume To Use (ul):: &gt; step.::Maximum Library Volume Threshold (ul)::) {output.::EB Volume (ul):: = 6.2 + 4.36 - output.::Denaturation Sample Volume (ul)::} else {output.::EB Volume (ul):: = 6.2}  ' -log {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>VariableByInput</variability-type>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Normalized conc. (nM)"/>
+    <field-definition name="Adapter (%)"/>
+    <field-definition name="Aligned Bases On Target (%)"/>
+    <field-definition name="Aligned Dup. Rate (%)"/>
+    <field-definition name="Avg. Qual"/>
+    <field-definition name="Bases"/>
+    <field-definition name="Bases Covered at 100x (%)"/>
+    <field-definition name="Bases Covered at 10x (%)"/>
+    <field-definition name="Bases Covered at 25x (%)"/>
+    <field-definition name="Bases Covered at 50x (%)"/>
+    <field-definition name="Bases Covered at 75x (%)"/>
+    <field-definition name="Bed"/>
+    <field-definition name="Chimeras (%)"/>
+    <field-definition name="Clusters"/>
+    <field-definition name="Dup. Rate (%)"/>
+    <field-definition name="Expected Sample Tag Name"/>
+    <field-definition name="Flowcell ID"/>
+    <field-definition name="Freemix Number of SNP"/>
+    <field-definition name="Freemix Value"/>
+    <field-definition name="Mapped Insert Size (mean)"/>
+    <field-definition name="Mapped Insert Size (median)"/>
+    <field-definition name="Mapped Insert Size (std. dev.)"/>
+    <field-definition name="Mean Coverage"/>
+    <field-definition name="On Bait Bases from On Target Bases (%)"/>
+    <field-definition name="PF Reads Aligned All"/>
+    <field-definition name="PF Reads Aligned All (%)"/>
+    <field-definition name="PF Reads Aligned R1 (%)"/>
+    <field-definition name="PF Reads Aligned R2 (%)"/>
+    <field-definition name="Processing Folder Name"/>
+    <field-definition name="R1 PhiX Rate from Total (%)"/>
+    <field-definition name="R1 Top Blast Hit Name"/>
+    <field-definition name="R1 Top Blast Hit Rate (%)"/>
+    <field-definition name="R2 PhiX Rate from Total (%)"/>
+    <field-definition name="R2 Top Blast Hit Name"/>
+    <field-definition name="Reference"/>
+    <field-definition name="Run Count"/>
+    <field-definition name="Run Folder Name"/>
+    <field-definition name="Run ID"/>
+    <field-definition name="Top Sample Tag Name"/>
+    <field-definition name="Top Sample Tag Name Match"/>
+    <field-definition name="Top Sample Tag Rate from All Detected (%)"/>
+    <field-definition name="Top Sample Tag Rate from Total (%)"/>
+    <field-definition name="Clusters on Index in Lane (%)"/>
+    <field-definition name="Clusters on Index in Lane from Target (%)"/>
+    <field-definition name="i7 Adapter"/>
+    <field-definition name="i5 Adapter"/>
+    <field-definition name="chr1 Normalized Coverage"/>
+    <field-definition name="chr2 Normalized Coverage"/>
+    <field-definition name="chr3 Normalized Coverage"/>
+    <field-definition name="chr4 Normalized Coverage"/>
+    <field-definition name="chr5 Normalized Coverage"/>
+    <field-definition name="chr6 Normalized Coverage"/>
+    <field-definition name="chr7 Normalized Coverage"/>
+    <field-definition name="chr8 Normalized Coverage"/>
+    <field-definition name="chr9 Normalized Coverage"/>
+    <field-definition name="chr10 Normalized Coverage"/>
+    <field-definition name="chr11 Normalized Coverage"/>
+    <field-definition name="chr12 Normalized Coverage"/>
+    <field-definition name="chr13 Normalized Coverage"/>
+    <field-definition name="chr14 Normalized Coverage"/>
+    <field-definition name="chr15 Normalized Coverage"/>
+    <field-definition name="chr16 Normalized Coverage"/>
+    <field-definition name="chr17 Normalized Coverage"/>
+    <field-definition name="chr18 Normalized Coverage"/>
+    <field-definition name="chr19 Normalized Coverage"/>
+    <field-definition name="chr20 Normalized Coverage"/>
+    <field-definition name="chr21 Normalized Coverage"/>
+    <field-definition name="chr22 Normalized Coverage"/>
+    <field-definition name="chrM Normalized Coverage"/>
+    <field-definition name="chrX Normalized Coverage"/>
+    <field-definition name="chrY Normalized Coverage"/>
+    <field-definition name="Data Release"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Lab Tracking Form,Normalization Buffer Volumes CSV,Calculation Log}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">NRM</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">GEL_SPOT</process-type-attribute>
+  <process-type-attribute name="InheritsQC">true</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LI</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">3. Illumina SBS</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Library Pooling (HiSeq X) 1.0">
+  <field-definition name="Plate Barcode: Pooled DCT Plate (PDP)"/>
+  <parameter name="0. autoplacement">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/PlacementHelper.jar script:place_samples -i {stepURI:v2} -u {username} -p {password} -d /opt/gls/clarity/customextensions/Common "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. AutoPool">
+    <string>bash -c -l "/usr/bin/python /opt/gls/clarity/customextensions/Common/autopool_2018.py -u {username} -p {password} -s {stepURI:v2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Sample</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{PoolName}</output-name>
+    <field-definition name="Normalized conc. (nM)"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>2</number-of-outputs>
+    <output-name>{LIST:Lab Tracking Form,Log file}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PSL</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">PoolSamples</process-type-attribute>
+  <process-type-attribute name="IconConstant">GEL_SPOT</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="NamingTagHandlers">com.genologics.platform.behaviourmanagement.process.commands.outputnaming.PoolNamingTagHandler</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">PL</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">3. Illumina SBS</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="SameReagent">false</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">8</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">4</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Adapter</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Adapter Read 2</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Cartridge</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Primer Set</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Illumina</preset>
+  <preset>Custom Primers (set output fields for details)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Reagent Kit</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>HiSeq X HD Reagent Kit</preset>
+  <preset>HiSeq X cBot Multi-Primer Rehybridization Kit</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Reagent Kit ID</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Run Recipe</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>HiSeq X HD Exclusion Amp v1.0</preset>
+  <preset>HiSeq X Cluster Kit v1 cBot Rehyb Recipe v1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Used</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Astro</preset>
+  <preset>Cyberman</preset>
+  <preset>Optimus Prime</preset>
+  <preset>Twiki-2</preset>
+  <preset>Wall-e</preset>
+  <preset>EVE</preset>
+  <preset>BB8</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Experiment Name</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Flowcell ID</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Flowcell Lot</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>HiSeq Used</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Capri</preset>
+  <preset>Faroe</preset>
+  <preset>Margarita</preset>
+  <preset>Skye</preset>
+  <preset>Tasmania</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Index 1</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>8</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Index 2</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Manifold</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Mask Adapter</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Mask Adapter Read 2</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>NaOH 2N</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PE Clusters Kit</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PhiX v3</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Read 1 Cycles</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>151</preset>
+  <min-value>0.0</min-value>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Read 2 Cycles</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>151</preset>
+  <min-value>0.0</min-value>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SBS Kit (Box -20C)</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SBS Kit (Box Room Temp.)</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Start Date</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Workflow</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Run Counter</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Sequencer Side</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>A</preset>
+  <preset>B</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>ExAmp Box Lot</name>
+  <attach-to-name>Cluster Generation (HiSeq X) 1.0 McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Resuspension Buffer (RSB) Barcode</name>
+  <attach-to-name>Create Strip Tube (HiSeq X) 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Cluster Mix 1 (PCX1) Barcode</name>
+  <attach-to-name>Create Strip Tube (HiSeq X) 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Cluster Mix 2 (PCX2) Barcode</name>
+  <attach-to-name>Create Strip Tube (HiSeq X) 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Cluster Mix 3 (PCX3) Barcode</name>
+  <attach-to-name>Create Strip Tube (HiSeq X) 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cBot Used</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Comments</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Control Lane</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Experiment Name</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Finish Date</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Flow Cell ID</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Flow Cell Position</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <preset>N/A (GA)</preset>
+  <preset>A</preset>
+  <preset>B</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Flow Cell Version</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>HiSeq Used</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Index 1 (i7) Primer Mix (HP12) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Index 1 Read Cycles</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>8</preset>
+  <preset>0</preset>
+  <preset>10</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Index 2 Read Cycles</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>8</preset>
+  <preset>0</preset>
+  <preset>10</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Output Folder</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Amplification Mix (PAM) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Amplification Premix (PPM) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Cleavage Mix (PCM) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Denaturation Reagent (PDR) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Incorporation Mix (PIM) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Linearization Mix 2 (PLM2) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Resynthesis Mix (PRM) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned SBS Buffer 1 (PB1) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned SBS Buffer 2 (PB2) Barcode (x3)</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Patterned Scan Mix (PSM) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Read 1 Cycles</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Read 2 Cycles</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Read 2 Primer Mix (HP11) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Run ID</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Run Type</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SBS Kit (Box -20C)</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SBS Kit (Box Room Temp.)</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SBS Kit Lot #</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SBS Kit Type</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Status</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Wash Buffer (PW1) Barcode</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="URI">
+  <name>Report File</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Run Processing Status</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Failed Data IDs (csv)</name>
+  <attach-to-name>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library volume (uL) transferred to DESTINATION plate</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>10</preset>
+  <min-value>0.0</min-value>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Normalized conc. (nM)</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>10</preset>
+  <preset>4</preset>
+  <preset>2</preset>
+  <min-value>0.001</min-value>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Maximum destination container volume (uL)</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>800</preset>
+  <min-value>0.0</min-value>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Plate Barcode: Diluted Cluster Template (DCT)</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Maximum Library Volume Threshold (ul)</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>5.5</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Target Volume (ul)</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>10</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Target Concentration (nM)</name>
+  <attach-to-name>Library Normalization (HiSeq X) 1.0 McGill 1.4</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>3</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Plate Barcode: Pooled DCT Plate (PDP)</name>
+  <attach-to-name>Library Pooling (HiSeq X) 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="64" name="Illumina SBS (HiSeq X) 1.0">
+  <steps>
+    <step name="Library Normalization (HiSeq X) 1.0 McGill 1.4">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>Library Normalization (HiSeq X) 1.0 McGill 1.4</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="2" name="Library Pooling (HiSeq X) 1.0"/>
+        <transition sequence="3" name="Create Strip Tube (HiSeq X) 1.0"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Lane Fraction"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Data Release"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="0/{LIST:Lab Tracking Form,Normalization Buffer Volumes CSV,Calculation Log}|1/{LIST:Lab Tracking Form,Normalization Buffer Volumes CSV,Calculation Log}|2/{LIST:Lab Tracking Form,Normalization Buffer Volumes CSV,Calculation Log}" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="Copy Library Volume"/>
+        <epp-trigger type="UNUSED" name="Create Normalization CSV"/>
+        <epp-trigger type="UNUSED" name="Test 1"/>
+      </epp-triggers>
+    </step>
+    <step name="Library Pooling (HiSeq X) 1.0">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>Library Pooling (HiSeq X) 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types>
+        <control-type name="PhiX v3"/>
+      </permitted-control-types>
+      <transitions>
+        <transition sequence="3" name="Create Strip Tube (HiSeq X) 1.0"/>
+      </transitions>
+      <default-grouping>previousStepGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Reagent Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="0/{LIST:Lab Tracking Form,Log file}|1/{LIST:Lab Tracking Form,Log file}" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0. autoplacement"/>
+        <epp-trigger type="UNUSED" name="1. AutoPool"/>
+      </epp-triggers>
+    </step>
+    <step name="Create Strip Tube (HiSeq X) 1.0">
+      <protocol-step-index>3</protocol-step-index>
+      <process-type>Create Strip Tube (HiSeq X) 1.0</process-type>
+      <permitted-containers>
+        <container-type>Strip Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types>
+        <control-type name="PhiX v3"/>
+      </permitted-control-types>
+      <transitions>
+        <transition sequence="4" name="Cluster Generation (HiSeq X) 1.0 McGill 1.0"/>
+      </transitions>
+      <default-grouping>previousStepGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Create Excel file"/>
+        <epp-trigger type="MANUAL" name="1. Create Excel (NO polling NO replicas)"/>
+        <epp-trigger type="UNUSED" name="2. Update Library Volume"/>
+        <epp-trigger type="UNUSED" name="3. Check the File Attachment"/>
+        <epp-trigger status="RECORD_DETAILS" point="AFTER" type="AUTOMATIC" name="4. CheckFIleAttachment and Update Lib Volume"/>
+      </epp-triggers>
+    </step>
+    <step name="Cluster Generation (HiSeq X) 1.0 McGill 1.0">
+      <protocol-step-index>4</protocol-step-index>
+      <process-type>Cluster Generation (HiSeq X) 1.0 McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>Patterned Flow Cell</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="5" name="Illumina Sequencing (HiSeq X) 1.0 McGill 1.1"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="cBot Used"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="HiSeq Used"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Start Date"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Experiment Name"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Flowcell ID"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Flowcell Lot"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="PhiX v3"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="NaOH 2N"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="cBot Cartridge"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="cBot Reagent Kit ID"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="PE Clusters Kit"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Manifold"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="SBS Kit (Box Room Temp.)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="SBS Kit (Box -20C)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Read 1 Cycles"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Read 2 Cycles"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Index 1"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Index 2"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Sequencer Side"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="ExAmp Box Lot"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Aligned R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Aligned R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Bases &gt;=Q30 R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Bases &gt;=Q30 R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Error Rate R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Error Rate R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Intensity Cycle 20 R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Intensity Cycle 20 R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Phasing R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Phasing R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Prephasing R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Prephasing R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="%PF R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="%PF R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Avg Q Score R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Avg Q Score R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="cBot Primer Set"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="cBot Run Recipe"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cluster Density (K/mm^2) R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cluster Density (K/mm^2) R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters PF R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters PF R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters Raw R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters Raw R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Intensity Cycle 1 R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Intensity Cycle 1 R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Loading Conc. (pM)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Workflow"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Yield PF (Gb) R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Yield PF (Gb) R2"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="0/{LIST:Lab Tracking Form,bcl2fastq Sample Sheet,bcl2fastq Sample Sheet Generation Log}|1/{LIST:Lab Tracking Form,bcl2fastq Sample Sheet,bcl2fastq Sample Sheet Generation Log}|2/{LIST:Lab Tracking Form,bcl2fastq Sample Sheet,bcl2fastq Sample Sheet Generation Log}" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="Generate bcl2fastq Sample Sheet"/>
+      </epp-triggers>
+    </step>
+    <step name="Illumina Sequencing (HiSeq X) 1.0 McGill 1.1">
+      <protocol-step-index>5</protocol-step-index>
+      <process-type>Illumina Sequencing (HiSeq X) 1.0 McGill 1.1</process-type>
+      <permitted-containers>
+        <container-type>Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Status"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Flow Cell ID"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Run ID"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Run Processing Status"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Report File"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Failed Data IDs (csv)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Comments"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Yield PF (Gb) R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Yield PF (Gb) R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Bases &gt;=Q30 R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Bases &gt;=Q30 R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cluster Density (K/mm^2) R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cluster Density (K/mm^2) R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters Raw R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters Raw R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters PF R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Clusters PF R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="%PF R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="%PF R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Intensity Cycle 1 R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Intensity Cycle 1 R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Intensity Cycle 20 R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Intensity Cycle 20 R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Phasing R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Phasing R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Prephasing R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Prephasing R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Aligned R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Aligned R2"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Error Rate R1"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% Error Rate R2"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Check run status"/>
+        <epp-trigger type="MANUAL" name="1. Create file for pipeline"/>
+        <epp-trigger type="MANUAL" name="2. Create file for pipeline (NO Pooling/replicas)"/>
+        <epp-trigger type="MANUAL" name="3. Assign analysis report"/>
+        <epp-trigger type="MANUAL" name="4.Apply Fail Data"/>
+        <epp-trigger status="RECORD_DETAILS" point="AFTER" type="AUTOMATIC" name="5.Run Processing UDF validation"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="50" name="capacity"/>
+    <protocol-property value="sequencing" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+	<Workflows>
+<wkfcnf:workflow xmlns:wkfcnf="http://genologics.com/ri/workflowconfiguration" status="PENDING" name="HiSeqX">
+  <protocols>
+    <protocol name="Illumina SBS (HiSeq X) 1.0"/>
+  </protocols>
+</wkfcnf:workflow>
+	</Workflows>
+</config>

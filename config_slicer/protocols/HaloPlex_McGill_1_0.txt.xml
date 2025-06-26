@@ -1,0 +1,2498 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A01">
+  <special-type name="Index">
+    <attribute value="ATGCCTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A02">
+  <special-type name="Index">
+    <attribute value="AGCAGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A03">
+  <special-type name="Index">
+    <attribute value="ATCATTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A04">
+  <special-type name="Index">
+    <attribute value="AACTCACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A05">
+  <special-type name="Index">
+    <attribute value="AACGCTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A06">
+  <special-type name="Index">
+    <attribute value="AGCCATGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A07">
+  <special-type name="Index">
+    <attribute value="ACGTATCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A08">
+  <special-type name="Index">
+    <attribute value="CAGCGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A09">
+  <special-type name="Index">
+    <attribute value="CTCAATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A10">
+  <special-type name="Index">
+    <attribute value="AATGTTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A11">
+  <special-type name="Index">
+    <attribute value="CCAGTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_A12">
+  <special-type name="Index">
+    <attribute value="CAAGGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B01">
+  <special-type name="Index">
+    <attribute value="GAATCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B02">
+  <special-type name="Index">
+    <attribute value="GAGCTGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B03">
+  <special-type name="Index">
+    <attribute value="GCCACATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B04">
+  <special-type name="Index">
+    <attribute value="GCTAACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B05">
+  <special-type name="Index">
+    <attribute value="GGAGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B06">
+  <special-type name="Index">
+    <attribute value="GTACGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B07">
+  <special-type name="Index">
+    <attribute value="GTCTGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B08">
+  <special-type name="Index">
+    <attribute value="TAGGATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B09">
+  <special-type name="Index">
+    <attribute value="TCCGTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B10">
+  <special-type name="Index">
+    <attribute value="TGAAGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B11">
+  <special-type name="Index">
+    <attribute value="TGGCTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_B12">
+  <special-type name="Index">
+    <attribute value="TTCACGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C01">
+  <special-type name="Index">
+    <attribute value="AACGTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C02">
+  <special-type name="Index">
+    <attribute value="AAACATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C03">
+  <special-type name="Index">
+    <attribute value="ACCACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C04">
+  <special-type name="Index">
+    <attribute value="CAGATCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C05">
+  <special-type name="Index">
+    <attribute value="CATCAAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C06">
+  <special-type name="Index">
+    <attribute value="AGTACAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C07">
+  <special-type name="Index">
+    <attribute value="CTAAGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C08">
+  <special-type name="Index">
+    <attribute value="AGTGGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C09">
+  <special-type name="Index">
+    <attribute value="AGGCTAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C10">
+  <special-type name="Index">
+    <attribute value="AGATCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C11">
+  <special-type name="Index">
+    <attribute value="CGACTGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_C12">
+  <special-type name="Index">
+    <attribute value="CACCTTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D01">
+  <special-type name="Index">
+    <attribute value="CACTTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D02">
+  <special-type name="Index">
+    <attribute value="GAGTTAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D03">
+  <special-type name="Index">
+    <attribute value="CTGGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D04">
+  <special-type name="Index">
+    <attribute value="ATCCTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D05">
+  <special-type name="Index">
+    <attribute value="AAGGTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D06">
+  <special-type name="Index">
+    <attribute value="ACATTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D07">
+  <special-type name="Index">
+    <attribute value="CGACACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D08">
+  <special-type name="Index">
+    <attribute value="ACAGCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D09">
+  <special-type name="Index">
+    <attribute value="CCATCCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D10">
+  <special-type name="Index">
+    <attribute value="AAGAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D11">
+  <special-type name="Index">
+    <attribute value="CAAGACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_D12">
+  <special-type name="Index">
+    <attribute value="AAGACGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E01">
+  <special-type name="Index">
+    <attribute value="GCCAAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E02">
+  <special-type name="Index">
+    <attribute value="CGAACTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E03">
+  <special-type name="Index">
+    <attribute value="ACCTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E04">
+  <special-type name="Index">
+    <attribute value="CTGTAGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E05">
+  <special-type name="Index">
+    <attribute value="CGCTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E06">
+  <special-type name="Index">
+    <attribute value="ATTGAGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E07">
+  <special-type name="Index">
+    <attribute value="CCGTGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E08">
+  <special-type name="Index">
+    <attribute value="CATACCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E09">
+  <special-type name="Index">
+    <attribute value="AGATGTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E10">
+  <special-type name="Index">
+    <attribute value="CAACCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E11">
+  <special-type name="Index">
+    <attribute value="CCTCCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_E12">
+  <special-type name="Index">
+    <attribute value="ACACAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F01">
+  <special-type name="Index">
+    <attribute value="GACTAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F02">
+  <special-type name="Index">
+    <attribute value="GATAGACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F03">
+  <special-type name="Index">
+    <attribute value="GCGAGTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F04">
+  <special-type name="Index">
+    <attribute value="GCTCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F05">
+  <special-type name="Index">
+    <attribute value="GGTGCGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F06">
+  <special-type name="Index">
+    <attribute value="GTCGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F07">
+  <special-type name="Index">
+    <attribute value="GTGTTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F08">
+  <special-type name="Index">
+    <attribute value="TATCAGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F09">
+  <special-type name="Index">
+    <attribute value="TCTTCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F10">
+  <special-type name="Index">
+    <attribute value="TGGAACAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F11">
+  <special-type name="Index">
+    <attribute value="TGGTGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_F12">
+  <special-type name="Index">
+    <attribute value="GAACAGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G01">
+  <special-type name="Index">
+    <attribute value="ATTGGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G02">
+  <special-type name="Index">
+    <attribute value="AAGGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G03">
+  <special-type name="Index">
+    <attribute value="ACTATGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G04">
+  <special-type name="Index">
+    <attribute value="ACACGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G05">
+  <special-type name="Index">
+    <attribute value="CCTAATCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G06">
+  <special-type name="Index">
+    <attribute value="AGAGTCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G07">
+  <special-type name="Index">
+    <attribute value="CAATGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G08">
+  <special-type name="Index">
+    <attribute value="ATAGCGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G09">
+  <special-type name="Index">
+    <attribute value="CCGAAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G10">
+  <special-type name="Index">
+    <attribute value="CCTCTATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G11">
+  <special-type name="Index">
+    <attribute value="AACAACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_G12">
+  <special-type name="Index">
+    <attribute value="AACCGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H01">
+  <special-type name="Index">
+    <attribute value="GATGAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H02">
+  <special-type name="Index">
+    <attribute value="GACAGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H03">
+  <special-type name="Index">
+    <attribute value="CGGATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H04">
+  <special-type name="Index">
+    <attribute value="AGTCACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H05">
+  <special-type name="Index">
+    <attribute value="CTGAGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H06">
+  <special-type name="Index">
+    <attribute value="CCGACAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H07">
+  <special-type name="Index">
+    <attribute value="AGCACCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H08">
+  <special-type name="Index">
+    <attribute value="ACGCTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H09">
+  <special-type name="Index">
+    <attribute value="CGCATACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H10">
+  <special-type name="Index">
+    <attribute value="ACAGATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H11">
+  <special-type name="Index">
+    <attribute value="AATCCGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Blue_H12">
+  <special-type name="Index">
+    <attribute value="ACAAGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Blue</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A01">
+  <special-type name="Index">
+    <attribute value="AACGTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A02">
+  <special-type name="Index">
+    <attribute value="CGCTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A03">
+  <special-type name="Index">
+    <attribute value="AAGGTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A04">
+  <special-type name="Index">
+    <attribute value="AGATCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A05">
+  <special-type name="Index">
+    <attribute value="CACTTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A06">
+  <special-type name="Index">
+    <attribute value="CGACTGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A07">
+  <special-type name="Index">
+    <attribute value="GATAGACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A08">
+  <special-type name="Index">
+    <attribute value="GTCGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A09">
+  <special-type name="Index">
+    <attribute value="TGGAACAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A10">
+  <special-type name="Index">
+    <attribute value="AATGTTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A11">
+  <special-type name="Index">
+    <attribute value="ATCATTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_A12">
+  <special-type name="Index">
+    <attribute value="CGACACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B01">
+  <special-type name="Index">
+    <attribute value="AAACATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B02">
+  <special-type name="Index">
+    <attribute value="ACAAGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B03">
+  <special-type name="Index">
+    <attribute value="ACACAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B04">
+  <special-type name="Index">
+    <attribute value="AGCAGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B05">
+  <special-type name="Index">
+    <attribute value="CAGCGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B06">
+  <special-type name="Index">
+    <attribute value="CGCATACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B07">
+  <special-type name="Index">
+    <attribute value="GCCACATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B08">
+  <special-type name="Index">
+    <attribute value="GTCTGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B09">
+  <special-type name="Index">
+    <attribute value="TGGCTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B10">
+  <special-type name="Index">
+    <attribute value="ACACGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B11">
+  <special-type name="Index">
+    <attribute value="ATTGGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_B12">
+  <special-type name="Index">
+    <attribute value="CGGATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C01">
+  <special-type name="Index">
+    <attribute value="ATGCCTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C02">
+  <special-type name="Index">
+    <attribute value="CTGTAGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C03">
+  <special-type name="Index">
+    <attribute value="ACAGCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C04">
+  <special-type name="Index">
+    <attribute value="AGTCACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C05">
+  <special-type name="Index">
+    <attribute value="CATACCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C06">
+  <special-type name="Index">
+    <attribute value="CTCAATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C07">
+  <special-type name="Index">
+    <attribute value="GCGAGTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C08">
+  <special-type name="Index">
+    <attribute value="GTGTTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C09">
+  <special-type name="Index">
+    <attribute value="TGGTGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C10">
+  <special-type name="Index">
+    <attribute value="ACAGATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C11">
+  <special-type name="Index">
+    <attribute value="CAAGGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_C12">
+  <special-type name="Index">
+    <attribute value="CTAAGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D01">
+  <special-type name="Index">
+    <attribute value="AGTGGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D02">
+  <special-type name="Index">
+    <attribute value="AGTACAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D03">
+  <special-type name="Index">
+    <attribute value="ACCTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D04">
+  <special-type name="Index">
+    <attribute value="ATCCTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D05">
+  <special-type name="Index">
+    <attribute value="CCAGTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D06">
+  <special-type name="Index">
+    <attribute value="CTGAGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D07">
+  <special-type name="Index">
+    <attribute value="GCTAACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D08">
+  <special-type name="Index">
+    <attribute value="TAGGATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D09">
+  <special-type name="Index">
+    <attribute value="TTCACGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D10">
+  <special-type name="Index">
+    <attribute value="AGATGTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D11">
+  <special-type name="Index">
+    <attribute value="CACCTTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_D12">
+  <special-type name="Index">
+    <attribute value="GAACAGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E01">
+  <special-type name="Index">
+    <attribute value="ACCACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E02">
+  <special-type name="Index">
+    <attribute value="AACAACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E03">
+  <special-type name="Index">
+    <attribute value="ACGCTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E04">
+  <special-type name="Index">
+    <attribute value="ATTGAGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E05">
+  <special-type name="Index">
+    <attribute value="CCGAAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E06">
+  <special-type name="Index">
+    <attribute value="CTGGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E07">
+  <special-type name="Index">
+    <attribute value="GCTCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E08">
+  <special-type name="Index">
+    <attribute value="TATCAGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E09">
+  <special-type name="Index">
+    <attribute value="AACTCACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E10">
+  <special-type name="Index">
+    <attribute value="AGCACCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E11">
+  <special-type name="Index">
+    <attribute value="CCATCCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_E12">
+  <special-type name="Index">
+    <attribute value="GACAGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F01">
+  <special-type name="Index">
+    <attribute value="ACATTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F02">
+  <special-type name="Index">
+    <attribute value="AACCGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F03">
+  <special-type name="Index">
+    <attribute value="ACGTATCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F04">
+  <special-type name="Index">
+    <attribute value="CAACCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F05">
+  <special-type name="Index">
+    <attribute value="CCGTGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F06">
+  <special-type name="Index">
+    <attribute value="GAATCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F07">
+  <special-type name="Index">
+    <attribute value="GGAGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F08">
+  <special-type name="Index">
+    <attribute value="TCCGTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F09">
+  <special-type name="Index">
+    <attribute value="TGACCGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F10">
+  <special-type name="Index">
+    <attribute value="AGCCATGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F11">
+  <special-type name="Index">
+    <attribute value="CCGACAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_F12">
+  <special-type name="Index">
+    <attribute value="GAGTTAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G01">
+  <special-type name="Index">
+    <attribute value="CAGATCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G02">
+  <special-type name="Index">
+    <attribute value="AACGCTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G03">
+  <special-type name="Index">
+    <attribute value="ACTATGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G04">
+  <special-type name="Index">
+    <attribute value="CAAGACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G05">
+  <special-type name="Index">
+    <attribute value="CCTCCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G06">
+  <special-type name="Index">
+    <attribute value="GACTAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G07">
+  <special-type name="Index">
+    <attribute value="GGTGCGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G08">
+  <special-type name="Index">
+    <attribute value="TCTTCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G09">
+  <special-type name="Index">
+    <attribute value="AAGGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G10">
+  <special-type name="Index">
+    <attribute value="AGGCTAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G11">
+  <special-type name="Index">
+    <attribute value="CCTAATCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_G12">
+  <special-type name="Index">
+    <attribute value="GATGAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H01">
+  <special-type name="Index">
+    <attribute value="CATCAAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H02">
+  <special-type name="Index">
+    <attribute value="AAGACGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H03">
+  <special-type name="Index">
+    <attribute value="AGAGTCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H04">
+  <special-type name="Index">
+    <attribute value="CAATGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H05">
+  <special-type name="Index">
+    <attribute value="CGAACTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H06">
+  <special-type name="Index">
+    <attribute value="GAGCTGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H07">
+  <special-type name="Index">
+    <attribute value="GTACGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H08">
+  <special-type name="Index">
+    <attribute value="TGAAGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H09">
+  <special-type name="Index">
+    <attribute value="AATCCGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H10">
+  <special-type name="Index">
+    <attribute value="ATAGCGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H11">
+  <special-type name="Index">
+    <attribute value="CCTCTATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloPlex_Clear_H12">
+  <special-type name="Index">
+    <attribute value="GCCAAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloPlex_Clear</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or01_A01">
+  <special-type name="Index">
+    <attribute value="ATGCCTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or02_B01">
+  <special-type name="Index">
+    <attribute value="GAATCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or03_C01">
+  <special-type name="Index">
+    <attribute value="AACGTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or04_D01">
+  <special-type name="Index">
+    <attribute value="CACTTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or05_E01">
+  <special-type name="Index">
+    <attribute value="GCCAAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or06_F01">
+  <special-type name="Index">
+    <attribute value="GACTAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or07_G01">
+  <special-type name="Index">
+    <attribute value="ATTGGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or08_H01">
+  <special-type name="Index">
+    <attribute value="GATGAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or09_A02">
+  <special-type name="Index">
+    <attribute value="AGCAGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or10_B02">
+  <special-type name="Index">
+    <attribute value="GAGCTGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or11_C02">
+  <special-type name="Index">
+    <attribute value="AAACATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or12_D02">
+  <special-type name="Index">
+    <attribute value="GAGTTAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or13_E02">
+  <special-type name="Index">
+    <attribute value="CGAACTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or14_F02">
+  <special-type name="Index">
+    <attribute value="GATAGACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or15_G02">
+  <special-type name="Index">
+    <attribute value="AAGGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or16_H02">
+  <special-type name="Index">
+    <attribute value="GACAGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or17_A03">
+  <special-type name="Index">
+    <attribute value="ATCATTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or18_B03">
+  <special-type name="Index">
+    <attribute value="GCCACATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or19_C03">
+  <special-type name="Index">
+    <attribute value="ACCACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or20_D03">
+  <special-type name="Index">
+    <attribute value="CTGGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or21_E03">
+  <special-type name="Index">
+    <attribute value="ACCTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or22_F03">
+  <special-type name="Index">
+    <attribute value="GCGAGTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or23_G03">
+  <special-type name="Index">
+    <attribute value="ACTATGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or24_H03">
+  <special-type name="Index">
+    <attribute value="CGGATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or25_A04">
+  <special-type name="Index">
+    <attribute value="AACTCACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or26_B04">
+  <special-type name="Index">
+    <attribute value="GCTAACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or27_C04">
+  <special-type name="Index">
+    <attribute value="CAGATCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or28_D04">
+  <special-type name="Index">
+    <attribute value="ATCCTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or29_E04">
+  <special-type name="Index">
+    <attribute value="CTGTAGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or30_F04">
+  <special-type name="Index">
+    <attribute value="GCTCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or31_G04">
+  <special-type name="Index">
+    <attribute value="ACACGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or32_H04">
+  <special-type name="Index">
+    <attribute value="AGTCACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or33_A05">
+  <special-type name="Index">
+    <attribute value="AACGCTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or34_B05">
+  <special-type name="Index">
+    <attribute value="GGAGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or35_C05">
+  <special-type name="Index">
+    <attribute value="CATCAAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or36_D05">
+  <special-type name="Index">
+    <attribute value="AAGGTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or37_E05">
+  <special-type name="Index">
+    <attribute value="CGCTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or38_F05">
+  <special-type name="Index">
+    <attribute value="GGTGCGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or39_G05">
+  <special-type name="Index">
+    <attribute value="CCTAATCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or40_H05">
+  <special-type name="Index">
+    <attribute value="CTGAGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or41_A06">
+  <special-type name="Index">
+    <attribute value="AGCCATGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or42_B06">
+  <special-type name="Index">
+    <attribute value="GTACGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or43_C06">
+  <special-type name="Index">
+    <attribute value="AGTACAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or44_D06">
+  <special-type name="Index">
+    <attribute value="ACATTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or45_E06">
+  <special-type name="Index">
+    <attribute value="ATTGAGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or46_F06">
+  <special-type name="Index">
+    <attribute value="GTCGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or47_G06">
+  <special-type name="Index">
+    <attribute value="AGAGTCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or48_H06">
+  <special-type name="Index">
+    <attribute value="CCGACAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or49_A07">
+  <special-type name="Index">
+    <attribute value="ACGTATCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or50_B07">
+  <special-type name="Index">
+    <attribute value="GTCTGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or51_C07">
+  <special-type name="Index">
+    <attribute value="CTAAGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or52_D07">
+  <special-type name="Index">
+    <attribute value="CGACACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or53_E07">
+  <special-type name="Index">
+    <attribute value="CCGTGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or54_F07">
+  <special-type name="Index">
+    <attribute value="GTGTTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or55_G07">
+  <special-type name="Index">
+    <attribute value="CAATGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or56_H07">
+  <special-type name="Index">
+    <attribute value="AGCACCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or57_A08">
+  <special-type name="Index">
+    <attribute value="CAGCGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or58_B08">
+  <special-type name="Index">
+    <attribute value="TAGGATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or59_C08">
+  <special-type name="Index">
+    <attribute value="AGTGGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or60_D08">
+  <special-type name="Index">
+    <attribute value="ACAGCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or61_E08">
+  <special-type name="Index">
+    <attribute value="CATACCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or62_F08">
+  <special-type name="Index">
+    <attribute value="TATCAGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or63_G08">
+  <special-type name="Index">
+    <attribute value="ATAGCGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or64_H08">
+  <special-type name="Index">
+    <attribute value="ACGCTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or65_A09">
+  <special-type name="Index">
+    <attribute value="CTCAATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or66_B09">
+  <special-type name="Index">
+    <attribute value="TCCGTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or67_C09">
+  <special-type name="Index">
+    <attribute value="AGGCTAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or68_D09">
+  <special-type name="Index">
+    <attribute value="CCATCCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or69_E09">
+  <special-type name="Index">
+    <attribute value="AGATGTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or70_F09">
+  <special-type name="Index">
+    <attribute value="TCTTCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or71_G09">
+  <special-type name="Index">
+    <attribute value="CCGAAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or72_H09">
+  <special-type name="Index">
+    <attribute value="CGCATACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or73_A10">
+  <special-type name="Index">
+    <attribute value="AATGTTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or74_B10">
+  <special-type name="Index">
+    <attribute value="TGAAGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or75_C10">
+  <special-type name="Index">
+    <attribute value="AGATCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or76_D10">
+  <special-type name="Index">
+    <attribute value="AAGAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or77_E10">
+  <special-type name="Index">
+    <attribute value="CAACCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or78_F10">
+  <special-type name="Index">
+    <attribute value="TGGAACAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or79_G10">
+  <special-type name="Index">
+    <attribute value="CCTCTATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or80_H10">
+  <special-type name="Index">
+    <attribute value="ACAGATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or81_A11">
+  <special-type name="Index">
+    <attribute value="CCAGTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or82_B11">
+  <special-type name="Index">
+    <attribute value="TGGCTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or83_C11">
+  <special-type name="Index">
+    <attribute value="CGACTGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or84_D11">
+  <special-type name="Index">
+    <attribute value="CAAGACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or85_E11">
+  <special-type name="Index">
+    <attribute value="CCTCCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or86_F11">
+  <special-type name="Index">
+    <attribute value="TGGTGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or87_G11">
+  <special-type name="Index">
+    <attribute value="AACAACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or88_H11">
+  <special-type name="Index">
+    <attribute value="AATCCGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or89_A12">
+  <special-type name="Index">
+    <attribute value="CAAGGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or90_B12">
+  <special-type name="Index">
+    <attribute value="TTCACGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or91_C12">
+  <special-type name="Index">
+    <attribute value="CACCTTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or92_D12">
+  <special-type name="Index">
+    <attribute value="AAGACGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or93_E12">
+  <special-type name="Index">
+    <attribute value="ACACAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or94_F12">
+  <special-type name="Index">
+    <attribute value="GAACAGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or95_G12">
+  <special-type name="Index">
+    <attribute value="AACCGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Or96_H12">
+  <special-type name="Index">
+    <attribute value="ACAAGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye01_A01">
+  <special-type name="Index">
+    <attribute value="ATGCCTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye02_B01">
+  <special-type name="Index">
+    <attribute value="GAATCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye03_C01">
+  <special-type name="Index">
+    <attribute value="AACGTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye04_D01">
+  <special-type name="Index">
+    <attribute value="CACTTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye05_E01">
+  <special-type name="Index">
+    <attribute value="GCCAAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye06_F01">
+  <special-type name="Index">
+    <attribute value="GACTAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye07_G01">
+  <special-type name="Index">
+    <attribute value="ATTGGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye08_H01">
+  <special-type name="Index">
+    <attribute value="GATGAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye09_A02">
+  <special-type name="Index">
+    <attribute value="AGCAGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye10_B02">
+  <special-type name="Index">
+    <attribute value="GAGCTGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye11_C02">
+  <special-type name="Index">
+    <attribute value="AAACATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye12_D02">
+  <special-type name="Index">
+    <attribute value="GAGTTAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye13_E02">
+  <special-type name="Index">
+    <attribute value="CGAACTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye14_F02">
+  <special-type name="Index">
+    <attribute value="GATAGACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye15_G02">
+  <special-type name="Index">
+    <attribute value="AAGGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye16_H02">
+  <special-type name="Index">
+    <attribute value="GACAGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye17_A03">
+  <special-type name="Index">
+    <attribute value="ATCATTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye18_B03">
+  <special-type name="Index">
+    <attribute value="GCCACATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye19_C03">
+  <special-type name="Index">
+    <attribute value="ACCACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye20_D03">
+  <special-type name="Index">
+    <attribute value="CTGGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye21_E03">
+  <special-type name="Index">
+    <attribute value="ACCTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye22_F03">
+  <special-type name="Index">
+    <attribute value="GCGAGTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye23_G03">
+  <special-type name="Index">
+    <attribute value="ACTATGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye24_H03">
+  <special-type name="Index">
+    <attribute value="CGGATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye25_A04">
+  <special-type name="Index">
+    <attribute value="AACTCACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye26_B04">
+  <special-type name="Index">
+    <attribute value="GCTAACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye27_C04">
+  <special-type name="Index">
+    <attribute value="CAGATCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye28_D04">
+  <special-type name="Index">
+    <attribute value="ATCCTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye29_E04">
+  <special-type name="Index">
+    <attribute value="CTGTAGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye30_F04">
+  <special-type name="Index">
+    <attribute value="GCTCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye31_G04">
+  <special-type name="Index">
+    <attribute value="ACACGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye32_H04">
+  <special-type name="Index">
+    <attribute value="AGTCACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye33_A05">
+  <special-type name="Index">
+    <attribute value="AACGCTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye34_B05">
+  <special-type name="Index">
+    <attribute value="GGAGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye35_C05">
+  <special-type name="Index">
+    <attribute value="CATCAAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye36_D05">
+  <special-type name="Index">
+    <attribute value="AAGGTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye37_E05">
+  <special-type name="Index">
+    <attribute value="CGCTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye38_F05">
+  <special-type name="Index">
+    <attribute value="GGTGCGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye39_G05">
+  <special-type name="Index">
+    <attribute value="CCTAATCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye40_H05">
+  <special-type name="Index">
+    <attribute value="CTGAGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye41_A06">
+  <special-type name="Index">
+    <attribute value="AGCCATGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye42_B06">
+  <special-type name="Index">
+    <attribute value="GTACGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye43_C06">
+  <special-type name="Index">
+    <attribute value="AGTACAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye44_D06">
+  <special-type name="Index">
+    <attribute value="ACATTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye45_E06">
+  <special-type name="Index">
+    <attribute value="ATTGAGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye46_F06">
+  <special-type name="Index">
+    <attribute value="GTCGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye47_G06">
+  <special-type name="Index">
+    <attribute value="AGAGTCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye48_H06">
+  <special-type name="Index">
+    <attribute value="CCGACAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye49_A07">
+  <special-type name="Index">
+    <attribute value="ACGTATCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye50_B07">
+  <special-type name="Index">
+    <attribute value="GTCTGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye51_C07">
+  <special-type name="Index">
+    <attribute value="CTAAGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye52_D07">
+  <special-type name="Index">
+    <attribute value="CGACACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye53_E07">
+  <special-type name="Index">
+    <attribute value="CCGTGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye54_F07">
+  <special-type name="Index">
+    <attribute value="GTGTTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye55_G07">
+  <special-type name="Index">
+    <attribute value="CAATGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye56_H07">
+  <special-type name="Index">
+    <attribute value="AGCACCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye57_A08">
+  <special-type name="Index">
+    <attribute value="CAGCGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye58_B08">
+  <special-type name="Index">
+    <attribute value="TAGGATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye59_C08">
+  <special-type name="Index">
+    <attribute value="AGTGGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye60_D08">
+  <special-type name="Index">
+    <attribute value="ACAGCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye61_E08">
+  <special-type name="Index">
+    <attribute value="CATACCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye62_F08">
+  <special-type name="Index">
+    <attribute value="TATCAGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye63_G08">
+  <special-type name="Index">
+    <attribute value="ATAGCGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye64_H08">
+  <special-type name="Index">
+    <attribute value="ACGCTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye65_A09">
+  <special-type name="Index">
+    <attribute value="CTCAATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye66_B09">
+  <special-type name="Index">
+    <attribute value="TCCGTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye67_C09">
+  <special-type name="Index">
+    <attribute value="AGGCTAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye68_D09">
+  <special-type name="Index">
+    <attribute value="CCATCCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye69_E09">
+  <special-type name="Index">
+    <attribute value="AGATGTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye70_F09">
+  <special-type name="Index">
+    <attribute value="TGACCGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye71_G09">
+  <special-type name="Index">
+    <attribute value="CCGAAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye72_H09">
+  <special-type name="Index">
+    <attribute value="CGCATACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye73_A10">
+  <special-type name="Index">
+    <attribute value="AATGTTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye74_B10">
+  <special-type name="Index">
+    <attribute value="TGAAGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye75_C10">
+  <special-type name="Index">
+    <attribute value="AGATCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye76_D10">
+  <special-type name="Index">
+    <attribute value="AAGAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye77_E10">
+  <special-type name="Index">
+    <attribute value="CAACCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye78_F10">
+  <special-type name="Index">
+    <attribute value="TGGAACAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye79_G10">
+  <special-type name="Index">
+    <attribute value="CCTCTATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye80_H10">
+  <special-type name="Index">
+    <attribute value="ACAGATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye81_A11">
+  <special-type name="Index">
+    <attribute value="CCAGTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye82_B11">
+  <special-type name="Index">
+    <attribute value="TGGCTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye83_C11">
+  <special-type name="Index">
+    <attribute value="CGACTGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye84_D11">
+  <special-type name="Index">
+    <attribute value="CAAGACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye85_E11">
+  <special-type name="Index">
+    <attribute value="CCTCCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye86_F11">
+  <special-type name="Index">
+    <attribute value="TGGTGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye87_G11">
+  <special-type name="Index">
+    <attribute value="AACAACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye88_H11">
+  <special-type name="Index">
+    <attribute value="AATCCGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye89_A12">
+  <special-type name="Index">
+    <attribute value="CAAGGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye90_B12">
+  <special-type name="Index">
+    <attribute value="TTCACGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye91_C12">
+  <special-type name="Index">
+    <attribute value="CACCTTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye92_D12">
+  <special-type name="Index">
+    <attribute value="AAGACGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye93_E12">
+  <special-type name="Index">
+    <attribute value="ACACAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye94_F12">
+  <special-type name="Index">
+    <attribute value="GAACAGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye95_G12">
+  <special-type name="Index">
+    <attribute value="AACCGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="HaloplexHS_Ye96_H12">
+  <special-type name="Index">
+    <attribute value="ACAAGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<ReagentKits>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>AMPure XP Beads PROD</name>
+  <supplier>Beckman Coulter Genomics</supplier>
+  <catalogue-number>A63881</catalogue-number>
+  <website>https://www.beckmancoulter.com/wsrportal/wsr/research-and-discovery/products-and-services/nucleic-acid-sample-preparation/agencourt-ampure-xp-pcr-purification/index.htm</website>
+  <archived>false</archived>
+</kit:reagent-kit>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>HaloPlex HS 1-500kb 96 Reactions (Design ID: 39353-1534510850)</name>
+  <supplier>Agilent Technologies</supplier>
+  <catalogue-number>5190-7847</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+	</ReagentKits>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="HaloPlex">
+  <field-definition name="PCR Cycles"/>
+  <parameter name="0. Auto Next">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'nextStep = ::ADVANCE::' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Print plate barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}-{AppliedReagentLabels}</output-name>
+    <field-definition name="Library Volume (ul)"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{LIST:Enrichment Control Image}</output-name>
+  </process-output>
+  <process-type-attribute name="AddReagentsImmediately">true</process-type-attribute>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">HAL</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="DisplaceInputs">false</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup"/>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ReagentType">N7</process-type-attribute>
+  <process-type-attribute name="ReagentVolume">1.0</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">12</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">8</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Cycles</name>
+  <attach-to-name>HaloPlex</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="33" name="HaloPlex McGill 1.0">
+  <steps>
+    <step name="HaloPlex">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>HaloPlex</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>HaloPlex_Blue</reagent-category>
+        <reagent-category>HaloPlex_Clear</reagent-category>
+        <reagent-category>HaloplexHS_OrangePlate</reagent-category>
+        <reagent-category>HaloplexHS_YellowPlate</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits>
+        <reagent-kit name="AMPure XP Beads PROD"/>
+        <reagent-kit name="HaloPlex HS 1-500kb 96 Reactions (Design ID: 39353-1534510850)"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Cycles"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="column" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0. Auto Next"/>
+        <epp-trigger type="UNUSED" name="1. Print plate barcodes"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="50" name="capacity"/>
+    <protocol-property value="samplePrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

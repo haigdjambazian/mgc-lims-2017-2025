@@ -1,0 +1,197 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Thu Jun 14 17:58:31 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+384 well plate,\
+96 well plate,\
+BioAnalyzer DNA 1000 Chip,\
+BioAnalyzer DNA High Sensitivity Chip,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+AD001 (ATCACG),\
+AD002 (CGATGT),\
+AD003 (TTAGGC),\
+AD004 (TGACCA),\
+AD005 (ACAGTG),\
+AD006 (GCCAAT),\
+AD007 (CAGATC),\
+AD008 (ACTTGA),\
+AD009 (GATCAG),\
+AD010 (TAGCTT),\
+AD011 (GGCTAC),\
+AD012 (CTTGTA),\
+AD013 (AGTCAA),\
+AD014 (AGTTCC),\
+AD015 (ATGTCA),\
+AD016 (CCGTCC),\
+AD018 (GTCCGC),\
+AD019 (GTGAAA),\
+AD020 (GTGGCC),\
+AD021 (GTTTCG),\
+AD022 (CGTACG),\
+AD023 (GAGTGG),\
+AD025 (ACTGAT),\
+AD027 (ATTCCT),\
+AR001 (ATCACGAT),\
+AR003 (TTAGGCAT),\
+AR004 (TGACCAAT),\
+AR005 (ACAGTGAT),\
+AR006 (GCCAATAT),\
+AR007 (CAGATCAT),\
+AR008 (ACTTGAAT),\
+AR010 (TAGCTTAT),\
+AR011 (GGCTACAT),\
+AR012 (CTTGTAAT),\
+AR013 (AGTCAACA),\
+AR014 (AGTTCCGT),\
+AR018 (GTCCGCAC),\
+AR019 (GTGAAACG),\
+AR027 (ATTCCTTT),\
+TruSeq DNA LT Adapters (AD series)
+
+# Manifest for Control Types
+ControlTypes=\
+Endogenous Positive Control,\
+Exogenous Positive Control,\
+No Amplification Control,\
+No Reverse Transcriptase Control,\
+No Template Control
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Application,\
+LIMS ID (Submitted Sample),\
+Pooling,\
+Read Length,\
+Sample Type,\
+Sequencing Coverage,\
+Sequencing Method
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container,\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+A260/230 ratio,\
+A260/280 ratio,\
+Conc. Units,\
+Concentration,\
+Go To Next Step,\
+LIMS ID (Derived Sample),\
+Library Volume (ul),\
+Pooling Group,\
+Sample Name,\
+Waiting,\
+Workflow
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260,\
+A260/230 ratio,\
+A260/280 ratio,\
+BA Sample Name,\
+Conc. Units,\
+Concentration,\
+File,\
+MW Units,\
+Mass,\
+Mass Units,\
+Molarity (nmol/L),\
+Molarity Units,\
+Number of Peaks found,\
+Number of Regions found,\
+Peak 1 % Integrated Area,\
+Peak 1 Conc.,\
+Peak 1 MW,\
+Peak 1 Molarity,\
+Peak 1 Size - bp,\
+Peak 2 % Integrated Area,\
+Peak 2 Conc.,\
+Peak 2 MW,\
+Peak 2 Molarity,\
+Peak 2 Size - bp,\
+Peak 3 % Integrated Area,\
+Peak 3 Conc.,\
+Peak 3 MW,\
+Peak 3 Molarity,\
+Peak 3 Size - bp,\
+Peak 4 % Integrated Area,\
+Peak 4 Conc.,\
+Peak 4 MW,\
+Peak 4 Molarity,\
+Peak 4 Size - bp,\
+Peak 5 % Integrated Area,\
+Peak 5 Conc.,\
+Peak 5 MW,\
+Peak 5 Molarity,\
+Peak 5 Size - bp,\
+Region,\
+Region 1 % of Total,\
+Region 1 Average Size - bp,\
+Region 1 Conc.,\
+Region 1 Molarity,\
+Region 2 % of Total,\
+Region 2 Average Size - bp,\
+Region 2 Conc.,\
+Region 2 Molarity,\
+Region 3 % of Total,\
+Region 3 Average Size - bp,\
+Region 3 Conc.,\
+Region 3 Molarity,\
+Region 4 % of Total,\
+Region 4 Average Size - bp,\
+Region 4 Conc.,\
+Region 4 Molarity,\
+Region 5 % of Total,\
+Region 5 Average Size - bp,\
+Region 5 Conc.,\
+Region 5 Molarity,\
+Sample Comment,\
+Size (bp),\
+Size at Max (bp),\
+Volume Used (ul)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0,\
+Bioanalyzer QC (DNA) 5.0,\
+CaliperGX QC 5.0,\
+CaliperGX QC 5.0 McGill 1.0,\
+DNA Extraction,\
+EMC Aggregate QC (DNA) 5.0,\
+NanoDrop QC (DNA) 5.0,\
+PicoGreen QC (DNA) 5.0,\
+Qubit QC (DNA) 5.0,\
+Sample Normalization Manual,\
+Sample Reception EMC,\
+Tapestation QC (DNA) 5.0,\
+WGBS Lucigen,\
+qPCR QC 5.0,\
+qPCR QC 5.0 McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+DNA Extraction,\
+DNA Initial QC EMC,\
+Library Validation QC 5.0,\
+Sample Normalization Manual,\
+Sample Reception EMC,\
+WGBS Lucigen Library
+
+# Manifest for Workflows
+Workflows=\
+WGBS JSON NormM Lucigen Lib
+

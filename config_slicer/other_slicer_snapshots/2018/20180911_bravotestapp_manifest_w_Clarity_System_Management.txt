@@ -1,0 +1,37 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Tue Sep 11 17:42:10 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Sample Name,\
+Waiting
+
+# Manifest for Process Types
+ProcessTypes=\
+System Add Indexes,\
+System Add Reagent Lots
+
+# Manifest for Protocols
+Protocols=\
+Clarity System Management
+
+# Manifest for Workflows
+Workflows=\
+Clarity System Management
+

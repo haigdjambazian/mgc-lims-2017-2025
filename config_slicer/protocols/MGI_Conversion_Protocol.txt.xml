@@ -1,0 +1,608 @@
+<config ApiVersion="v2,r27" ConfigSlicerVersion="3.2.0.7">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Tube">
+  <is-tube>true</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <preset>M</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Boolean">
+  <name>Go To Next Step</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>False</preset>
+  <preset>True</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Index Cycles</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>8-8</preset>
+  <preset>8-0</preset>
+  <preset>10-8</preset>
+  <preset>10-0</preset>
+  <preset>10-10</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Number of Sample in Pool</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Pool Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Pooling Fraction</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>6</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Pooling Group</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Pooling QC</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Pass</preset>
+  <preset>Fail</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Size (bp)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Library Pool">
+  <parameter name="1.Library Volume in Pool">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'if (!output.hasValue( ::Pool Volume (ul):: )) {output.::Pool Volume (ul):: = 0}; if (output.hasValue( ::Pool Volume (ul):: )) {output.::Pool Volume (ul):: = output.::Pool Volume (ul):: + input.::Library Volume To Use (ul)::}; if (!output.hasValue( ::Number of Sample in Pool:: )) {output.::Number of Sample in Pool:: = 0}; if (output.hasValue( ::Number of Sample in Pool:: )) {output.::Number of Sample in Pool:: = output.::Number of Sample in Pool:: + 1};' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Auto Pooling">
+    <string>bash -c -l "/usr/bin/python /opt/gls/clarity/customextensions/Common/autopool_2018.py  -u {username} -p {password}  -s {stepURI:v2} "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Sample</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Sample</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{PoolName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{LIST:Log file}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PSA</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">PoolSamples</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="NamingTagHandlers">com.genologics.platform.behaviourmanagement.process.commands.outputnaming.PoolNamingTagHandler</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">PS</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Transfer Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="SameReagent">true</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">8</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">4</process-type-attribute>
+  <permitted-containers/>
+  <permitted-reagent-categories/>
+  <required-reagent-kits/>
+  <permitted-control-types/>
+  <permitted-instrument-types/>
+  <queue-fields/>
+  <ice-bucket-fields/>
+  <step-fields/>
+  <sample-fields/>
+  <step-properties>
+    <step-property value="row" name="placementDefaultPattern"/>
+  </step-properties>
+  <epp-triggers/>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="MGI Conversion">
+  <field-definition name="Concentration from"/>
+  <field-definition name="Conversion Date"/>
+  <field-definition name="Destination Concentration (ng/ul)"/>
+  <field-definition name="Destination Volume (ul)"/>
+  <field-definition name="MGI Beads lot"/>
+  <field-definition name="MGI Conversion kit lot"/>
+  <field-definition name="Pooling Status"/>
+  <field-definition name="Target"/>
+  <field-definition name="Technician"/>
+  <field-definition name="Total Quantity for Pool (ng)"/>
+  <parameter name="0. Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1.Index Collision Check Only">
+    <string>bash -l -c "/usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/create_csv_4_sequencing_library_index_validation_v5x.py    -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  -ar=Analyte  -ComponentLuids='{compoundOutputFileLuids}'  &gt;  /opt/gls/clarity/ai/temp/{processLuid}_index_val.csv &amp;&amp; sh /opt/gls/clarity/customextensions/Common/hamming_dist_v4.sh  /opt/gls/clarity/ai/temp/{processLuid}_index_val.csv  /opt/gls/clarity/customextensions/Common &amp;&amp; /usr/bin/python /opt/gls/clarity/customextensions/Common/upload_custom_reports.py   -s {stepURI:v2}   -u {username} -p {password}   -t  /opt/gls/clarity/ai/temp/{processLuid}_index_val.udfs.txt  &amp;&amp; mv /opt/gls/clarity/ai/temp/{processLuid}_index_val.html  {compoundOutputFileLuid0}_{processLuid}_index_val.html "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Normalize samples">
+    <string>bash -c -l "/usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/concentration_lib_normalization_sorted_robot.py   -stepURI_v2={stepURI:v2}   -user_psw={username}:{password}  -ar=Analyte  -ComponentLuids='{compoundOutputFileLuids}'   -reports='0' "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. QC Validation">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -excludeControls true -exp 'if (output.::Volume QC:: == ::Pass:: &amp;&amp; output.::Pooling QC:: == ::Pass:: ) {output.QC=true} else {output.QC=false} ' -log {compoundOutputFileLuid4} &amp;&amp; /usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/concentration_lib_normalization_sorted_robot.py   -stepURI_v2={stepURI:v2}   -user_psw={username}:{password}  -ar=Analyte  -ComponentLuids='{compoundOutputFileLuids}'   -reports='1' -qc='1' &gt; {compoundOutputFileLuid0}_for_robot.csv "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Autoplacement  Generic Artifacts">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic_artifact.py -u {username} -p {password}  -s {stepURI:v2}  -t /opt/gls/clarity/ai/temp/{processLuid}_autoplacement_generic_artifacts_template.csv  --suffix '_{processLuid}'  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Library Volume Adjustment">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -excludeControls true -exp 'if (output.QC == true) {input.::Library Volume (ul):: =  input.::Library Volume (ul)::-output.::Library Volume To Use (ul)::} ' -log {compoundOutputFileLuid4}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Transfering LibQC data">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'output.::Concentration:: = input.::Concentration::; output.::Conc. Units:: = input.::Conc. Units::; output.::Library Volume (ul):: = input.::Library Volume (ul)::; output.::Size (bp):: = input.::Size (bp):: ; ' -log {compoundOutputFileLuid1}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Conc. Units"/>
+    <field-definition name="Concentration"/>
+    <field-definition name="Go To Next Step"/>
+    <field-definition name="Pooling Group"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{LIST:Library Index Validation Log }</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">SAM</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">SA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <permitted-containers/>
+  <permitted-reagent-categories/>
+  <required-reagent-kits/>
+  <permitted-control-types/>
+  <permitted-instrument-types/>
+  <queue-fields/>
+  <ice-bucket-fields/>
+  <step-fields/>
+  <sample-fields/>
+  <step-properties>
+    <step-property value="same shape" name="placementDefaultPattern"/>
+  </step-properties>
+  <epp-triggers/>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Concentration from</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Last Protocol</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Conversion Date</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Destination Concentration (ng/ul)</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <preset>100</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Destination Volume (ul)</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>MGI Beads lot</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>MGI Conversion kit lot</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Pooling Status</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Target</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Quantity</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Technician</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Total Quantity for Pool (ng)</name>
+  <attach-to-name>MGI Conversion</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>400</preset>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="67" name="MGI Conversion Protocol">
+  <steps>
+    <step name="MGI Conversion">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>MGI Conversion</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <permitted-instrument-types/>
+      <transitions>
+        <transition sequence="2" name="Library Pool"/>
+      </transitions>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+      </queue-fields>
+      <ice-bucket-fields>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+        <ice-bucket-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <ice-bucket-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+      </ice-bucket-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Pooling Status"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Pooling Group"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Index Cycles"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Pooling QC"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Pooling Fraction"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Number of Sample in Pool"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Pool Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Conc. Units"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Size (bp)"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="attemptAutoPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="0/{LIST:Library Index Validation Log }/isAutoAttached=false/locked=false" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+        <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="queueDefaultGrouping"/>
+        <step-property value="column" name="queueMultiwellSortOrder"/>
+        <step-property value="false" name="placementSkipAlternatingRows"/>
+        <step-property value="false" name="placementSkipAlternatingColumns"/>
+        <step-property value="same shape" name="placementDefaultPattern"/>
+        <step-property value="containerGroup" name="placementDefaultGrouping"/>
+        <step-property value="column" name="placementMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="poolingDefaultGrouping"/>
+        <step-property value="column" name="poolingMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="iceBucketDefaultGrouping"/>
+        <step-property value="column" name="iceBucketMultiwellSortOrder"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0. Print barcodes"/>
+        <epp-trigger type="MANUAL" name="1.Index Collision Check Only"/>
+        <epp-trigger type="UNUSED" name="2. Normalize samples"/>
+        <epp-trigger type="UNUSED" name="3. QC Validation"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="Autoplacement  Generic Artifacts"/>
+        <epp-trigger type="UNUSED" name="Library Volume Adjustment"/>
+        <epp-trigger status="RECORD_DETAILS" point="BEFORE" type="AUTOMATIC" name="Transfering LibQC data"/>
+      </epp-triggers>
+    </step>
+    <step name="Library Pool">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>Library Pool</process-type>
+      <permitted-containers>
+        <container-type>Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <permitted-instrument-types/>
+      <transitions/>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+      </queue-fields>
+      <ice-bucket-fields>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+        <ice-bucket-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <ice-bucket-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+      </ice-bucket-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Pool Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Number of Sample in Pool"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="true" name="attemptAutoPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="0/{LIST:Log file}/isAutoAttached=false/locked=false" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+        <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="queueDefaultGrouping"/>
+        <step-property value="column" name="queueMultiwellSortOrder"/>
+        <step-property value="false" name="placementSkipAlternatingRows"/>
+        <step-property value="false" name="placementSkipAlternatingColumns"/>
+        <step-property value="row" name="placementDefaultPattern"/>
+        <step-property value="containerGroup" name="placementDefaultGrouping"/>
+        <step-property value="column" name="placementMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="poolingDefaultGrouping"/>
+        <step-property value="column" name="poolingMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="iceBucketDefaultGrouping"/>
+        <step-property value="column" name="iceBucketMultiwellSortOrder"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="1.Library Volume in Pool"/>
+        <epp-trigger status="POOLING" point="BEFORE" type="AUTOMATIC" name="Auto Pooling"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="other" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

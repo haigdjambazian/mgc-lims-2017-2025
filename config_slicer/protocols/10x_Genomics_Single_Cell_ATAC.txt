@@ -1,0 +1,135 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Tue Mar 10 13:08:56 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate
+
+# Manifest for Reagent Types
+ReagentTypes=\
+10X Single Index Kit N Set A,\
+SI-NA-A1,\
+SI-NA-A10,\
+SI-NA-A11,\
+SI-NA-A12,\
+SI-NA-A2,\
+SI-NA-A3,\
+SI-NA-A4,\
+SI-NA-A5,\
+SI-NA-A6,\
+SI-NA-A7,\
+SI-NA-A8,\
+SI-NA-A9,\
+SI-NA-B1,\
+SI-NA-B10,\
+SI-NA-B11,\
+SI-NA-B12,\
+SI-NA-B2,\
+SI-NA-B3,\
+SI-NA-B4,\
+SI-NA-B5,\
+SI-NA-B6,\
+SI-NA-B7,\
+SI-NA-B8,\
+SI-NA-B9,\
+SI-NA-C1,\
+SI-NA-C10,\
+SI-NA-C11,\
+SI-NA-C12,\
+SI-NA-C2,\
+SI-NA-C3,\
+SI-NA-C4,\
+SI-NA-C5,\
+SI-NA-C6,\
+SI-NA-C7,\
+SI-NA-C8,\
+SI-NA-C9,\
+SI-NA-D1,\
+SI-NA-D10,\
+SI-NA-D11,\
+SI-NA-D12,\
+SI-NA-D2,\
+SI-NA-D3,\
+SI-NA-D4,\
+SI-NA-D5,\
+SI-NA-D6,\
+SI-NA-D7,\
+SI-NA-D8,\
+SI-NA-D9,\
+SI-NA-E1,\
+SI-NA-E10,\
+SI-NA-E11,\
+SI-NA-E12,\
+SI-NA-E2,\
+SI-NA-E3,\
+SI-NA-E4,\
+SI-NA-E5,\
+SI-NA-E6,\
+SI-NA-E7,\
+SI-NA-E8,\
+SI-NA-E9,\
+SI-NA-F1,\
+SI-NA-F10,\
+SI-NA-F11,\
+SI-NA-F12,\
+SI-NA-F2,\
+SI-NA-F3,\
+SI-NA-F4,\
+SI-NA-F5,\
+SI-NA-F6,\
+SI-NA-F7,\
+SI-NA-F8,\
+SI-NA-F9,\
+SI-NA-G1,\
+SI-NA-G10,\
+SI-NA-G11,\
+SI-NA-G12,\
+SI-NA-G2,\
+SI-NA-G3,\
+SI-NA-G4,\
+SI-NA-G5,\
+SI-NA-G6,\
+SI-NA-G7,\
+SI-NA-G8,\
+SI-NA-G9,\
+SI-NA-H1,\
+SI-NA-H10,\
+SI-NA-H11,\
+SI-NA-H12,\
+SI-NA-H2,\
+SI-NA-H3,\
+SI-NA-H4,\
+SI-NA-H5,\
+SI-NA-H6,\
+SI-NA-H7,\
+SI-NA-H8,\
+SI-NA-H9
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Cell Viability (%),\
+Library Volume (ul),\
+Sample Name,\
+Target Cells,\
+Waiting
+
+# Manifest for Process Types
+ProcessTypes=\
+10x Genomics Single Cell ATAC
+
+# Manifest for Protocols
+Protocols=\
+10x Genomics Single Cell ATAC
+

@@ -1,0 +1,851 @@
+<config ApiVersion="v2,r27" ConfigSlicerVersion="3.2.0.7">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Strip Tube">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC01">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC02">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC03">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC04">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC05">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC06">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC07">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC08">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC09">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC10">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC11">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC12">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC13">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC14">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC15">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC16">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC17">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC18">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC19">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC20">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC21">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC22">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC23">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC24">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC25">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC26">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC27">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC28">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC29">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC30">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC31">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC32">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC33">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC34">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC35">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC36">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC37">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC38">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC39">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC40">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC41">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC42">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC43">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC44">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC45">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC46">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC47">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC48">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC49">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC50">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC51">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC52">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC53">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC54">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC55">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC56">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC57">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC58">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC59">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC60">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC61">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC62">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC63">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC64">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC65">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC66">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC67">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC68">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC69">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC70">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC71">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC72">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC73">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC74">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC75">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC76">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC77">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC78">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC79">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC80">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC81">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC82">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC83">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC84">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC85">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC86">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC87">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC88">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC89">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC90">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC91">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC92">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC93">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC94">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC95">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BC96">
+  <special-type name="Index">
+    <attribute value="" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="NoIndex">
+  <special-type name="Index">
+    <attribute value="NoIndex" name="Sequence"/>
+  </special-type>
+  <reagent-category>NoIndex</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>cDNA PCR cycles</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Fragment Size (kbp)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Oxford Nanopore RNASeq">
+  <field-definition name="Comment"/>
+  <field-definition name="Date"/>
+  <field-definition name="Index Placement Guide"/>
+  <field-definition name="Kit Name"/>
+  <field-definition name="RNA input (ng)"/>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}-{AppliedReagentLabels}</output-name>
+  </process-output>
+  <process-type-attribute name="ContextCode">NAN</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">NA</process-type-attribute>
+  <permitted-containers>
+    <container-type name="96 well plate"/>
+    <container-type name="Strip Tube"/>
+  </permitted-containers>
+  <permitted-reagent-categories>
+    <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+    <reagent-category>NoIndex</reagent-category>
+  </permitted-reagent-categories>
+  <required-reagent-kits/>
+  <permitted-control-types/>
+  <permitted-instrument-types/>
+  <queue-fields/>
+  <ice-bucket-fields/>
+  <step-fields>
+    <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Comment"/>
+    <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Date"/>
+    <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Index Placement Guide"/>
+    <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Kit Name"/>
+    <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="RNA input (ng)"/>
+  </step-fields>
+  <sample-fields>
+    <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+    <sample-field style="USER_DEFINED" attach-to="Analyte" name="Fragment Size (kbp)"/>
+    <sample-field style="BUILT_IN" attach-to="Project" name="LIMS ID (Project)"/>
+    <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+    <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+    <sample-field style="USER_DEFINED" attach-to="Analyte" name="cDNA PCR cycles"/>
+  </sample-fields>
+  <step-properties>
+    <step-property value="false" name="attemptAutoPlacement"/>
+    <step-property value="false" name="qcProtocolStep"/>
+    <step-property value="true" name="expandContainerGroupsCheckBox"/>
+    <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+    <step-property value="false" name="placementSkipAlternatingRows"/>
+    <step-property value="false" name="placementSkipAlternatingColumns"/>
+    <step-property value="column" name="placementDefaultPattern"/>
+    <step-property value="projectGroup" name="placementDefaultGrouping"/>
+    <step-property value="column" name="placementMultiwellSortOrder"/>
+  </step-properties>
+  <epp-triggers/>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Comment</name>
+  <attach-to-name>Oxford Nanopore RNASeq</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Date</name>
+  <attach-to-name>Oxford Nanopore RNASeq</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="URI">
+  <name>Index Placement Guide</name>
+  <attach-to-name>Oxford Nanopore RNASeq</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <preset>https://docs.google.com/document/d/1GU2jRrAQBy0sKBsn5RADFm_1THuP9u6Rq2_UJBGvIrw/edit?usp=sharing</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Kit Name</name>
+  <attach-to-name>Oxford Nanopore RNASeq</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Direct cDNA Sequencing Kit (SQK-DCS109)</preset>
+  <preset>PCR-cDNA Sequencing Kit (SQK-PCS109)</preset>
+  <preset>Direct RNA Sequencing Kit (SQK-RNA002)</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>RNA input (ng)</name>
+  <attach-to-name>Oxford Nanopore RNASeq</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="59" name="Oxford Nanopore RNASeq Protocol">
+  <steps>
+    <step name="Oxford Nanopore RNASeq">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>Oxford Nanopore RNASeq</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+        <container-type>Strip Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01, 02, 03, 04, 05, 06, 07, 08)</reagent-category>
+        <reagent-category>NoIndex</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <permitted-instrument-types/>
+      <transitions/>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <ice-bucket-fields>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </ice-bucket-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Date"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Kit Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="RNA input (ng)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Index Placement Guide"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Comment"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="LIMS ID (Project)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="cDNA PCR cycles"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Fragment Size (kbp)"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="attemptAutoPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+        <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="queueDefaultGrouping"/>
+        <step-property value="row" name="queueMultiwellSortOrder"/>
+        <step-property value="false" name="placementSkipAlternatingRows"/>
+        <step-property value="false" name="placementSkipAlternatingColumns"/>
+        <step-property value="column" name="placementDefaultPattern"/>
+        <step-property value="projectGroup" name="placementDefaultGrouping"/>
+        <step-property value="column" name="placementMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="poolingDefaultGrouping"/>
+        <step-property value="row" name="poolingMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="iceBucketDefaultGrouping"/>
+        <step-property value="row" name="iceBucketMultiwellSortOrder"/>
+      </step-properties>
+      <epp-triggers/>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

@@ -1,0 +1,89 @@
+[HiSeqX]
+LibPooling=Library Pooling (HiSeq X) 1.0
+LibNorm=Library Normalization (HiSeq X) 1.0 McGill 1.4
+StripTube=Create Strip Tube (HiSeq X) 1.0
+ClusterGen=Cluster Generation (HiSeq X) 1.0 McGill 1.0
+Sequencing=Illumina Sequencing (HiSeq X) 1.0 McGill 1.1
+StorageFolder=hiseq
+StorageSuffix=hiseqx
+
+[NovaSeq]
+LibPooling=Library Pooling (NovaSeq) 1.0 McGill 1.0
+LibNorm=Library Normalization (NovaSeq) 1.0 McGill 1.4
+StripTube=Create Strip Tube (NovaSeq) 1.0  McGill 1.0
+ClusterGen=Cluster Generation (NovaSeq) 1.0 McGill 1.0
+Sequencing=Illumina Sequencing (NovaSeq) 1.0 McGill 1.0
+StorageFolder=novaseq
+StorageSuffix=novaseq
+
+[HiSeq4000]
+LibPooling=Library Pooling (HiSeq 4000) 1.0
+LibNorm=Library Normalization (HiSeq 4000) 1.0 McGill 1.4
+StripTube=Create Strip Tube (HiSeq 4000) 1.0
+ClusterGen=Cluster Generation (HiSeq 4000) 1.0 McGill 1.0
+Sequencing=Illumina Sequencing (HiSeq 4000) 1.0 McGill 1.1
+StorageFolder=hiseq
+StorageSuffix=hiseq4000
+
+[HiSeq2500]
+LibPooling=Library Pooling (HiSeq 42500) 1.0
+LibNorm=Library Normalization (HiSeq 2500) 1.0 McGill 1.4
+StripTube=Create Strip Tube (HiSeq 2500) 1.0
+ClusterGen=Cluster Generation (HiSeq 2500) 1.0 McGill 1.0
+Sequencing=Illumina Sequencing (HiSeq 2500) 1.0 McGill 1.1
+StorageFolder=hiseq
+StorageSuffix=hiseq2500
+
+[iSeq]
+LibPooling=Library Pooling (iSeq) 1.0 McGill 1.0
+LibNorm=Library Normalization (iSeq) 1.0 McGill 1.4
+StripTube=Create Strip Tube (iSeq) 1.0  McGill 1.0
+ClusterGen=Cluster Generation (iSeq) 1.0 McGill 1.0
+Sequencing=Illumina Sequencing (iSeq) 1.0 McGill 1.0
+StorageFolder=iSeq
+StorageSuffix=iSeq
+
+[MiSeq]
+LibPooling=Library Pooling (MiSeq) 1.0 McGill 1.0
+LibNorm=Library Normalization (MiSeq) 1.0 McGill 1.4
+StripTube=Create Strip Tube (MiSeq) 1.0  McGill 1.0
+ClusterGen=Cluster Generation (MiSeq) 1.0 McGill 1.0
+Sequencing=Illumina Sequencing (MiSeq) 1.0 McGill 1.0
+StorageFolder=miseq
+StorageSuffix=miseq
+
+[DNBSeqG400]
+LibPooling=Library Pooling (DNBSeq-G400) 1.0 McGill 1.0
+LibNorm=Library Normalization (DNBSeq-G400) 1.0 McGill 1.4
+StripTube=Create Strip Tube (DNBSeq-G400) 1.0  McGill 1.0
+ClusterGen=Cluster Generation (DNBSeq-G400) 1.0 McGill 1.0
+Sequencing=MGI Sequencing (DNBSeq-G400) 1.0 McGill 1.0
+StorageFolder=dnbseqg400
+StorageSuffix=dnbseqg400
+
+[Nanopore]
+LibPooling=Library Pooling (Nanopore) McGill
+LibNorm=Library Normalization and Pooling Check (Nanopore) McGill
+StripTube=Create Strip (Nanopore) McGill
+ClusterGen=Run Setup (Nanopore) McGill
+Sequencing=Sequencing (Nanopore) McGill
+StorageFolder=Nanopore
+StorageSuffix=Nanopore
+
+[DNBSeqT7]
+LibPooling=Library Pooling (T7) 1.0 McGill 1.0
+LibNorm=Library Normalization (T7) 1.0 McGill 1.4
+StripTube=Create Strip (T7) 1.0 McGill 1.0
+ClusterGen=Cluster Generation (T7) 1.0 McGill 1.0
+Sequencing=MGI Sequencing (T7) 1.0 McGill 1.0
+StorageFolder=dnbseqt7
+StorageSuffix=dnbseqt7
+
+[PacBio]
+LibPooling=Library Pooling (PacBio) McGill
+LibNorm=Library Normalization and Pooling Check (PacBio) McGill
+StripTube=Create Strip (PacBio) McGill
+ClusterGen=Run Setup (PacBio) McGill
+Sequencing=Sequencing (PacBio) McGill
+StorageFolder=PacBio
+StorageSuffix=PacBio

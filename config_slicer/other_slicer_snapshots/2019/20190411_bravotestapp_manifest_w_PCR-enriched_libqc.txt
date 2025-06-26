@@ -1,0 +1,168 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Thu Apr 11 18:10:05 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+384 well plate,\
+96 well plate,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+BioOHT,\
+BioOHT_1,\
+BioOHT_10,\
+BioOHT_11,\
+BioOHT_12,\
+BioOHT_13,\
+BioOHT_14,\
+BioOHT_15,\
+BioOHT_16,\
+BioOHT_17,\
+BioOHT_18,\
+BioOHT_19,\
+BioOHT_2,\
+BioOHT_20,\
+BioOHT_21,\
+BioOHT_22,\
+BioOHT_23,\
+BioOHT_24,\
+BioOHT_25,\
+BioOHT_26,\
+BioOHT_27,\
+BioOHT_28,\
+BioOHT_29,\
+BioOHT_3,\
+BioOHT_30,\
+BioOHT_31,\
+BioOHT_32,\
+BioOHT_33,\
+BioOHT_34,\
+BioOHT_35,\
+BioOHT_36,\
+BioOHT_37,\
+BioOHT_38,\
+BioOHT_39,\
+BioOHT_4,\
+BioOHT_40,\
+BioOHT_41,\
+BioOHT_42,\
+BioOHT_43,\
+BioOHT_44,\
+BioOHT_45,\
+BioOHT_46,\
+BioOHT_47,\
+BioOHT_48,\
+BioOHT_49,\
+BioOHT_5,\
+BioOHT_50,\
+BioOHT_51,\
+BioOHT_52,\
+BioOHT_53,\
+BioOHT_54,\
+BioOHT_55,\
+BioOHT_56,\
+BioOHT_57,\
+BioOHT_58,\
+BioOHT_59,\
+BioOHT_6,\
+BioOHT_61,\
+BioOHT_62,\
+BioOHT_63,\
+BioOHT_64,\
+BioOHT_65,\
+BioOHT_66,\
+BioOHT_67,\
+BioOHT_68,\
+BioOHT_69,\
+BioOHT_7,\
+BioOHT_70,\
+BioOHT_71,\
+BioOHT_73,\
+BioOHT_74,\
+BioOHT_75,\
+BioOHT_76,\
+BioOHT_77,\
+BioOHT_78,\
+BioOHT_79,\
+BioOHT_8,\
+BioOHT_80,\
+BioOHT_81,\
+BioOHT_82,\
+BioOHT_83,\
+BioOHT_85,\
+BioOHT_86,\
+BioOHT_87,\
+BioOHT_88,\
+BioOHT_89,\
+BioOHT_9,\
+BioOHT_90,\
+BioOHT_91,\
+BioOHT_92,\
+BioOHT_93,\
+BioOHT_94,\
+BioOHT_95
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Area/Room,\
+Box,\
+Conc. Units,\
+Concentration,\
+Floor,\
+Freezer,\
+Go To Next Step,\
+LIMS ID (Derived Sample),\
+Library Volume (ul),\
+Pooling Group,\
+Sample Name,\
+Sample Tag,\
+Shelf,\
+Size (bp),\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260/280 ratio,\
+Conc. Units,\
+Concentration,\
+File,\
+FileURI,\
+Molarity (nmol/L),\
+Region,\
+Size (bp),\
+Size at Max (bp),\
+Volume Used (ul)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0,\
+CaliperGX QC 5.0 McGill 1.0,\
+DNA Samples QC,\
+Library Batch,\
+PCR-enriched,\
+Sample Normalization Robot,\
+qPCR QC 5.0 McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+Library Batch,\
+Library Validation QC McGill 1.0,\
+PCR-enriched
+
+# Manifest for Workflows
+Workflows=\
+PCR-enriched_libqc
+

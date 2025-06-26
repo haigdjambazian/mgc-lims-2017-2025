@@ -1,0 +1,770 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Tube">
+  <is-tube>true</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ResultFileUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Barcode</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</ResultFileUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Aggregate QC (DNA) 5.0">
+  <field-definition name="Bioanalyzer QC (DNA) 5.0"/>
+  <field-definition name="CaliperGX QC 5.0"/>
+  <field-definition name="CaliperGX QC 5.0 McGill 1.0"/>
+  <field-definition name="Copy task 1 - Source Field"/>
+  <field-definition name="Copy task 1 - Source Step"/>
+  <field-definition name="Copy task 2 - Source Field"/>
+  <field-definition name="Copy task 2 - Source Step"/>
+  <field-definition name="Copy task 3 - Source Field"/>
+  <field-definition name="Copy task 3 - Source Step"/>
+  <field-definition name="DNA Gel QC McGill 1.0"/>
+  <field-definition name="NanoDrop QC (DNA) 5.0"/>
+  <field-definition name="PicoGreen QC (DNA) 5.0"/>
+  <field-definition name="Qubit QC (DNA) 5.0"/>
+  <field-definition name="Tapestation QC (DNA) 5.0"/>
+  <field-definition name="Tecan SPARK PicoGreen QC (DNA) McGill 1.0"/>
+  <parameter name="Aggregate QC Flags and Copy Fields">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2:http} -u {username} -p {password} script:setUDF -f 'Progress' -t '//input/@uri-&gt;//sample/@uri' -v 'Initial sample QC complete' script:aggregateQC -c 'true' -a 'true' -log {compoundOutputFileLuid0} -aggregatelog {compoundOutputFileLuid1} -copylog {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Aggregation Script Log,QC Flag Aggregation Log,QC UDF Copy Log}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">AGD</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">AG</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">1. DNA Initial QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="DNA Gel QC McGill 1.0">
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>16</number-of-outputs>
+    <output-name>{LIST:Gel Image1,Gel Image2,Gel Image3,Gel Image4,Gel Image5,Gel Image6,Gel Image7,Gel Image8,Samples position CSVfile1,Samples position CSVfile2,Samples position CSVfile3,Samples position CSVfile4,Samples position CSVfile5,Samples position CSVfile6,Samples position CSVfile7,Samples position CSVfile8}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">DNA</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">DN</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">false</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Tecan SPARK PicoGreen QC (DNA) McGill 1.0">
+  <field-definition name="Criteria 1 - Operator"/>
+  <field-definition name="Criteria 1 - Source Data Field"/>
+  <field-definition name="Criteria 1 - Threshold Value"/>
+  <field-definition name="Criteria 2 - Operator"/>
+  <field-definition name="Criteria 2 - Source Data Field"/>
+  <field-definition name="Criteria 2 - Threshold Value"/>
+  <field-definition name="DF"/>
+  <field-definition name="Fitting Method"/>
+  <field-definition name="Replica outlier"/>
+  <parameter name="0.Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}    &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1.Calibrate">
+    <string>bash -l -c  "/usr/bin/python3.5 /opt/gls/clarity/customextensions/SPARK/spark_calibration.py  -fileLuid={compoundOutputFileLuid0}  -processURI_v2={processURI:v2}  -controlLUIDs='{compoundOutputFileLuids}' -user_psw={username}:{password}  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2.Apply quantified values">
+    <string>bash -l -c  "/usr/bin/python3.5 /opt/gls/clarity/customextensions/SPARK/spark_apply_quant.py  -fileLuid={compoundOutputFileLuid0}  -stepURI_v2={stepURI:v2}   -processURI_v2={processURI:v2}  -user_psw={username}:{password}  &gt; {compoundOutputFileLuid21}.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3.Assign QC flags">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2:http} -u {username} -p {password} script:assignQC -log {compoundOutputFileLuid21} -qcResult {compoundOutputFileLuid22}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName} PicoGreen</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Conc. Units"/>
+    <field-definition name="Barcode"/>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>SharedResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>23</number-of-outputs>
+    <output-name>{LIST:PicoGreen Calibration File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Sample File,PicoGreen Calibration plot,PicoGreen Calibration plot,PicoGreen Calibration plot,PicoGreen Calibration plot,Quantified Sample File,Quantified Sample File,Quantified Sample File,Quantified Sample File,Quantified Sample File,Quantified Sample File,Quantified Sample File,Quantified Sample File,QC Assignment Log File,QC Assignment Report}</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Conc. Units"/>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">PGD</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">PG</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">1. DNA Initial QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display the UDF information associated with all the outputs</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 1 - Source Step</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</preset>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>NanoDrop QC (DNA) 5.0</preset>
+  <preset>PicoGreen QC (DNA) 5.0</preset>
+  <preset>Qubit QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>DNA Gel QC McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 1 - Source Field</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 2 - Source Step</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</preset>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>NanoDrop QC (DNA) 5.0</preset>
+  <preset>PicoGreen QC (DNA) 5.0</preset>
+  <preset>Qubit QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>DNA Gel QC McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 2 - Source Field</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 3 - Source Step</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</preset>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>NanoDrop QC (DNA) 5.0</preset>
+  <preset>Qubit QC (DNA) 5.0</preset>
+  <preset>PicoGreen QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>DNA Gel QC McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 3 - Source Field</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Bioanalyzer QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>NanoDrop QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PicoGreen QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Qubit QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Tapestation QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>CaliperGX QC 5.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>CaliperGX QC 5.0 McGill 1.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>DNA Gel QC McGill 1.0</name>
+  <attach-to-name>Aggregate QC (DNA) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Source Data Field</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Operator</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 1 - Threshold Value</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Source Data Field</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Operator</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 2 - Threshold Value</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Fitting Method</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>RANSAC (auto)</preset>
+  <preset>Linear Regression (manual)</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>DF</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>10</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Replica outlier</name>
+  <attach-to-name>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<ProcessTemplates>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>NanoDrop Values</name>
+  <type>Aggregate QC (DNA) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">NanoDrop QC (DNA) 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">NanoDrop QC (DNA) 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Tecan SPARK PicoGreen</name>
+  <type>Aggregate QC (DNA) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">Tecan SPARK PicoGreen QC (DNA) McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">Tecan SPARK PicoGreen QC (DNA) McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="DNA Gel QC McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tecan SPARK PicoGreen QC (DNA) McGill 1.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+	</ProcessTemplates>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="30" name="DNA Initial QC McGill">
+  <steps>
+    <step name="Tecan SPARK PicoGreen QC (DNA) McGill 1.0">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>Tecan SPARK PicoGreen QC (DNA) McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Source Data Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Operator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Threshold Value"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Source Data Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Operator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Threshold Value"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Fitting Method"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="DF"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Replica outlier"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Conc. Units"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Concentration"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0.Print barcodes"/>
+        <epp-trigger type="MANUAL" name="1.Calibrate"/>
+        <epp-trigger type="MANUAL" name="2.Apply quantified values"/>
+        <epp-trigger type="MANUAL" name="3.Assign QC flags"/>
+      </epp-triggers>
+    </step>
+    <step name="DNA Gel QC McGill 1.0">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>DNA Gel QC McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+      </step-properties>
+      <epp-triggers/>
+    </step>
+    <step name="Aggregate QC (DNA) 5.0">
+      <protocol-step-index>3</protocol-step-index>
+      <process-type>Aggregate QC (DNA) 5.0</process-type>
+      <permitted-containers>
+        <container-type>Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 1 - Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 1 - Source Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 2 - Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 2 - Source Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 3 - Source Step"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Copy task 3 - Source Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Bioanalyzer QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="NanoDrop QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="PicoGreen QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Qubit QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Tapestation QC (DNA) 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="CaliperGX QC 5.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Tecan SPARK PicoGreen QC (DNA) McGill 1.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="CaliperGX QC 5.0 McGill 1.0"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="DNA Gel QC McGill 1.0"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="Tecan SPARK PicoGreen" name="defaultProcessTemplate"/>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="Aggregate QC Flags and Copy Fields"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="qc" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+	<Workflows>
+<wkfcnf:workflow xmlns:wkfcnf="http://genologics.com/ri/workflowconfiguration" status="PENDING" name="DNA Initial QC McGill WF">
+  <protocols>
+    <protocol name="DNA Initial QC McGill"/>
+  </protocols>
+</wkfcnf:workflow>
+	</Workflows>
+</config>

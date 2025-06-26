@@ -1,0 +1,103 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Mon May 13 16:49:30 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+384 well plate,\
+96 well plate,\
+Strip Tube,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+Index_1,\
+Index_10,\
+Index_11,\
+Index_12,\
+Index_13,\
+Index_14,\
+Index_15,\
+Index_16,\
+Index_18,\
+Index_19,\
+Index_2,\
+Index_20,\
+Index_21,\
+Index_22,\
+Index_23,\
+Index_25,\
+Index_27,\
+Index_3,\
+Index_4,\
+Index_5,\
+Index_6,\
+Index_7,\
+Index_8,\
+Index_9,\
+TruSeq LT McGill
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Area/Room,\
+Box,\
+ChIP-Seq Mark,\
+Conc. Units,\
+Concentration,\
+Floor,\
+Freezer,\
+LIMS ID (Derived Sample),\
+Library Volume (ul),\
+Sample Name,\
+Sample Tag,\
+Sample Volume (ul),\
+Shelf,\
+Size (bp),\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260/280 ratio,\
+Conc. Units,\
+Concentration,\
+File,\
+FileURI,\
+Molarity (nmol/L),\
+Region,\
+Size (bp),\
+Size at Max (bp),\
+Volume Used (ul)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0,\
+CaliperGX QC 5.0 McGill 1.0,\
+ChIP-Seq,\
+ChIPmentation,\
+DNA Gel QC McGill 1.0,\
+Library Batch,\
+Lysis and Sonication,\
+Qubit QC (DNA) 5.0,\
+qPCR QC 5.0 McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+ChIP-Seq Protocol,\
+Library Batch,\
+Library Validation QC McGill 1.0
+
+# Manifest for Workflows
+Workflows=\
+ChIPSeq_libqc
+

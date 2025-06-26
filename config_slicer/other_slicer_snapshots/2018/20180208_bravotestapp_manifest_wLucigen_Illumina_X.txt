@@ -1,0 +1,442 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Thu Feb 08 16:32:42 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+384 well plate,\
+96 well plate,\
+BioAnalyzer DNA 1000 Chip,\
+BioAnalyzer DNA High Sensitivity Chip,\
+Patterned Flow Cell,\
+Strip Tube,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+D701-D501 (ATTACTCG-TATAGCCT),\
+D701-D502 (ATTACTCG-ATAGAGGC),\
+D701-D503 (ATTACTCG-CCTATCCT),\
+D701-D504 (ATTACTCG-GGCTCTGA),\
+D701-D505 (ATTACTCG-AGGCGAAG),\
+D701-D506 (ATTACTCG-TAATCTTA),\
+D701-D507 (ATTACTCG-CAGGACGT),\
+D701-D508 (ATTACTCG-GTACTGAC),\
+D702-D501 (TCCGGAGA-TATAGCCT),\
+D702-D502 (TCCGGAGA-ATAGAGGC),\
+D702-D503 (TCCGGAGA-CCTATCCT),\
+D702-D504 (TCCGGAGA-GGCTCTGA),\
+D702-D505 (TCCGGAGA-AGGCGAAG),\
+D702-D506 (TCCGGAGA-TAATCTTA),\
+D702-D507 (TCCGGAGA-CAGGACGT),\
+D702-D508 (TCCGGAGA-GTACTGAC),\
+D703-D501 (CGCTCATT-TATAGCCT),\
+D703-D502 (CGCTCATT-ATAGAGGC),\
+D703-D503 (CGCTCATT-CCTATCCT),\
+D703-D504 (CGCTCATT-GGCTCTGA),\
+D703-D505 (CGCTCATT-AGGCGAAG),\
+D703-D506 (CGCTCATT-TAATCTTA),\
+D703-D507 (CGCTCATT-CAGGACGT),\
+D703-D508 (CGCTCATT-GTACTGAC),\
+D704-D501 (GAGATTCC-TATAGCCT),\
+D704-D502 (GAGATTCC-ATAGAGGC),\
+D704-D503 (GAGATTCC-CCTATCCT),\
+D704-D504 (GAGATTCC-GGCTCTGA),\
+D704-D505 (GAGATTCC-AGGCGAAG),\
+D704-D506 (GAGATTCC-TAATCTTA),\
+D704-D507 (GAGATTCC-CAGGACGT),\
+D704-D508 (GAGATTCC-GTACTGAC),\
+D705-D501 (ATTCAGAA-TATAGCCT),\
+D705-D502 (ATTCAGAA-ATAGAGGC),\
+D705-D503 (ATTCAGAA-CCTATCCT),\
+D705-D504 (ATTCAGAA-GGCTCTGA),\
+D705-D505 (ATTCAGAA-AGGCGAAG),\
+D705-D506 (ATTCAGAA-TAATCTTA),\
+D705-D507 (ATTCAGAA-CAGGACGT),\
+D705-D508 (ATTCAGAA-GTACTGAC),\
+D706-D501 (GAATTCGT-TATAGCCT),\
+D706-D502 (GAATTCGT-ATAGAGGC),\
+D706-D503 (GAATTCGT-CCTATCCT),\
+D706-D504 (GAATTCGT-GGCTCTGA),\
+D706-D505 (GAATTCGT-AGGCGAAG),\
+D706-D506 (GAATTCGT-TAATCTTA),\
+D706-D507 (GAATTCGT-CAGGACGT),\
+D706-D508 (GAATTCGT-GTACTGAC),\
+D707-D501 (CTGAAGCT-TATAGCCT),\
+D707-D502 (CTGAAGCT-ATAGAGGC),\
+D707-D503 (CTGAAGCT-CCTATCCT),\
+D707-D504 (CTGAAGCT-GGCTCTGA),\
+D707-D505 (CTGAAGCT-AGGCGAAG),\
+D707-D506 (CTGAAGCT-TAATCTTA),\
+D707-D507 (CTGAAGCT-CAGGACGT),\
+D707-D508 (CTGAAGCT-GTACTGAC),\
+D708-D501 (TAATGCGC-TATAGCCT),\
+D708-D502 (TAATGCGC-ATAGAGGC),\
+D708-D503 (TAATGCGC-CCTATCCT),\
+D708-D504 (TAATGCGC-GGCTCTGA),\
+D708-D505 (TAATGCGC-AGGCGAAG),\
+D708-D506 (TAATGCGC-TAATCTTA),\
+D708-D507 (TAATGCGC-CAGGACGT),\
+D708-D508 (TAATGCGC-GTACTGAC),\
+D709-D501 (CGGCTATG-TATAGCCT),\
+D709-D502 (CGGCTATG-ATAGAGGC),\
+D709-D503 (CGGCTATG-CCTATCCT),\
+D709-D504 (CGGCTATG-GGCTCTGA),\
+D709-D505 (CGGCTATG-AGGCGAAG),\
+D709-D506 (CGGCTATG-TAATCTTA),\
+D709-D507 (CGGCTATG-CAGGACGT),\
+D709-D508 (CGGCTATG-GTACTGAC),\
+D710-D501 (TCCGCGAA-TATAGCCT),\
+D710-D502 (TCCGCGAA-ATAGAGGC),\
+D710-D503 (TCCGCGAA-CCTATCCT),\
+D710-D504 (TCCGCGAA-GGCTCTGA),\
+D710-D505 (TCCGCGAA-AGGCGAAG),\
+D710-D506 (TCCGCGAA-TAATCTTA),\
+D710-D507 (TCCGCGAA-CAGGACGT),\
+D710-D508 (TCCGCGAA-GTACTGAC),\
+D711-D501 (TCTCGCGC-TATAGCCT),\
+D711-D502 (TCTCGCGC-ATAGAGGC),\
+D711-D503 (TCTCGCGC-CCTATCCT),\
+D711-D504 (TCTCGCGC-GGCTCTGA),\
+D711-D505 (TCTCGCGC-AGGCGAAG),\
+D711-D506 (TCTCGCGC-TAATCTTA),\
+D711-D507 (TCTCGCGC-CAGGACGT),\
+D711-D508 (TCTCGCGC-GTACTGAC),\
+D712-D501 (AGCGATAG-TATAGCCT),\
+D712-D502 (AGCGATAG-ATAGAGGC),\
+D712-D503 (AGCGATAG-CCTATCCT),\
+D712-D504 (AGCGATAG-GGCTCTGA),\
+D712-D505 (AGCGATAG-AGGCGAAG),\
+D712-D506 (AGCGATAG-TAATCTTA),\
+D712-D507 (AGCGATAG-CAGGACGT),\
+D712-D508 (AGCGATAG-GTACTGAC),\
+IDT UDI non-UMI v.1.0,\
+IDT701_A01-IDT501_A01,\
+IDT702_A02-IDT502_A02,\
+IDT703_A03-IDT503_A03,\
+IDT704_A04-IDT504_A04,\
+IDT705_A05-IDT505_A05,\
+IDT706_A06-IDT506_A06,\
+IDT707_A07-IDT507_A07,\
+IDT708_A08-IDT508_A08,\
+IDT709_A09-IDT509_A09,\
+IDT710_A10-IDT510_A10,\
+IDT711_A11-IDT511_A11,\
+IDT712_A12-IDT512_A12,\
+IDT713_B01-IDT513_B01,\
+IDT714_B02-IDT514_B02,\
+IDT715_B03-IDT515_B03,\
+IDT716_B04-IDT516_B04,\
+IDT717_B05-IDT517_B05,\
+IDT718_B06-IDT518_B06,\
+IDT719_B07-IDT519_B07,\
+IDT720_B08-IDT520_B08,\
+IDT721_B09-IDT521_B09,\
+IDT722_B10-IDT522_B10,\
+IDT723_B11-IDT523_B11,\
+IDT724_B12-IDT524_B12,\
+IDT725_C01-IDT525_C01,\
+IDT726_C02-IDT526_C02,\
+IDT727_C03-IDT527_C03,\
+IDT728_C04-IDT528_C04,\
+IDT729_C05-IDT529_C05,\
+IDT730_C06-IDT530_C06,\
+IDT731_C07-IDT531_C07,\
+IDT732_C08-IDT532_C08,\
+IDT733_C09-IDT533_C09,\
+IDT734_C10-IDT534_C10,\
+IDT735_C11-IDT535_C11,\
+IDT736_C12-IDT536_C12,\
+IDT737_D01-IDT537_D01,\
+IDT738_D02-IDT538_D02,\
+IDT739_D03-IDT539_D03,\
+IDT740_D04-IDT540_D04,\
+IDT741_D05-IDT541_D05,\
+IDT742_D06-IDT542_D06,\
+IDT743_D07-IDT543_D07,\
+IDT744_D08-IDT544_D08,\
+IDT745_D09-IDT545_D09,\
+IDT746_D10-IDT546_D10,\
+IDT747_D11-IDT547_D11,\
+IDT748_D12-IDT548_D12,\
+IDT749_E01-IDT549_E01,\
+IDT750_E02-IDT550_E02,\
+IDT751_E03-IDT551_E03,\
+IDT752_E04-IDT552_E04,\
+IDT753_E05-IDT553_E05,\
+IDT754_E06-IDT554_E06,\
+IDT755_E07-IDT555_E07,\
+IDT756_E08-IDT556_E08,\
+IDT757_E09-IDT557_E09,\
+IDT758_E10-IDT558_E10,\
+IDT759_E11-IDT559_E11,\
+IDT760_E12-IDT560_E12,\
+IDT761_F01-IDT561_F01,\
+IDT762_F02-IDT562_F02,\
+IDT763_F03-IDT563_F03,\
+IDT764_F04-IDT564_F04,\
+IDT765_F05-IDT565_F05,\
+IDT766_F06-IDT566_F06,\
+IDT767_F07-IDT567_F07,\
+IDT768_F08-IDT568_F08,\
+IDT769_F09-IDT569_F09,\
+IDT770_F10-IDT570_F10,\
+IDT771_F11-IDT571_F11,\
+IDT772_F12-IDT572_F12,\
+IDT773_G01-IDT573_G01,\
+IDT774_G02-IDT574_G02,\
+IDT775_G03-IDT575_G03,\
+IDT776_G04-IDT576_G04,\
+IDT777_G05-IDT577_G05,\
+IDT778_G06-IDT578_G06,\
+IDT779_G07-IDT579_G07,\
+IDT780_G08-IDT580_G08,\
+IDT781_G09-IDT581_G09,\
+IDT782_G10-IDT582_G10,\
+IDT783_G11-IDT583_G11,\
+IDT784_G12-IDT584_G12,\
+IDT785_H01-IDT585_H01,\
+IDT786_H02-IDT586_H02,\
+IDT787_H03-IDT587_H03,\
+IDT788_H04-IDT588_H04,\
+IDT789_H05-IDT589_H05,\
+IDT790_H06-IDT590_H06,\
+IDT791_H07-IDT591_H07,\
+IDT792_H08-IDT592_H08,\
+IDT793_H09-IDT593_H09,\
+IDT794_H10-IDT594_H10,\
+IDT795_H11-IDT595_H11,\
+IDT796_H12-IDT596_H12,\
+TruSeq HT Adapters (D7-D5)
+
+# Manifest for Reagent Kits
+ReagentKits=\
+Quant-iT Picogreen dsDNA Assay Kit
+
+# Manifest for Control Types
+ControlTypes=\
+Axiom gDNA103,\
+CEPH1463-02,\
+Endogenous Positive Control,\
+Exogenous Positive Control,\
+Negative Control,\
+No Amplification Control,\
+No Reverse Transcriptase Control,\
+No Template Control,\
+PhiX v3
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Application,\
+Barcode,\
+Concentration,\
+Pooling,\
+Read Length,\
+Sample Type,\
+Sequencing Coverage,\
+Sequencing Method
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+% Aligned R1,\
+% Aligned R2,\
+% Bases >=Q30 R1,\
+% Bases >=Q30 R2,\
+% Error Rate R1,\
+% Error Rate R2,\
+% Intensity Cycle 20 R1,\
+% Intensity Cycle 20 R2,\
+% Phasing R1,\
+% Phasing R2,\
+% Prephasing R1,\
+% Prephasing R2,\
+%PF R1,\
+%PF R2,\
+A260/280 ratio,\
+Adapter (%),\
+Aligned Bases On Target (%),\
+Aligned Dup. Rate (%),\
+Avg Q Score R1,\
+Avg Q Score R2,\
+Avg. Qual,\
+Bases,\
+Bases Covered at 100x (%),\
+Bases Covered at 10x (%),\
+Bases Covered at 25x (%),\
+Bases Covered at 50x (%),\
+Bases Covered at 75x (%),\
+Bed,\
+Chimeras (%),\
+Cluster Density (K/mm^2) R1,\
+Cluster Density (K/mm^2) R2,\
+Clusters,\
+Clusters PF R1,\
+Clusters PF R2,\
+Clusters Raw R1,\
+Clusters Raw R2,\
+Conc. Units,\
+Concentration,\
+Concentration (ng/ul),\
+Data Directory,\
+Denaturation Sample Volume (ul),\
+Diluent Volume (ul),\
+Dup. Rate (%),\
+EB Volume (ul),\
+Expected Sample Tag Name,\
+Flowcell ID,\
+Freemix Number of SNP,\
+Freemix Value,\
+Intensity Cycle 1 R1,\
+Intensity Cycle 1 R2,\
+Library Concentration (nM),\
+Library Volume (ul),\
+Library Volume To Use (ul),\
+Loading Conc. (pM),\
+Location,\
+Mapped Insert Size (mean),\
+Mapped Insert Size (median),\
+Mapped Insert Size (std. dev.),\
+Mean Coverage,\
+Normalized conc. (nM),\
+On Bait Bases from On Target Bases (%),\
+PF Reads Aligned All,\
+PF Reads Aligned All (%),\
+PF Reads Aligned R1 (%),\
+PF Reads Aligned R2 (%),\
+Processing Folder Name,\
+R1 PhiX Rate from Total (%),\
+R1 Top Blast Hit Name,\
+R1 Top Blast Hit Rate (%),\
+R2 PhiX Rate from Total (%),\
+R2 Top Blast Hit Name,\
+Reagent Name,\
+Reference,\
+Run Count,\
+Run Folder Name,\
+Run ID,\
+Sample Conc.,\
+Sample Name,\
+Sample Tag,\
+Top Sample Tag Name,\
+Top Sample Tag Name Match,\
+Top Sample Tag Rate from All Detected (%),\
+Top Sample Tag Rate from Total (%),\
+Waiting,\
+Workflow,\
+Yield PF (Gb) R1,\
+Yield PF (Gb) R2,\
+cBot Primer Set,\
+cBot Run Recipe
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260,\
+A260/230 ratio,\
+A260/280 ratio,\
+BA Sample Name,\
+Barcode,\
+Conc. Units,\
+Concentration,\
+MW Units,\
+Molarity (nmol/L),\
+Molarity Units,\
+Number of Peaks found,\
+Number of Regions found,\
+Peak 1 % Integrated Area,\
+Peak 1 Conc.,\
+Peak 1 MW,\
+Peak 1 Molarity,\
+Peak 1 Size - bp,\
+Peak 2 % Integrated Area,\
+Peak 2 Conc.,\
+Peak 2 MW,\
+Peak 2 Molarity,\
+Peak 2 Size - bp,\
+Peak 3 % Integrated Area,\
+Peak 3 Conc.,\
+Peak 3 MW,\
+Peak 3 Molarity,\
+Peak 3 Size - bp,\
+Peak 4 % Integrated Area,\
+Peak 4 Conc.,\
+Peak 4 MW,\
+Peak 4 Molarity,\
+Peak 4 Size - bp,\
+Peak 5 % Integrated Area,\
+Peak 5 Conc.,\
+Peak 5 MW,\
+Peak 5 Molarity,\
+Peak 5 Size - bp,\
+Region,\
+Region 1 % of Total,\
+Region 1 Average Size - bp,\
+Region 1 Conc.,\
+Region 1 Molarity,\
+Region 2 % of Total,\
+Region 2 Average Size - bp,\
+Region 2 Conc.,\
+Region 2 Molarity,\
+Region 3 % of Total,\
+Region 3 Average Size - bp,\
+Region 3 Conc.,\
+Region 3 Molarity,\
+Region 4 % of Total,\
+Region 4 Average Size - bp,\
+Region 4 Conc.,\
+Region 4 Molarity,\
+Region 5 % of Total,\
+Region 5 Average Size - bp,\
+Region 5 Conc.,\
+Region 5 Molarity,\
+Sample Comment,\
+Size (bp),\
+Size at Max (bp),\
+Volume Used (ul)
+
+# Manifest for Process Types
+ProcessTypes=\
+Add Multiple Reagents,\
+Aggregate QC (DNA) 5.0,\
+Aggregate QC (Library Validation) 5.0,\
+Bioanalyzer QC (DNA) 5.0,\
+CaliperGX QC 5.0,\
+CaliperGX QC 5.0 McGill 1.0,\
+Cluster Generation (HiSeq X) 1.0 McGill 1.0,\
+Create Strip Tube (HiSeq X) 1.0,\
+DNA Gel QC McGill 1.0,\
+Illumina Sequencing (HiSeq X) 1.0 McGill 1.1,\
+Library Normalization (HiSeq X) 1.0 McGill 1.4,\
+Library Pooling (HiSeq X) 1.0,\
+Lucigen AmpFREE Low DNA 1.0,\
+NanoDrop QC (DNA) 5.0,\
+PicoGreen QC (DNA) 5.0,\
+Qubit QC (DNA) 5.0,\
+Sample Normalization,\
+Sample Normalization Extra Plate,\
+Tapestation QC (DNA) 5.0,\
+Tecan SPARK PicoGreen QC (DNA) McGill 1.0,\
+qPCR QC 5.0
+
+# Manifest for Protocols
+Protocols=\
+DNA Initial QC 5.0,\
+Illumina SBS (HiSeq X) 1.0,\
+Library Validation QC 5.0,\
+Lucigen AmpFree Low DNA,\
+Sample Normalization
+
+# Manifest for Workflows
+Workflows=\
+Lucigen_Illumina_X
+

@@ -1,0 +1,2598 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="Tube">
+  <is-tube>true</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>1</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentKits>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>Axiom 2.0 Reagent Kit - Module 1</name>
+  <supplier>Affymetrix</supplier>
+  <catalogue-number>901711</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>Axiom 2.0 Reagent Kit - Module 2-1</name>
+  <supplier>Affymetrix</supplier>
+  <catalogue-number>901528</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>Axiom 2.0 Reagent Kit - Module 2-2</name>
+  <supplier>Affymetrix</supplier>
+  <catalogue-number>901529</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>Axiom 2.0 Reagent Kit - Module 4-1</name>
+  <supplier>Affymetrix</supplier>
+  <catalogue-number>901278</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>Axiom 2.0 Reagent Kit - Module 4-2</name>
+  <supplier>Affymetrix</supplier>
+  <catalogue-number>901276</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+	</ReagentKits>
+	<ControlTypes>
+<ctrltp:control-type xmlns:ctrltp="http://genologics.com/ri/controltype" name="Axiom_gDNA103">
+  <supplier>Affymetrix</supplier>
+  <catalogue-number/>
+  <website/>
+  <concentration>10000</concentration>
+  <archived>false</archived>
+  <single-step>false</single-step>
+</ctrltp:control-type>
+<ctrltp:control-type xmlns:ctrltp="http://genologics.com/ri/controltype" name="CEPH1463-02">
+  <supplier>Coriell</supplier>
+  <catalogue-number/>
+  <website/>
+  <concentration>20</concentration>
+  <archived>false</archived>
+  <single-step>false</single-step>
+</ctrltp:control-type>
+<ctrltp:control-type xmlns:ctrltp="http://genologics.com/ri/controltype" name="Negative_Control">
+  <supplier/>
+  <catalogue-number/>
+  <website/>
+  <concentration/>
+  <archived>false</archived>
+  <single-step>false</single-step>
+</ctrltp:control-type>
+	</ControlTypes>
+	<SampleUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Carrier Coordinate</name>
+  <attach-to-name>Sample</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Carrier Name</name>
+  <attach-to-name>Sample</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Replicate ID</name>
+  <attach-to-name>Sample</attach-to-name>
+  <show-in-lablink>false</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</SampleUDFs>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>% of passing samples</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="URI">
+  <name>.arr File Location</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Affymetrix Plate Barcode</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Affymetrix Plate Peg Wellposition</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Average Call Rate Passing Samples</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <preset>M</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>DQC</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Boolean">
+  <name>Go To Next Step</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>False</preset>
+  <preset>True</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Pooling Group</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>QC Call Rate</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>QC Computed Gender</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>QC Het Rate</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>3</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ResultFileUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>File</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Mass</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <unit>ug</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</ResultFileUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Axiom Analysis QC">
+  <field-definition name="Local PC path"/>
+  <field-definition name="Memo"/>
+  <field-definition name="RawData"/>
+  <parameter name="0.Generate robocopy file">
+    <string>bash -l -c "/usr/bin/python3.5 /opt/gls/clarity/customextensions/GeneTitan/create_robocopy_batch_hybrid.py  -s {stepURI:v2}  -u {username} -p {password}  --c {compoundOutputFileLuids}  --activeStep 'DNA Amplification McGill 1.1'  &gt; {compoundOutputFileLuid2}_robocopy.bat.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Assign Axiom Analysis results">
+    <string>bash -c  " /usr/bin/python /opt/gls/clarity/customextensions/GeneTitan/upload_Axiom_reports_parent.py   -u {username} -p {password} -s {stepURI:v2}    -l '{compoundOutputFileLuids}'  -a 'Denaturation and Hybridization McGill 1.0'  -c 'output' &gt; {compoundOutputFileLuid3}_log.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement Generic">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic_sorted.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix 'Q' "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>4</number-of-outputs>
+    <output-name>{LIST:File AxiomSampleQcSummary (txt),File AxiomBatchQCSummary (pdf),RoboCopy File,Log file}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">AXI</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">AX</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Axiom Scanning QC">
+  <field-definition name="Memo"/>
+  <field-definition name="RawData"/>
+  <parameter name="1.Check *.CEL files">
+    <string>bash -l -c "/usr/bin/python3.5 /opt/gls/clarity/customextensions/GeneTitan/check_cel_files_rollback_hybrid.py   -s {stepURI:v2}  -u {username} -p {password}   -a 'DNA Amplification McGill 1.1'  -c 'input'   &gt; {compoundOutputFileLuid0}_log.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{LIST:Log file}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">AXI</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">AX</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Centrifugation,Drying and Resuspension McGill 1.1">
+  <field-definition name="Centrifugation time, min"/>
+  <field-definition name="Drying Time, min"/>
+  <field-definition name="Incubator"/>
+  <field-definition name="Incubator Temperature"/>
+  <field-definition name="Inverted drying time, min"/>
+  <field-definition name="Memo"/>
+  <field-definition name="Module 2.1 (blue cap)"/>
+  <field-definition name="Module 2.1 Exp. Date"/>
+  <field-definition name="Module 2.2 (blue cap)"/>
+  <field-definition name="Module 2.2 Exp. Date"/>
+  <field-definition name="Resuspension Buffer Volume, uL"/>
+  <field-definition name="Vortex Duration, min"/>
+  <field-definition name="Vortex Speed, rpm"/>
+  <field-definition name="gForce"/>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">CEN</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">CE</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">false</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Denaturation and Hybridization McGill 1.0">
+  <field-definition name="AGCC Project"/>
+  <field-definition name="Array Type"/>
+  <field-definition name="Barcode"/>
+  <field-definition name="Library Package"/>
+  <field-definition name="Location"/>
+  <field-definition name="Memo"/>
+  <field-definition name="Transfer Amount, uL"/>
+  <field-definition name="Vendor ID"/>
+  <parameter name="0.Create  Project and ARR files">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/PlacementHelper.jar -i {stepURI:v2} -u {username} -p {password} script:validate_container_names -errMode 'fail' -reset 'true' -t 'true' &amp;&amp; /opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/Affymetrix_AGCC/EPP/affymetrix-agcc-generator.jar -i {processURI:v2} -u {username} -p {password} script:generate_agcc_arr_files -log {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Create ARR ZIP file">
+    <string>bash -c -l "zip {compoundOutputFileLuid4}.zip /lb/robot/GeneTitan/test/{processLuid}/*.arr  /lb/robot/GeneTitan/test/{processLuid}/*.PROJECT "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Create CSV">
+    <string> bash -c  " /usr/bin/python3.5     /opt/gls/clarity/customextensions/GeneTitan/GeneTitan_create_excel_file.py   -user_psw={username}:{password}  -stepURI_v2={stepURI:v2}  -containerSource=input -activeStep='DNA Amplification McGill 1.1'  &gt; {compoundOutputFileLuid0}.csv"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. Create GTAPR Excel">
+    <string>bash -c  "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar script:convertToExcel     -i {stepURI:v2:http}     -u {username}    -p {password}    -logFileLIMSID {compoundOutputFileLuid2}   -srcLIMSID {compoundOutputFileLuid0}     -destLIMSID {compoundOutputFileLuid3}   -worksheet 'Samples' -updateFileName '/opt/gls/clarity/customextensions/GeneTitan/Template_for_GeneTitan.xls' -q ‘true’ "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement Generic">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix 'D' "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>5</number-of-outputs>
+    <output-name>{LIST:CSV source,GTAPR Excel file, Log file for ARR,Output Excel file,ZIP file- ARR and PROJECT}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">DEN</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">DE</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="DNA Amplification McGill 1.1">
+  <field-definition name="After Amplification"/>
+  <field-definition name="Date In"/>
+  <field-definition name="Date Out"/>
+  <field-definition name="Freezer Location"/>
+  <field-definition name="Incubator"/>
+  <field-definition name="Incubator Temperature, C"/>
+  <field-definition name="Memo"/>
+  <field-definition name="Module 1"/>
+  <field-definition name="Time In"/>
+  <field-definition name="Time Out"/>
+  <parameter name="0. Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv_rollback_hybrid.py  -stepURI_v2={stepURI:v2}    -user={username}  -psw={password}  -containerSource=input -activeStep='DNA Amplification McGill 1.1' -name2=''  -name1='Amplification'  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement Generic">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix '_A' "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="DQC"/>
+    <field-definition name="QC Call Rate"/>
+    <field-definition name="QC Het Rate"/>
+    <field-definition name="QC Computed Gender"/>
+    <field-definition name="Affymetrix Plate Barcode"/>
+    <field-definition name="Affymetrix Plate Peg Wellposition"/>
+    <field-definition name="% of passing samples"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">DNA</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">DN</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="DNA Samples QC">
+  <field-definition name="Concentration Threshold (ng/uL)"/>
+  <field-definition name="Criteria 1 - Operator"/>
+  <field-definition name="Criteria 1 - Source Data Field"/>
+  <field-definition name="Criteria 1 - Threshold Value"/>
+  <field-definition name="Criteria 2 - Operator"/>
+  <field-definition name="Criteria 2 - Source Data Field"/>
+  <field-definition name="Criteria 2 - Threshold Value"/>
+  <parameter name="0.Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/SPARK/create_plate_barcode_csv.py  -stepURI_v2={stepURI:v2}   -user_psw={username}:{password}  -labelSTD='1'    &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2.Apply quantified values">
+    <string>bash -l -c  "/usr/bin/python3.5 /opt/gls/clarity/customextensions/SPARK/spark_apply_quant.py  -fileLuid={compoundOutputFileLuid0}  -stepURI_v2={stepURI:v2}   -processURI_v2={processURI:v2}  -user_psw={username}:{password}  &gt; {compoundOutputFileLuid21}.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2.Assign Concentration from Submitted Samples">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'if (submittedSample.hasValue( ::Sample Conc.:: )) {output.::Concentration:: = submittedSample.::Sample Conc.::;  output.::Conc. Units::=submittedSample.::Sample Conc Units::} ' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3.Assign QC flags">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'if (output.::Concentration:: &gt;= step.::Concentration Threshold (ng/uL):: ) {output.QC = true} else {output.QC = false}' -log {compoundOutputFileLuid2}" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="4.AutoPlacement Mix">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic_mix.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix 'Q' "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>false</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>SharedResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Log file,Assign Report,Assign Log}</output-name>
+    <field-definition name="File"/>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">PGD</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">PG</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">1. DNA Initial QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display the UDF information associated with all the outputs</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Fragmentation  (Affy) McGill 1.0">
+  <field-definition name="Memo"/>
+  <field-definition name="Module 2.1 (yellow cap) Lot"/>
+  <field-definition name="Module 2.1 Exp. Date"/>
+  <field-definition name="Module 2.2 (yellow cap) Lot"/>
+  <field-definition name="Module 2.2 Exp. Date"/>
+  <parameter name="0.Print  barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv_rollback_hybrid.py  -stepURI_v2={stepURI:v2}    -user={username}  -psw={password}  -containerSource=input -activeStep='DNA Amplification McGill 1.1'  -name2=''  -name1='Fragmentation'  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement Generic">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix 'F' "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">FRA</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">FR</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="GeneTitan Reagent tray Preparation McGill 1.0">
+  <field-definition name="Module 4.1"/>
+  <field-definition name="Module 4.1 Exp. Date"/>
+  <field-definition name="Module 4.2"/>
+  <field-definition name="Module 4.2 Exp. Date"/>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">GEN</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">GE</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">false</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Hybridization Preparation McGill 1.0">
+  <field-definition name="Memo"/>
+  <field-definition name="Module 2.1 (blue cap) Lot"/>
+  <field-definition name="Module 2.1 Exp. Date"/>
+  <field-definition name="Module 2.2 (blue cap) Lot"/>
+  <field-definition name="Module 2.2 Exp. Date"/>
+  <parameter name="0.Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv_rollback_hybrid.py  -stepURI_v2={stepURI:v2}    -user={username}  -psw={password}  -containerSource=input -activeStep='DNA Amplification McGill 1.1'  -name2='' -name1='Hybridization'  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement Generic">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix 'H' "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">HYB</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">HY</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Hybridization Sample QC McGill 1.0">
+  <field-definition name="Barcodes Qty"/>
+  <field-definition name="Criteria 1 - Operator"/>
+  <field-definition name="Criteria 1 - Source Data Field"/>
+  <field-definition name="Criteria 1 - Threshold Value"/>
+  <field-definition name="Criteria 2 - Operator"/>
+  <field-definition name="Criteria 2 - Source Data Field"/>
+  <field-definition name="Criteria 2 - Threshold Value"/>
+  <field-definition name="Memo"/>
+  <parameter name="0. Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv_rollback_hybrid.py  -stepURI_v2={stepURI:v2}    -user={username}  -psw={password}  -containerSource=input -activeStep='DNA Amplification McGill 1.1'  -name2='_Gel,_Dil,_UV' -name1='HybQC'  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Apply  absorbance values">
+    <string>bash -l -c  "/usr/bin/python3.5 /opt/gls/clarity/customextensions/SPARK/spark_apply_absorb_quant.py  -fileLuid={compoundOutputFileLuid1}  -stepURI_v2={stepURI:v2}   -user_psw={username}:{password}  &gt; {compoundOutputFileLuid2}.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Assign QC flag">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2:http} -u {username} -p {password} script:assignQC -log {compoundOutputFileLuid8} -qcResult {compoundOutputFileLuid9}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement Generic">
+    <string>bash -l -c " /usr/bin/python /opt/gls/clarity/customextensions/Common/autoplacement_generic.py -u {username} -p {password}  -s {stepURI:v2}  --placementtemplate /opt/gls/clarity/ai/temp/autoplacement_generic_template.csv  --containertype '96 well plate'  --suffix 'Q'  --outputArtifact  'ResultFile' "
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Concentration"/>
+    <field-definition name="Conc. Units"/>
+    <field-definition name="Mass"/>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>4</number-of-outputs>
+    <output-name>{LIST:Gel Image1, Absorbtion file (.asc), Log QC, QCstatus  }</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">HYB</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples in same shape as input samples</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">HY</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Sample Normalization Extra Plate">
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">SAM</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">SA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Sample Normalization Generic">
+  <field-definition name="9th plate offset"/>
+  <field-definition name="Concentration from"/>
+  <field-definition name="Controls"/>
+  <field-definition name="Destination Concentration (ng/ul)"/>
+  <field-definition name="Destination Volume (ul)"/>
+  <field-definition name="Quantity (ng)"/>
+  <field-definition name="Target"/>
+  <field-definition name="Threshold, ng/ul"/>
+  <parameter name="0. Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  -containerSource=io &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Normalize samples">
+    <string>bash -c -l "/usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/concentration_normalization_sorted.py   -stepURI_v2={stepURI:v2}  -processLuid={processLuid} -user_psw={username}:{password}  -ar=Analyte  -ComponentLuids='{compoundOutputFileLuids}'   &gt; {compoundOutputFileLuid0}_for_robot.csv"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Route samples">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t true -h false -exp 'if (output.::Go To Next Step:: == true) { nextStep = ::REPEAT:: } else { nextStep = :: DNA Amplification McGill 1.1:: }' -log {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. Route by python">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/route_by_template.py -u {username} -p {password} -s {stepURI:v2} -r 'Go To Next Step,False,Affymetrix Axiom Genotyping McGill 1.0,DNA Amplification McGill 1.1\nGo To Next Step,True,Sample Normalization Generic,Sample Normalization Extra Plate' -l {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement">
+    <string>/usr/bin/python /opt/gls/clarity/customextensions/Common/autoplaceSamplesDefaultMulti.py -l {processLuid} -u {username} -p {password} -s {stepURI:v2}</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Control Placement with LeftOver">
+    <string>bash -c -l "/usr/bin/python /opt/gls/clarity/customextensions/Common/autoplace_controls_leftover_sorted.py  -u {username} -p {password} -s {stepURI:v2} --placementtemplate /opt/gls/clarity/ai/temp/{processLuid}_norm_template.csv --containertype '96 well plate'  &gt; /opt/gls/clarity/ai/temp/{processLuid}_autoplacement_log.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>VariableByInput</variability-type>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Pooling Group"/>
+    <field-definition name="Go To Next Step"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST: CSV file for robot,Normalization Log file,Mapping file }</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">SAM</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">SA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Axiom Analysis QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>RawData</name>
+  <attach-to-name>Axiom Analysis QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Local PC path</name>
+  <attach-to-name>Axiom Analysis QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>E:\</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Axiom Scanning QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>RawData</name>
+  <attach-to-name>Axiom Scanning QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>gForce</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>3200</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Centrifugation time, min</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <unit>Minutes</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Inverted drying time, min</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <unit>Minutes</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>5</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Incubator</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Binder</preset>
+  <preset>Small</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Incubator Temperature</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <unit>Celsius</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>37</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Drying Time, min</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <unit>Minutes</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Resuspension Buffer Volume, uL</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>2</precision>
+  <unit>uL</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>35</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Vortex Duration, min</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <unit>Minutes</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>10</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Vortex Speed, rpm</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 2.1 (blue cap)</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 2.2 (blue cap)</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 2.1 Exp. Date</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 2.2 Exp. Date</name>
+  <attach-to-name>Centrifugation,Drying and Resuspension McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Date In</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Time In</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Date Out</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Incubator</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Binder</preset>
+  <preset>Small</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Incubator Temperature, C</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <precision>0</precision>
+  <unit>Celsius</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>37</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>After Amplification</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Start Fragmentation</preset>
+  <preset>Place at -20C</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Freezer Location</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 1</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Time Out</name>
+  <attach-to-name>DNA Amplification McGill 1.1</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Source Data Field</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Operator</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 1 - Threshold Value</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Source Data Field</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Operator</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 2 - Threshold Value</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration Threshold (ng/uL)</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>7</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Transfer Amount, uL</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <unit>uL</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>105</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Barcode</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>AGCC Project</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Array Type</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Axiom_UKB_WCSG</preset>
+  <preset>Axiom_PMRA</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Vendor ID</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Package</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Universal</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Location</name>
+  <attach-to-name>Denaturation and Hybridization McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 2.1 (yellow cap) Lot</name>
+  <attach-to-name>Fragmentation  (Affy) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 2.1 Exp. Date</name>
+  <attach-to-name>Fragmentation  (Affy) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 2.2 (yellow cap) Lot</name>
+  <attach-to-name>Fragmentation  (Affy) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 2.2 Exp. Date</name>
+  <attach-to-name>Fragmentation  (Affy) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Fragmentation  (Affy) McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 4.1</name>
+  <attach-to-name>GeneTitan Reagent tray Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 4.1 Exp. Date</name>
+  <attach-to-name>GeneTitan Reagent tray Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 4.2</name>
+  <attach-to-name>GeneTitan Reagent tray Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 4.2 Exp. Date</name>
+  <attach-to-name>GeneTitan Reagent tray Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Hybridization Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 2.1 (blue cap) Lot</name>
+  <attach-to-name>Hybridization Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 2.1 Exp. Date</name>
+  <attach-to-name>Hybridization Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Module 2.2 (blue cap) Lot</name>
+  <attach-to-name>Hybridization Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Module 2.2 Exp. Date</name>
+  <attach-to-name>Hybridization Preparation McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Source Data Field</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Mass</preset>
+  <preset>Concentration</preset>
+  <preset>Conc. Unit</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Operator</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 1 - Threshold Value</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Source Data Field</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Unit</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Operator</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 2 - Threshold Value</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Barcodes Qty</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>3</preset>
+  <preset>1</preset>
+  <preset>2</preset>
+  <preset>4</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Memo</name>
+  <attach-to-name>Hybridization Sample QC McGill 1.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Concentration from</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Last Protocol</preset>
+  <preset>Submitted Sample</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Target</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Quantity</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Destination Concentration (ng/ul)</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <preset>100</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Destination Volume (ul)</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Quantity (ng)</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>400</preset>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>9th plate offset</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <preset>A:1</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Controls</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <preset>4 - Affymetrix</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Threshold, ng/ul</name>
+  <attach-to-name>Sample Normalization Generic</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>7</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<ProcessTemplates>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Concentration</name>
+  <type>Sample Normalization Generic</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Concentration from">Last Protocol</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Concentration (ng/ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Volume (ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Quantity (ng)">400</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Target">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Threshold, ng/ul">7</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Quantity</name>
+  <type>Sample Normalization Generic</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Concentration from">Last Protocol</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Concentration (ng/ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Volume (ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Quantity (ng)">400</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Target">Quantity</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Threshold, ng/ul">7</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+	</ProcessTemplates>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="1" name="Sample Normalization Generic">
+  <steps>
+    <step name="DNA Samples QC">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>DNA Samples QC</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="2" name="Sample Normalization Generic"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <queue-field detail="false" style="USER_DEFINED" attach-to="Sample" name="Replicate ID"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Concentration Threshold (ng/uL)"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Sample" name="LIMS ID (Submitted Sample)"/>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <sample-field style="USER_DEFINED" attach-to="Sample" name="Replicate ID"/>
+        <sample-field style="USER_DEFINED" attach-to="Sample" name="Carrier Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Sample" name="Carrier Coordinate"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Conc. Units"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="column" name="multiwellSortOrder"/>
+        <step-property value="0/{LIST:Log file,Assign Report,Assign Log}|1/{LIST:Log file,Assign Report,Assign Log}|2/{LIST:Log file,Assign Report,Assign Log}" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0.Print barcodes"/>
+        <epp-trigger type="UNUSED" name="2.Apply quantified values"/>
+        <epp-trigger type="MANUAL" name="2.Assign Concentration from Submitted Samples"/>
+        <epp-trigger type="MANUAL" name="3.Assign QC flags"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="4.AutoPlacement Mix"/>
+      </epp-triggers>
+    </step>
+    <step name="Sample Normalization Generic">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>Sample Normalization Generic</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+        <container-type>Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types>
+        <control-type name="Axiom_gDNA103"/>
+        <control-type name="CEPH1463-02"/>
+        <control-type name="Negative_Control"/>
+      </permitted-control-types>
+      <transitions>
+        <transition sequence="3" name="Sample Normalization Extra Plate"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Concentration from"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Target"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Destination Concentration (ng/ul)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Destination Volume (ul)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Quantity (ng)"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Sample" name="LIMS ID (Submitted Sample)"/>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Sample" name="Carrier Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Sample" name="Carrier Coordinate"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="Concentration" name="defaultProcessTemplate"/>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="true" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="0/{LIST: CSV file for robot,Normalization Log file,Mapping file }|1/{LIST: CSV file for robot,Normalization Log file,Mapping file }|2/{LIST: CSV file for robot,Normalization Log file,Mapping file }" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Print barcodes"/>
+        <epp-trigger type="MANUAL" name="1. Normalize samples"/>
+        <epp-trigger type="UNUSED" name="2. Route samples"/>
+        <epp-trigger type="UNUSED" name="3. Route by python"/>
+        <epp-trigger type="UNUSED" name="AutoPlacement"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="Control Placement with LeftOver"/>
+      </epp-triggers>
+    </step>
+    <step name="Sample Normalization Extra Plate">
+      <protocol-step-index>3</protocol-step-index>
+      <process-type>Sample Normalization Extra Plate</process-type>
+      <permitted-containers>
+        <container-type>Tube</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers/>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="samplePrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="2" name="Affymetrix Axiom Genotyping McGill 1.0">
+  <steps>
+    <step name="DNA Amplification McGill 1.1">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>DNA Amplification McGill 1.1</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 1"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="2" name="Fragmentation  (Affy) McGill 1.0"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="LIMS ID (Derived Sample)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Date In"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Time In"/>
+        <step-field style="BUILT_IN" attach-to="Process" name="LIMS ID (Process)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Date Out"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Time Out"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Incubator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Incubator Temperature, C"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="After Amplification"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Freezer Location"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Print barcodes"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="AutoPlacement Generic"/>
+      </epp-triggers>
+    </step>
+    <step name="Fragmentation  (Affy) McGill 1.0">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>Fragmentation  (Affy) McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 2-1"/>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 2-2"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="3" name="Centrifugation,Drying and Resuspension McGill 1.1"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="BUILT_IN" attach-to="Process" name="LIMS ID (Process)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0.Print  barcodes"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="AutoPlacement Generic"/>
+      </epp-triggers>
+    </step>
+    <step name="Centrifugation,Drying and Resuspension McGill 1.1">
+      <protocol-step-index>3</protocol-step-index>
+      <process-type>Centrifugation,Drying and Resuspension McGill 1.1</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 2-1"/>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 2-2"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="4" name="Hybridization Preparation McGill 1.0"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="gForce"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Centrifugation time, min"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Inverted drying time, min"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Incubator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Incubator Temperature"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Drying Time, min"/>
+        <step-field style="BUILT_IN" attach-to="Process" name="LIMS ID (Process)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Resuspension Buffer Volume, uL"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Vortex Duration, min"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Vortex Speed, rpm"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers/>
+    </step>
+    <step name="Hybridization Preparation McGill 1.0">
+      <protocol-step-index>4</protocol-step-index>
+      <process-type>Hybridization Preparation McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 2-1"/>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 2-2"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="5" name="Hybridization Sample QC McGill 1.0"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="BUILT_IN" attach-to="Process" name="LIMS ID (Process)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0.Print barcodes"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="AutoPlacement Generic"/>
+      </epp-triggers>
+    </step>
+    <step name="Hybridization Sample QC McGill 1.0">
+      <protocol-step-index>5</protocol-step-index>
+      <process-type>Hybridization Sample QC McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="6" name="Denaturation and Hybridization McGill 1.0"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Source Data Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Operator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 1 - Threshold Value"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Source Data Field"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Operator"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Criteria 2 - Threshold Value"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Mass"/>
+        <sample-field style="USER_DEFINED" attach-to="ResultFile" name="Conc. Units"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Print barcodes"/>
+        <epp-trigger type="MANUAL" name="1. Apply  absorbance values"/>
+        <epp-trigger type="MANUAL" name="2. Assign QC flag"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="AutoPlacement Generic"/>
+      </epp-triggers>
+    </step>
+    <step name="Denaturation and Hybridization McGill 1.0">
+      <protocol-step-index>6</protocol-step-index>
+      <process-type>Denaturation and Hybridization McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="7" name="GeneTitan Reagent tray Preparation McGill 1.0"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="USER_DEFINED" attach-to="Analyte" name=".arr File Location"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Transfer Amount, uL"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Array Type"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Barcode"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Library Package"/>
+        <step-field style="BUILT_IN" attach-to="Process" name="LIMS ID (Process)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name=".arr File Location"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0.Create  Project and ARR files"/>
+        <epp-trigger type="UNUSED" name="1. Create ARR ZIP file"/>
+        <epp-trigger type="MANUAL" name="2. Create CSV"/>
+        <epp-trigger type="MANUAL" name="3. Create GTAPR Excel"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="AutoPlacement Generic"/>
+      </epp-triggers>
+    </step>
+    <step name="GeneTitan Reagent tray Preparation McGill 1.0">
+      <protocol-step-index>7</protocol-step-index>
+      <process-type>GeneTitan Reagent tray Preparation McGill 1.0</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 4-1"/>
+        <reagent-kit name="Axiom 2.0 Reagent Kit - Module 4-2"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="8" name="Axiom Scanning QC"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="BUILT_IN" attach-to="Process" name="LIMS ID (Process)"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="true" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers/>
+    </step>
+    <step name="Axiom Scanning QC">
+      <protocol-step-index>8</protocol-step-index>
+      <process-type>Axiom Scanning QC</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="9" name="Axiom Analysis QC"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="RawData"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="1.Check *.CEL files"/>
+      </epp-triggers>
+    </step>
+    <step name="Axiom Analysis QC">
+      <protocol-step-index>9</protocol-step-index>
+      <process-type>Axiom Analysis QC</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Local PC path"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Memo"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="DQC"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="QC Call Rate"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="QC Computed Gender"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="QC Het Rate"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Affymetrix Plate Barcode"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Affymetrix Plate Peg Wellposition"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Average Call Rate Passing Samples"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="% of passing samples"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="3/{LIST:File AxiomSampleQcSummary (txt),File AxiomBatchQCSummary (pdf),RoboCopy File,Log file}" name="autoAttachFiles"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0.Generate robocopy file"/>
+        <epp-trigger type="MANUAL" name="1. Assign Axiom Analysis results"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="AutoPlacement Generic"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="samplePrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+	<Workflows>
+<wkfcnf:workflow xmlns:wkfcnf="http://genologics.com/ri/workflowconfiguration" status="PENDING" name="Axiom Norm Genotyping WF">
+  <protocols>
+    <protocol name="Sample Normalization Generic"/>
+    <protocol name="Affymetrix Axiom Genotyping McGill 1.0"/>
+  </protocols>
+</wkfcnf:workflow>
+	</Workflows>
+</config>

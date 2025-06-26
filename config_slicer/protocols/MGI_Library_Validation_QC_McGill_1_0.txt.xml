@@ -1,0 +1,507 @@
+<config ApiVersion="v2,r27" ConfigSlicerVersion="3.2.0.7">
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <preset>M</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Size (bp)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ResultFileUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>A260/280 ratio</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Size (bp)</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</ResultFileUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Aggregate QC (Library Validation) 5.0">
+  <field-definition name="Bioanalyzer QC (DNA) 5.0"/>
+  <field-definition name="CaliperGX QC 5.0"/>
+  <field-definition name="CaliperGX QC 5.0 McGill 1.0"/>
+  <field-definition name="Copy task / Source Step"/>
+  <field-definition name="Copy task 1 - Source Field"/>
+  <field-definition name="Copy task 1 - Source Step"/>
+  <field-definition name="Copy task 2 - Source Field"/>
+  <field-definition name="Copy task 2 - Source Step"/>
+  <field-definition name="Copy task 3 - Source Field"/>
+  <field-definition name="Copy task 3 - Source Step"/>
+  <field-definition name="NanoDrop QC (DNA) 5.0"/>
+  <field-definition name="PicoGreen QC (DNA) 5.0"/>
+  <field-definition name="Qubit QC (DNA) 5.0"/>
+  <field-definition name="Tapestation QC (DNA) 5.0"/>
+  <field-definition name="qPCR QC 5.0"/>
+  <field-definition name="qPCR QC 5.0 McGill 1.0"/>
+  <parameter name="Aggregate QC Flags and Copy Fields">
+    <string>bash -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {processURI:v2:http} -u {username} -p {password} script:setUDF -f 'Progress' -t '//input/@uri-&gt;//sample/@uri' -v 'Library preparation and QC validation complete' script:aggregateQC -c 'true' -a 'true' -log {compoundOutputFileLuid0} -aggregatelog {compoundOutputFileLuid1} -copylog {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Aggregation Script Log,QC Flag Aggregation Log,QC UDF Copy Log}</output-name>
+    <field-definition name="A260/280 ratio"/>
+    <field-definition name="Conc. Units"/>
+    <field-definition name="Concentration"/>
+    <field-definition name="Size (bp)"/>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">AGV</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">AG</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">2b. Library Validation QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display and maximize the Input/Output Explorer mini-tabbed page</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <permitted-containers/>
+  <permitted-reagent-categories/>
+  <required-reagent-kits/>
+  <permitted-control-types/>
+  <permitted-instrument-types/>
+  <queue-fields/>
+  <ice-bucket-fields/>
+  <step-fields/>
+  <sample-fields>
+    <sample-field style="USER_DEFINED" attach-to="Analyte" name="Conc. Units"/>
+    <sample-field style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+    <sample-field style="USER_DEFINED" attach-to="Analyte" name="Size (bp)"/>
+  </sample-fields>
+  <step-properties>
+    <step-property value="column" name="placementDefaultPattern"/>
+  </step-properties>
+  <epp-triggers/>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Bioanalyzer QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>CaliperGX QC 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>CaliperGX QC 5.0 McGill 1.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task / Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 1 - Source Field</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <preset>Size (bp)</preset>
+  <preset>Library Concentration (nM)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 1 - Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>qPCR QC 5.0 McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 2 - Source Field</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <preset>Size (bp)</preset>
+  <preset>Library Concentration (nM)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 2 - Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <preset>qPCR QC 5.0 McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 3 - Source Field</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <preset>A260/280 ratio</preset>
+  <preset>Size (bp)</preset>
+  <preset>Library Concentration (nM)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Copy task 3 - Source Step</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>qPCR QC 5.0 McGill 1.0</preset>
+  <preset>Bioanalyzer QC (DNA) 5.0</preset>
+  <preset>qPCR QC 5.0</preset>
+  <preset>Tapestation QC (DNA) 5.0</preset>
+  <preset>CaliperGX QC 5.0 McGill 1.0</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>NanoDrop QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PicoGreen QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>qPCR QC 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>qPCR QC 5.0 McGill 1.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Qubit QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Tapestation QC (DNA) 5.0</name>
+  <attach-to-name>Aggregate QC (Library Validation) 5.0</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Use if available (Priority 5)</preset>
+  <preset>Required (Priority 5)</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<ProcessTemplates>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>qPCR QC 5.0</name>
+  <type>Aggregate QC (Library Validation) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">qPCR QC 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">qPCR QC 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>qPCR QC 5.0 McGill 1.0</name>
+  <type>Aggregate QC (Library Validation) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">qPCR QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">qPCR QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Field">Size (bp)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Step">qPCR QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Tapestation Values</name>
+  <type>Aggregate QC (Library Validation) 5.0</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Bioanalyzer QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="CaliperGX QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Field">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 1 - Source Step">Tapestation QC (DNA) 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Field">Conc. Units</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 2 - Source Step">Tapestation QC (DNA) 5.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Field">Size (bp)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Copy task 3 - Source Step">CaliperGX QC 5.0 McGill 1.0</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="NanoDrop QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="PicoGreen QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Qubit QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Tapestation QC (DNA) 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0">Use if available (Priority 5)</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="qPCR QC 5.0 McGill 1.0">Use if available (Priority 5)</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+	</ProcessTemplates>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="71" name="MGI Library Validation QC McGill 1.0">
+  <steps>
+    <step name="Aggregate QC (MGI Library Validation) 5.0">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>Aggregate QC (Library Validation) 5.0</process-type>
+      <permitted-containers/>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <permitted-instrument-types/>
+      <transitions/>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <ice-bucket-fields>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </ice-bucket-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Conc. Units"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Size (bp)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="false" name="attemptAutoPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="0/{LIST:Aggregation Script Log,QC Flag Aggregation Log,QC UDF Copy Log}/isAutoAttached=false/locked=false|1/{LIST:Aggregation Script Log,QC Flag Aggregation Log,QC UDF Copy Log}/isAutoAttached=false/locked=false|2/{LIST:Aggregation Script Log,QC Flag Aggregation Log,QC UDF Copy Log}/isAutoAttached=false/locked=false" name="autoAttachFiles"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+        <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="queueDefaultGrouping"/>
+        <step-property value="row" name="queueMultiwellSortOrder"/>
+        <step-property value="false" name="placementSkipAlternatingRows"/>
+        <step-property value="false" name="placementSkipAlternatingColumns"/>
+        <step-property value="column" name="placementDefaultPattern"/>
+        <step-property value="containerGroup" name="placementDefaultGrouping"/>
+        <step-property value="row" name="placementMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="poolingDefaultGrouping"/>
+        <step-property value="row" name="poolingMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="iceBucketDefaultGrouping"/>
+        <step-property value="row" name="iceBucketMultiwellSortOrder"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="Aggregate QC Flags and Copy Fields"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="qc" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

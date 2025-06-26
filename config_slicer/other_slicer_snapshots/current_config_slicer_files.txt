@@ -1,0 +1,4 @@
+config_slicer/2019/0.1/20190723_bravotestapp_manifest_w_iSeq.txt
+config_slicer/2019/0.1/20190723_bravotestapp_manifest_w_iSeq.txt.xml
+config_slicer/2019/0.1/20190729_bravotestapp_manifest_p_Pool_and_Capture.txt
+config_slicer/2019/0.1/20190729_bravotestapp_manifest_p_Pool_and_Capture.txt.xml

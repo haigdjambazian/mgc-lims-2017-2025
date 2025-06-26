@@ -1,0 +1,926 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A1">
+  <special-type name="Index">
+    <attribute value="GGTTTACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A10">
+  <special-type name="Index">
+    <attribute value="GAAACCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A11">
+  <special-type name="Index">
+    <attribute value="GTCCGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A12">
+  <special-type name="Index">
+    <attribute value="AGTGGAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A2">
+  <special-type name="Index">
+    <attribute value="TTTCATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A3">
+  <special-type name="Index">
+    <attribute value="CAGTACTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A4">
+  <special-type name="Index">
+    <attribute value="TATGATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A5">
+  <special-type name="Index">
+    <attribute value="CTAGGTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A6">
+  <special-type name="Index">
+    <attribute value="CGCTATGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A7">
+  <special-type name="Index">
+    <attribute value="ACAGAGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A8">
+  <special-type name="Index">
+    <attribute value="GCATCTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-A9">
+  <special-type name="Index">
+    <attribute value="TCTTAAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B1">
+  <special-type name="Index">
+    <attribute value="GTAATCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B10">
+  <special-type name="Index">
+    <attribute value="ACCGTATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B11">
+  <special-type name="Index">
+    <attribute value="GTTCCTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B12">
+  <special-type name="Index">
+    <attribute value="TACCACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B2">
+  <special-type name="Index">
+    <attribute value="TACTCTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B3">
+  <special-type name="Index">
+    <attribute value="GTGTATTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B4">
+  <special-type name="Index">
+    <attribute value="ACTTCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B5">
+  <special-type name="Index">
+    <attribute value="AATAATGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B6">
+  <special-type name="Index">
+    <attribute value="CGTTAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B7">
+  <special-type name="Index">
+    <attribute value="AAACCTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B8">
+  <special-type name="Index">
+    <attribute value="AAAGTGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-B9">
+  <special-type name="Index">
+    <attribute value="CTGTAACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C1">
+  <special-type name="Index">
+    <attribute value="CCACTTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C10">
+  <special-type name="Index">
+    <attribute value="TCTCAGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C11">
+  <special-type name="Index">
+    <attribute value="GAGGATCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C12">
+  <special-type name="Index">
+    <attribute value="TCTCGTTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C2">
+  <special-type name="Index">
+    <attribute value="CCTAGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C3">
+  <special-type name="Index">
+    <attribute value="TCAGCCGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C4">
+  <special-type name="Index">
+    <attribute value="ACAATTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C5">
+  <special-type name="Index">
+    <attribute value="CGACTTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C6">
+  <special-type name="Index">
+    <attribute value="ATTACTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C7">
+  <special-type name="Index">
+    <attribute value="GTCTCTCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C8">
+  <special-type name="Index">
+    <attribute value="GTTGAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-C9">
+  <special-type name="Index">
+    <attribute value="GCGCAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D1">
+  <special-type name="Index">
+    <attribute value="CACTCGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D10">
+  <special-type name="Index">
+    <attribute value="CAATACCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D11">
+  <special-type name="Index">
+    <attribute value="CTTTGCGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D12">
+  <special-type name="Index">
+    <attribute value="GCACAATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D2">
+  <special-type name="Index">
+    <attribute value="TAACAAGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D3">
+  <special-type name="Index">
+    <attribute value="ACATTACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D4">
+  <special-type name="Index">
+    <attribute value="CCCTAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D5">
+  <special-type name="Index">
+    <attribute value="CTCGTCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D6">
+  <special-type name="Index">
+    <attribute value="CATGCGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D7">
+  <special-type name="Index">
+    <attribute value="ATTTGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D8">
+  <special-type name="Index">
+    <attribute value="GCAACAAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-D9">
+  <special-type name="Index">
+    <attribute value="AGGAGATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E1">
+  <special-type name="Index">
+    <attribute value="TGGTAAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E10">
+  <special-type name="Index">
+    <attribute value="AAATGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E11">
+  <special-type name="Index">
+    <attribute value="AAGCGCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E12">
+  <special-type name="Index">
+    <attribute value="ACCGGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E2">
+  <special-type name="Index">
+    <attribute value="GTGGTACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E3">
+  <special-type name="Index">
+    <attribute value="AGGTATTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E4">
+  <special-type name="Index">
+    <attribute value="TTCGCCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E5">
+  <special-type name="Index">
+    <attribute value="CATTAGCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E6">
+  <special-type name="Index">
+    <attribute value="CTGCGGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E7">
+  <special-type name="Index">
+    <attribute value="CACGCCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E8">
+  <special-type name="Index">
+    <attribute value="ATAGTTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-E9">
+  <special-type name="Index">
+    <attribute value="TTGTTTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F1">
+  <special-type name="Index">
+    <attribute value="GTTGCAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F10">
+  <special-type name="Index">
+    <attribute value="GCTTGGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F11">
+  <special-type name="Index">
+    <attribute value="GCGAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F12">
+  <special-type name="Index">
+    <attribute value="TGATGCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F2">
+  <special-type name="Index">
+    <attribute value="TTTACATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F3">
+  <special-type name="Index">
+    <attribute value="TTCAGGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F4">
+  <special-type name="Index">
+    <attribute value="CCCAATAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F5">
+  <special-type name="Index">
+    <attribute value="GACTACGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F6">
+  <special-type name="Index">
+    <attribute value="CGGAGCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F7">
+  <special-type name="Index">
+    <attribute value="CGTGCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F8">
+  <special-type name="Index">
+    <attribute value="CATGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-F9">
+  <special-type name="Index">
+    <attribute value="CAAGCTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G1">
+  <special-type name="Index">
+    <attribute value="ATGAATCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G10">
+  <special-type name="Index">
+    <attribute value="TCGCCAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G11">
+  <special-type name="Index">
+    <attribute value="TTATCGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G12">
+  <special-type name="Index">
+    <attribute value="ATTCTAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G2">
+  <special-type name="Index">
+    <attribute value="TGATTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G3">
+  <special-type name="Index">
+    <attribute value="CCTCATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G4">
+  <special-type name="Index">
+    <attribute value="GCGATGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G5">
+  <special-type name="Index">
+    <attribute value="GAGCAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G6">
+  <special-type name="Index">
+    <attribute value="CTGACGCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G7">
+  <special-type name="Index">
+    <attribute value="GGTATGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G8">
+  <special-type name="Index">
+    <attribute value="TATGAGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-G9">
+  <special-type name="Index">
+    <attribute value="TAGGACGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H1">
+  <special-type name="Index">
+    <attribute value="GTATGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H10">
+  <special-type name="Index">
+    <attribute value="GTAATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H11">
+  <special-type name="Index">
+    <attribute value="GGCGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H12">
+  <special-type name="Index">
+    <attribute value="GACAGCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H2">
+  <special-type name="Index">
+    <attribute value="TAATGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H3">
+  <special-type name="Index">
+    <attribute value="CCAAGATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H4">
+  <special-type name="Index">
+    <attribute value="GCCATTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H5">
+  <special-type name="Index">
+    <attribute value="CCACTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H6">
+  <special-type name="Index">
+    <attribute value="TAGGATAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H7">
+  <special-type name="Index">
+    <attribute value="AGCTATCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H8">
+  <special-type name="Index">
+    <attribute value="TTGTTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-GA-H9">
+  <special-type name="Index">
+    <attribute value="ACACTGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Chromium_SC3_v2</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>cDNA PCR cycles</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cell Conc. (cells/ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cell Viability (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Cell Viability Method</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Live/Dead</preset>
+  <preset>TRIPAN</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Gem Kit Lot</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Index PCR cycles</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Loading Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Sample Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Target Cells</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="10x Genomics Single Cell Feature Barcode">
+  <field-definition name="Chip Lot"/>
+  <field-definition name="Comments"/>
+  <field-definition name="Index PCR cycles"/>
+  <field-definition name="Library Kit Lot"/>
+  <field-definition name="Library Kit Name"/>
+  <field-definition name="cDNA PCR cycles"/>
+  <field-definition name="i7 Multiplex Kit Lot"/>
+  <parameter name="0. Auto Next">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'nextStep = ::ADVANCE::' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Print plate barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}-{AppliedReagentLabels}</output-name>
+    <assign-working-flag>false</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="AddReagentsImmediately">true</process-type-attribute>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PCR</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="DisplaceInputs">false</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Reagent Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ReagentType">N7</process-type-attribute>
+  <process-type-attribute name="ReagentVolume">1.0</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">12</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">8</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>cDNA PCR cycles</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Chip Lot</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Text">
+  <name>Comments</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>i7 Multiplex Kit Lot</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Index PCR cycles</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Lot</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Name</name>
+  <attach-to-name>10x Genomics Single Cell Feature Barcode</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Single Cell 3' Reagent Kits [v3.0 - Cell Surface Protein]</preset>
+  <preset>Single Cell 3' Reagent Kits [v3.0 - CRISPR Screening]</preset>
+  <preset>Next GEM Single Cell 3' Reagent Kits [v3.1 - Cell Surface Protein]</preset>
+  <preset>Next GEM Single Cell 3' Reagent Kits [v3.1 - CRISPR Screening]</preset>
+  <preset>Single Cell V(D)J Reagent Kits [v1.0 - Cell Surface Protein]</preset>
+  <preset>Next GEM Single Cell V(D)J Reagent Kits [v1.1 - Cell Surface Protein]</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="16" name="10x Genomics Single Cell Feature Barcode Library">
+  <steps>
+    <step name="10x Genomics Single Cell Feature Barcode">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>10x Genomics Single Cell Feature Barcode</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>Chromium_SC3_v2</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="cDNA PCR cycles"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Chip Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Comments"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="i7 Multiplex Kit Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Index PCR cycles"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Kit Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Kit Name"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cell Conc. (cells/ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Loading Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Sample Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Target Cells"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cell Viability (%)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cell Viability Method"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="cDNA PCR cycles"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Index PCR cycles"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Gem Kit Lot"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="column" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0. Auto Next"/>
+        <epp-trigger type="UNUSED" name="1. Print plate barcodes"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

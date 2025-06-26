@@ -1,0 +1,61 @@
+# Generated from https://bravoprodapp.genome.mcgill.ca/ at Tue Nov 05 16:56:26 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate
+
+# Manifest for Reagent Types
+ReagentTypes=\
+Index_1,\
+Index_10,\
+Index_11,\
+Index_12,\
+Index_13,\
+Index_14,\
+Index_15,\
+Index_16,\
+Index_18,\
+Index_19,\
+Index_2,\
+Index_20,\
+Index_21,\
+Index_22,\
+Index_23,\
+Index_25,\
+Index_27,\
+Index_3,\
+Index_4,\
+Index_5,\
+Index_6,\
+Index_7,\
+Index_8,\
+Index_9,\
+TruSeq LT McGill
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Library Volume (ul),\
+Sample Name,\
+Waiting
+
+# Manifest for Process Types
+ProcessTypes=\
+Hi-C Library Prep.
+
+# Manifest for Protocols
+Protocols=\
+Hi-C Library Prep.
+

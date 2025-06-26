@@ -1,0 +1,78 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Wed Mar 20 13:52:48 GMT 2019
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+384 well plate,\
+96 well plate,\
+Tube
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Area/Room,\
+Box,\
+Conc. Units,\
+Concentration,\
+Floor,\
+Freezer,\
+Go To Next Step,\
+Index Cycles,\
+LIMS ID (Derived Sample),\
+Library Volume (ul),\
+Library Volume To Use (ul),\
+Number of Sample in Pool,\
+Pool Volume (ul),\
+Pooling Fraction,\
+Pooling Group,\
+Pooling QC,\
+Sample Name,\
+Sample Tag,\
+Shelf,\
+Size (bp),\
+Volume QC,\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+A260/280 ratio,\
+Conc. Units,\
+Concentration,\
+File,\
+FileURI,\
+Molarity (nmol/L),\
+Region,\
+Size (bp),\
+Size at Max (bp),\
+Volume Used (ul)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0,\
+CaliperGX QC 5.0 McGill 1.0,\
+Capture,\
+Library Batch,\
+Library Normalization for Pooling,\
+qPCR QC 5.0 McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+Library Batch,\
+Library Validation QC McGill 1.0,\
+Pool and Capture
+
+# Manifest for Workflows
+Workflows=\
+MCC_WF_20190228
+

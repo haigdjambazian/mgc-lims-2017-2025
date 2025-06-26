@@ -1,0 +1,2365 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01A_H701-H505">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01B_H702-H517">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01C_H703-H506">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01D_H705-H503">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01E_H706-H516">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01F_H710-H522">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01G_H711-H513">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="01H_H714-H510">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02A_H702-H506">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02B_H703-H505">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02C_H701-H517">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02D_H707-H503">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02E_H712-H516">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02F_H711-H510">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02G_H714-H522">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="02H_H710-H513">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03A_H703-H517">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03B_H701-H506">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03C_H702-H505">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03D_H723-H503">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03E_H720-H516">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03F_H714-H513">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03G_H710-H510">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="03H_H711-H522">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04A_H705-H505">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04B_H707-H517">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04C_H723-H506">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04D_H706-H503">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04E_H710-H516">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04F_H701-H522">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04G_H702-H513">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="04H_H703-H510">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05A_H707-H506">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05B_H723-H505">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05C_H705-H517">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05D_H712-H503">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05E_H711-H516">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05F_H702-H510">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05G_H703-H522">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="05H_H701-H513">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06A_H723-H517">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06B_H705-H506">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06C_H707-H505">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06D_H720-H503">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06E_H714-H516">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06F_H703-H513">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06G_H701-H510">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="06H_H702-H522">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07A_H706-H505">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07B_H712-H517">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07C_H720-H506">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07D_H710-H503">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07E_H701-H516">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07F_H705-H522">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07G_H707-H513">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="07H_H723-H510">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08A_H712-H506">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08B_H720-H505">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08C_H706-H517">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08D_H711-H503">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08E_H702-H516">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08F_H707-H510">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08G_H723-H522">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="08H_H705-H513">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09A_H720-H517">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09B_H706-H506">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09C_H712-H505">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09D_H714-H503">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09E_H703-H516">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09F_H723-H513">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09G_H705-H510">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="09H_H707-H522">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10A_H710-H505">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10B_H711-H517">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10C_H714-H506">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10D_H701-H503">
+  <special-type name="Index">
+    <attribute value="TCGCCTTA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10E_H705-H516">
+  <special-type name="Index">
+    <attribute value="AGGAGTCC-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10F_H706-H522">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10G_H712-H513">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="10H_H720-H510">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11A_H711-H506">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11B_H714-H505">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11C_H710-H517">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11D_H702-H503">
+  <special-type name="Index">
+    <attribute value="CTAGTACG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11E_H707-H516">
+  <special-type name="Index">
+    <attribute value="GTAGAGAG-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11F_H712-H510">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11G_H720-H522">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="11H_H706-H513">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12A_H714-H517">
+  <special-type name="Index">
+    <attribute value="TCATGAGC-GCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12B_H710-H506">
+  <special-type name="Index">
+    <attribute value="CAGCCTCG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12C_H711-H505">
+  <special-type name="Index">
+    <attribute value="TGCCTCTT-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12D_H703-H503">
+  <special-type name="Index">
+    <attribute value="TTCTGCCT-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12E_H723-H516">
+  <special-type name="Index">
+    <attribute value="GAGCGCTA-CCTAGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12F_H720-H513">
+  <special-type name="Index">
+    <attribute value="AGGCTCCG-TCGACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12G_H706-H510">
+  <special-type name="Index">
+    <attribute value="CATGCCTA-CGTCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="12H_H712-H522">
+  <special-type name="Index">
+    <attribute value="TCCTCTAC-TTATGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera Dual Index Plate</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU701-IDTU501">
+  <special-type name="Index">
+    <attribute value="CTGATCGT-ATATGCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU702-IDTU502">
+  <special-type name="Index">
+    <attribute value="ACTCTCGA-TGGTACAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU703-IDTU503">
+  <special-type name="Index">
+    <attribute value="TGAGCTAG-AACCGTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU704-IDTU504">
+  <special-type name="Index">
+    <attribute value="GAGACGAT-TAACCGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU705-IDTU505">
+  <special-type name="Index">
+    <attribute value="CTTGTCGA-GAACATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU706-IDTU506">
+  <special-type name="Index">
+    <attribute value="TTCCAAGG-CCTTGTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU707-IDTU507">
+  <special-type name="Index">
+    <attribute value="CGCATGAT-TCAGGCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU708-IDTU508">
+  <special-type name="Index">
+    <attribute value="ACGGAACA-GTTCTCGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU709-IDTU509">
+  <special-type name="Index">
+    <attribute value="CGGCTAAT-AGAACGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU710-IDTU510">
+  <special-type name="Index">
+    <attribute value="ATCGATCG-TGCTTCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU711-IDTU511">
+  <special-type name="Index">
+    <attribute value="GCAAGATC-CTTCGACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU712-IDTU512">
+  <special-type name="Index">
+    <attribute value="GCTATCCT-CACCTGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU713-IDTU513">
+  <special-type name="Index">
+    <attribute value="TACGCTAC-ATCACACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU714-IDTU514">
+  <special-type name="Index">
+    <attribute value="TGGACTCT-CCGTAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU715-IDTU515">
+  <special-type name="Index">
+    <attribute value="AGAGTAGC-TACGCCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU716-IDTU516">
+  <special-type name="Index">
+    <attribute value="ATCCAGAG-CGACGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU717-IDTU517">
+  <special-type name="Index">
+    <attribute value="GACGATCT-ATGCACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU718-IDTU518">
+  <special-type name="Index">
+    <attribute value="AACTGAGC-CCTGATTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU719-IDTU519">
+  <special-type name="Index">
+    <attribute value="CTTAGGAC-GTAGGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU720-IDTU520">
+  <special-type name="Index">
+    <attribute value="GTGCCATA-ACTAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU721-IDTU521">
+  <special-type name="Index">
+    <attribute value="GAATCCGA-CACTAGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU722-IDTU522">
+  <special-type name="Index">
+    <attribute value="TCGCTGTT-ACGACTTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU723-IDTU523">
+  <special-type name="Index">
+    <attribute value="TTCGTTGG-CGTGTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU724-IDTU524">
+  <special-type name="Index">
+    <attribute value="AAGCACTG-GTTGACCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU725-IDTU525">
+  <special-type name="Index">
+    <attribute value="CCTTGATC-ACTCCATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU726-IDTU526">
+  <special-type name="Index">
+    <attribute value="GTCGAAGA-CAATGTGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU727-IDTU527">
+  <special-type name="Index">
+    <attribute value="ACCACGAT-TTGCAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU728-IDTU528">
+  <special-type name="Index">
+    <attribute value="GATTACCG-CAGTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU729-IDTU529">
+  <special-type name="Index">
+    <attribute value="GCACAACT-ACGTTCAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU730-IDTU530">
+  <special-type name="Index">
+    <attribute value="GCGTCATT-AACGTCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU731-IDTU531">
+  <special-type name="Index">
+    <attribute value="ATCCGGTA-TATCGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU732-IDTU532">
+  <special-type name="Index">
+    <attribute value="CGTTGCAA-CGCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU733-IDTU533">
+  <special-type name="Index">
+    <attribute value="GTGAAGTG-GATTGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU734-IDTU534">
+  <special-type name="Index">
+    <attribute value="CATGGCTA-GATGTGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU735-IDTU535">
+  <special-type name="Index">
+    <attribute value="ATGCCTGT-CGCAATCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU736-IDTU536">
+  <special-type name="Index">
+    <attribute value="CAACACCT-TGGTAGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU737-IDTU537">
+  <special-type name="Index">
+    <attribute value="TGTGACTG-GATAGGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU738-IDTU538">
+  <special-type name="Index">
+    <attribute value="GTCATCGA-AGTGGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU739-IDTU539">
+  <special-type name="Index">
+    <attribute value="AGCACTTC-TTGGACGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU740-IDTU540">
+  <special-type name="Index">
+    <attribute value="GAAGGAAG-ATGACGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU741-IDTU541">
+  <special-type name="Index">
+    <attribute value="GTTGTTCG-GAAGTTGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU742-IDTU542">
+  <special-type name="Index">
+    <attribute value="CGGTTGTT-CATACCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU743-IDTU543">
+  <special-type name="Index">
+    <attribute value="ACTGAGGT-CTGTTGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU744-IDTU544">
+  <special-type name="Index">
+    <attribute value="TGAAGACG-TGGCATGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU745-IDTU545">
+  <special-type name="Index">
+    <attribute value="GTTACGCA-ATCGCCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU746-IDTU546">
+  <special-type name="Index">
+    <attribute value="AGCGTGTT-TTGCGAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU747-IDTU547">
+  <special-type name="Index">
+    <attribute value="GATCGAGT-AGTTCGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU748-IDTU548">
+  <special-type name="Index">
+    <attribute value="ACAGCTCA-GAGCAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU749-IDTU549">
+  <special-type name="Index">
+    <attribute value="GAGCAGTA-ACAGCTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU750-IDTU550">
+  <special-type name="Index">
+    <attribute value="AGTTCGTC-GATCGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU751-IDTU551">
+  <special-type name="Index">
+    <attribute value="TTGCGAAG-AGCGTGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU752-IDTU552">
+  <special-type name="Index">
+    <attribute value="ATCGCCAT-GTTACGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU753-IDTU553">
+  <special-type name="Index">
+    <attribute value="TGGCATGT-TGAAGACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU754-IDTU554">
+  <special-type name="Index">
+    <attribute value="CTGTTGAC-ACTGAGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU755-IDTU555">
+  <special-type name="Index">
+    <attribute value="CATACCAC-CGGTTGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU756-IDTU556">
+  <special-type name="Index">
+    <attribute value="GAAGTTGG-GTTGTTCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU757-IDTU557">
+  <special-type name="Index">
+    <attribute value="ATGACGTC-GAAGGAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU758-IDTU558">
+  <special-type name="Index">
+    <attribute value="TTGGACGT-AGCACTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU759-IDTU559">
+  <special-type name="Index">
+    <attribute value="AGTGGATC-GTCATCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU760-IDTU560">
+  <special-type name="Index">
+    <attribute value="GATAGGCT-TGTGACTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU761-IDTU561">
+  <special-type name="Index">
+    <attribute value="TGGTAGCT-CAACACCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU762-IDTU562">
+  <special-type name="Index">
+    <attribute value="CGCAATCT-ATGCCTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU763-IDTU563">
+  <special-type name="Index">
+    <attribute value="GATGTGTG-CATGGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU764-IDTU564">
+  <special-type name="Index">
+    <attribute value="GATTGCTC-GTGAAGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU765-IDTU565">
+  <special-type name="Index">
+    <attribute value="CGCTCTAT-CGTTGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU766-IDTU566">
+  <special-type name="Index">
+    <attribute value="TATCGGTC-ATCCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU767-IDTU567">
+  <special-type name="Index">
+    <attribute value="AACGTCTG-GCGTCATT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU768-IDTU568">
+  <special-type name="Index">
+    <attribute value="ACGTTCAG-GCACAACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU769-IDTU569">
+  <special-type name="Index">
+    <attribute value="CAGTCCAA-GATTACCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU770-IDTU570">
+  <special-type name="Index">
+    <attribute value="TTGCAGAC-ACCACGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU771-IDTU571">
+  <special-type name="Index">
+    <attribute value="CAATGTGG-GTCGAAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU772-IDTU572">
+  <special-type name="Index">
+    <attribute value="ACTCCATC-CCTTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU773-IDTU573">
+  <special-type name="Index">
+    <attribute value="GTTGACCT-AAGCACTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU774-IDTU574">
+  <special-type name="Index">
+    <attribute value="CGTGTGTA-TTCGTTGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU775-IDTU575">
+  <special-type name="Index">
+    <attribute value="ACGACTTG-TCGCTGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU776-IDTU576">
+  <special-type name="Index">
+    <attribute value="CACTAGCT-GAATCCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU777-IDTU577">
+  <special-type name="Index">
+    <attribute value="ACTAGGAG-GTGCCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU778-IDTU578">
+  <special-type name="Index">
+    <attribute value="GTAGGAGT-CTTAGGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU779-IDTU579">
+  <special-type name="Index">
+    <attribute value="CCTGATTG-AACTGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU780-IDTU580">
+  <special-type name="Index">
+    <attribute value="ATGCACGA-GACGATCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU781-IDTU581">
+  <special-type name="Index">
+    <attribute value="CGACGTTA-ATCCAGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU782-IDTU582">
+  <special-type name="Index">
+    <attribute value="TACGCCTT-AGAGTAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU783-IDTU583">
+  <special-type name="Index">
+    <attribute value="CCGTAAGA-TGGACTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU784-IDTU584">
+  <special-type name="Index">
+    <attribute value="ATCACACG-TACGCTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU785-IDTU585">
+  <special-type name="Index">
+    <attribute value="CACCTGTT-GCTATCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU786-IDTU586">
+  <special-type name="Index">
+    <attribute value="CTTCGACT-GCAAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU787-IDTU587">
+  <special-type name="Index">
+    <attribute value="TGCTTCCA-ATCGATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU788-IDTU588">
+  <special-type name="Index">
+    <attribute value="AGAACGAG-CGGCTAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU789-IDTU589">
+  <special-type name="Index">
+    <attribute value="GTTCTCGT-ACGGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU790-IDTU590">
+  <special-type name="Index">
+    <attribute value="TCAGGCTT-CGCATGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU791-IDTU591">
+  <special-type name="Index">
+    <attribute value="CCTTGTAG-TTCCAAGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU792-IDTU592">
+  <special-type name="Index">
+    <attribute value="GAACATCG-CTTGTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU793-IDTU593">
+  <special-type name="Index">
+    <attribute value="TAACCGGT-GAGACGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU794-IDTU594">
+  <special-type name="Index">
+    <attribute value="AACCGTTC-TGAGCTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU795-IDTU595">
+  <special-type name="Index">
+    <attribute value="TGGTACAG-ACTCTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="IDTU796-IDTU596">
+  <special-type name="Index">
+    <attribute value="ATATGCGC-CTGATCGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>IDT UDI UMI no-well</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI701-ILLUDI501">
+  <special-type name="Index">
+    <attribute value="CCGCGGTT-AGCGCTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI702-ILLUDI502">
+  <special-type name="Index">
+    <attribute value="TTATAACC-GATATCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI703-ILLUDI503">
+  <special-type name="Index">
+    <attribute value="GGACTTGG-CGCAGACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI704-ILLUDI504">
+  <special-type name="Index">
+    <attribute value="AAGTCCAA-TATGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI705-ILLUDI505">
+  <special-type name="Index">
+    <attribute value="ATCCACTG-AGGTGCGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI706-ILLUDI506">
+  <special-type name="Index">
+    <attribute value="GCTTGTCA-GAACATAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI707-ILLUDI507">
+  <special-type name="Index">
+    <attribute value="CAAGCTAG-ACATAGCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI708-ILLUDI508">
+  <special-type name="Index">
+    <attribute value="TGGATCGA-GTGCGATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI709-ILLUDI509">
+  <special-type name="Index">
+    <attribute value="AGTTCAGG-CCAACAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI710-ILLUDI510">
+  <special-type name="Index">
+    <attribute value="GACCTGAA-TTGGTGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI711-ILLUDI511">
+  <special-type name="Index">
+    <attribute value="TCTCTACT-CGCGGTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI712-ILLUDI512">
+  <special-type name="Index">
+    <attribute value="CTCTCGTC-TATAACCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI713-ILLUDI513">
+  <special-type name="Index">
+    <attribute value="CCAAGTCT-AAGGATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI714-ILLUDI514">
+  <special-type name="Index">
+    <attribute value="TTGGACTC-GGAAGCAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI715-ILLUDI515">
+  <special-type name="Index">
+    <attribute value="GGCTTAAG-TCGTGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI716-ILLUDI516">
+  <special-type name="Index">
+    <attribute value="AATCCGGA-CTACAGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI717-ILLUDI517">
+  <special-type name="Index">
+    <attribute value="TAATACAG-ATATTCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI718-ILLUDI518">
+  <special-type name="Index">
+    <attribute value="CGGCGTGA-GCGCCTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI719-ILLUDI519">
+  <special-type name="Index">
+    <attribute value="ATGTAAGT-ACTCTATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI720-ILLUDI520">
+  <special-type name="Index">
+    <attribute value="GCACGGAC-GTCTCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI721-ILLUDI521">
+  <special-type name="Index">
+    <attribute value="GGTACCTT-AAGACGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI722-ILLUDI522">
+  <special-type name="Index">
+    <attribute value="AACGTTCC-GGAGTACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI723-ILLUDI523">
+  <special-type name="Index">
+    <attribute value="GCAGAATT-ACCGGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI724-ILLUDI524">
+  <special-type name="Index">
+    <attribute value="ATGAGGCC-GTTAATTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI725-ILLUDI525">
+  <special-type name="Index">
+    <attribute value="ACTAAGAT-AACCGCGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI726-ILLUDI526">
+  <special-type name="Index">
+    <attribute value="GTCGGAGC-GGTTATAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI727-ILLUDI527">
+  <special-type name="Index">
+    <attribute value="CTTGGTAT-CCAAGTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI728-ILLUDI528">
+  <special-type name="Index">
+    <attribute value="TCCAACGC-TTGGACTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI729-ILLUDI529">
+  <special-type name="Index">
+    <attribute value="CCGTGAAG-CAGTGGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI730-ILLUDI530">
+  <special-type name="Index">
+    <attribute value="TTACAGGA-TGACAAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI731-ILLUDI531">
+  <special-type name="Index">
+    <attribute value="GGCATTCT-CTAGCTTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI732-ILLUDI532">
+  <special-type name="Index">
+    <attribute value="AATGCCTC-TCGATCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI733-ILLUDI533">
+  <special-type name="Index">
+    <attribute value="TACCGAGG-CCTGAACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI734-ILLUDI534">
+  <special-type name="Index">
+    <attribute value="CGTTAGAA-TTCAGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI735-ILLUDI535">
+  <special-type name="Index">
+    <attribute value="AGCCTCAT-AGTAGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI736-ILLUDI536">
+  <special-type name="Index">
+    <attribute value="GATTCTGC-GACGAGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI737-ILLUDI537">
+  <special-type name="Index">
+    <attribute value="TCGTAGTG-AGACTTGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI738-ILLUDI538">
+  <special-type name="Index">
+    <attribute value="CTACGACA-GAGTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI739-ILLUDI539">
+  <special-type name="Index">
+    <attribute value="TAAGTGGT-CTTAAGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI740-ILLUDI540">
+  <special-type name="Index">
+    <attribute value="CGGACAAC-TCCGGATT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI741-ILLUDI541">
+  <special-type name="Index">
+    <attribute value="ATATGGAT-CTGTATTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI742-ILLUDI542">
+  <special-type name="Index">
+    <attribute value="GCGCAAGC-TCACGCCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI743-ILLUDI543">
+  <special-type name="Index">
+    <attribute value="AAGATACT-ACTTACAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI744-ILLUDI544">
+  <special-type name="Index">
+    <attribute value="GGAGCGTC-GTCCGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI745-ILLUDI545">
+  <special-type name="Index">
+    <attribute value="ATGGCATG-AAGGTACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI746-ILLUDI546">
+  <special-type name="Index">
+    <attribute value="GCAATGCA-GGAACGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI747-ILLUDI547">
+  <special-type name="Index">
+    <attribute value="GTTCCAAT-AATTCTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI748-ILLUDI548">
+  <special-type name="Index">
+    <attribute value="ACCTTGGC-GGCCTCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI749-ILLUDI549">
+  <special-type name="Index">
+    <attribute value="ATATCTCG-ATCTTAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI750-ILLUDI550">
+  <special-type name="Index">
+    <attribute value="GCGCTCTA-GCTCCGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI751-ILLUDI551">
+  <special-type name="Index">
+    <attribute value="AACAGGTT-ATACCAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI752-ILLUDI552">
+  <special-type name="Index">
+    <attribute value="GGTGAACC-GCGTTGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI753-ILLUDI553">
+  <special-type name="Index">
+    <attribute value="CAACAATG-CTTCACGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI754-ILLUDI554">
+  <special-type name="Index">
+    <attribute value="TGGTGGCA-TCCTGTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI755-ILLUDI555">
+  <special-type name="Index">
+    <attribute value="AGGCAGAG-AGAATGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI756-ILLUDI556">
+  <special-type name="Index">
+    <attribute value="GAATGAGA-GAGGCATT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI757-ILLUDI557">
+  <special-type name="Index">
+    <attribute value="TGCGGCGT-CCTCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI758-ILLUDI558">
+  <special-type name="Index">
+    <attribute value="CATAATAC-TTCTAACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI759-ILLUDI559">
+  <special-type name="Index">
+    <attribute value="GATCTATC-ATGAGGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI760-ILLUDI560">
+  <special-type name="Index">
+    <attribute value="AGCTCGCT-GCAGAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI761-ILLUDI561">
+  <special-type name="Index">
+    <attribute value="CGGAACTG-CACTACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI762-ILLUDI562">
+  <special-type name="Index">
+    <attribute value="TAAGGTCA-TGTCGTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI763-ILLUDI563">
+  <special-type name="Index">
+    <attribute value="TTGCCTAG-ACCACTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI764-ILLUDI564">
+  <special-type name="Index">
+    <attribute value="CCATTCGA-GTTGTCCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI765-ILLUDI565">
+  <special-type name="Index">
+    <attribute value="ACACTAAG-ATCCATAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI766-ILLUDI566">
+  <special-type name="Index">
+    <attribute value="GTGTCGGA-GCTTGCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI767-ILLUDI567">
+  <special-type name="Index">
+    <attribute value="TTCCTGTT-AGTATCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI768-ILLUDI568">
+  <special-type name="Index">
+    <attribute value="CCTTCACC-GACGCTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI769-ILLUDI569">
+  <special-type name="Index">
+    <attribute value="GCCACAGG-CATGCCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI770-ILLUDI570">
+  <special-type name="Index">
+    <attribute value="ATTGTGAA-TGCATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI771-ILLUDI571">
+  <special-type name="Index">
+    <attribute value="ACTCGTGT-ATTGGAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI772-ILLUDI572">
+  <special-type name="Index">
+    <attribute value="GTCTACAC-GCCAAGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI773-ILLUDI573">
+  <special-type name="Index">
+    <attribute value="CAATTAAC-CGAGATAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI774-ILLUDI574">
+  <special-type name="Index">
+    <attribute value="TGGCCGGT-TAGAGCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI775-ILLUDI575">
+  <special-type name="Index">
+    <attribute value="AGTACTCC-AACCTGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI776-ILLUDI576">
+  <special-type name="Index">
+    <attribute value="GACGTCTT-GGTTCACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI777-ILLUDI577">
+  <special-type name="Index">
+    <attribute value="TGCGAGAC-CATTGTTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI778-ILLUDI578">
+  <special-type name="Index">
+    <attribute value="CATAGAGT-TGCCACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI779-ILLUDI579">
+  <special-type name="Index">
+    <attribute value="ACAGGCGC-CTCTGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI780-ILLUDI580">
+  <special-type name="Index">
+    <attribute value="GTGAATAT-TCTCATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI781-ILLUDI581">
+  <special-type name="Index">
+    <attribute value="AACTGTAG-ACGCCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI782-ILLUDI582">
+  <special-type name="Index">
+    <attribute value="GGTCACGA-GTATTATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI783-ILLUDI583">
+  <special-type name="Index">
+    <attribute value="CTGCTTCC-GATAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI784-ILLUDI584">
+  <special-type name="Index">
+    <attribute value="TCATCCTT-AGCGAGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI785-ILLUDI585">
+  <special-type name="Index">
+    <attribute value="AGGTTATA-CAGTTCCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI786-ILLUDI586">
+  <special-type name="Index">
+    <attribute value="GAACCGCG-TGACCTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI787-ILLUDI587">
+  <special-type name="Index">
+    <attribute value="CTCACCAA-CTAGGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI788-ILLUDI588">
+  <special-type name="Index">
+    <attribute value="TCTGTTGG-TCGAATGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI789-ILLUDI589">
+  <special-type name="Index">
+    <attribute value="TATCGCAC-CTTAGTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI790-ILLUDI590">
+  <special-type name="Index">
+    <attribute value="CGCTATGT-TCCGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI791-ILLUDI591">
+  <special-type name="Index">
+    <attribute value="GTATGTTC-AACAGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI792-ILLUDI592">
+  <special-type name="Index">
+    <attribute value="ACGCACCT-GGTGAAGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI793-ILLUDI593">
+  <special-type name="Index">
+    <attribute value="TACTCATA-CCTGTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI794-ILLUDI594">
+  <special-type name="Index">
+    <attribute value="CGTCTGCG-TTCACAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI795-ILLUDI595">
+  <special-type name="Index">
+    <attribute value="TCGATATC-ACACGAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="ILLUDI796-ILLUDI596">
+  <special-type name="Index">
+    <attribute value="CTAGCGCT-GTGTAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Illumina Unique Dual Index</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_1">
+  <special-type name="Index">
+    <attribute value="ATCACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_10">
+  <special-type name="Index">
+    <attribute value="TAGCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_11">
+  <special-type name="Index">
+    <attribute value="GGCTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_12">
+  <special-type name="Index">
+    <attribute value="CTTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_13">
+  <special-type name="Index">
+    <attribute value="AGTCAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_14">
+  <special-type name="Index">
+    <attribute value="AGTTCCGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_15">
+  <special-type name="Index">
+    <attribute value="ATGTCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_16">
+  <special-type name="Index">
+    <attribute value="CCGTCCCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_18">
+  <special-type name="Index">
+    <attribute value="GTCCGCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_19">
+  <special-type name="Index">
+    <attribute value="GTGAAACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_2">
+  <special-type name="Index">
+    <attribute value="CGATGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_20">
+  <special-type name="Index">
+    <attribute value="GTGGCCTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_21">
+  <special-type name="Index">
+    <attribute value="GTTTCGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_22">
+  <special-type name="Index">
+    <attribute value="CGTACGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_23">
+  <special-type name="Index">
+    <attribute value="GAGTGGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_25">
+  <special-type name="Index">
+    <attribute value="ACTGATAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_27">
+  <special-type name="Index">
+    <attribute value="ATTCCTTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_3">
+  <special-type name="Index">
+    <attribute value="TTAGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_4">
+  <special-type name="Index">
+    <attribute value="TGACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_5">
+  <special-type name="Index">
+    <attribute value="ACAGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_6">
+  <special-type name="Index">
+    <attribute value="GCCAAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_7">
+  <special-type name="Index">
+    <attribute value="CAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_8">
+  <special-type name="Index">
+    <attribute value="ACTTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Index_9">
+  <special-type name="Index">
+    <attribute value="GATCAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>TruSeq LT McGill</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<ReagentKits>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>AMPure XP Beads PROD</name>
+  <supplier>Beckman Coulter Genomics</supplier>
+  <catalogue-number>A63881</catalogue-number>
+  <website>https://www.beckmancoulter.com/wsrportal/wsr/research-and-discovery/products-and-services/nucleic-acid-sample-preparation/agencourt-ampure-xp-pcr-purification/index.htm</website>
+  <archived>false</archived>
+</kit:reagent-kit>
+	</ReagentKits>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Comments</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="RNASeq">
+  <field-definition name="Ampure Final Size Selection"/>
+  <field-definition name="Ampure Post-Shear"/>
+  <field-definition name="Bisulfite Conversion Kit Lot"/>
+  <field-definition name="Bisulfite Conversion Kit Name"/>
+  <field-definition name="Cycles per Burst (Fragmentation)"/>
+  <field-definition name="Date (Fragmentation)"/>
+  <field-definition name="Duration (s) (Fragmentation)"/>
+  <field-definition name="Duty Cycle (%) (Fragmentation)"/>
+  <field-definition name="Intensity (W) (Fragmentation)"/>
+  <field-definition name="Library Kit Lot"/>
+  <field-definition name="Library Kit Name"/>
+  <field-definition name="Lot Ampure Beads"/>
+  <field-definition name="Mode (Fragmentation)"/>
+  <field-definition name="Number Of Cycles"/>
+  <field-definition name="PCR Enzyme Kit Name"/>
+  <field-definition name="PCR Enzyme Lot"/>
+  <field-definition name="PCR Program"/>
+  <field-definition name="Plate Number (Fragmentation)"/>
+  <field-definition name="Primer Concentration (uM)"/>
+  <field-definition name="Primers Sequence"/>
+  <field-definition name="RNA Input quantity"/>
+  <field-definition name="Sonicator (Fragmentation)"/>
+  <field-definition name="Target Size (bp) (Fragmentation)"/>
+  <field-definition name="Temperature,C (Fragmentation)"/>
+  <field-definition name="Y-dittering (Fragmentation)"/>
+  <field-definition name="gDNA Input quantity (ng)"/>
+  <parameter name="0. Auto Next">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'nextStep = ::ADVANCE::' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Print plate barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>VariableByInput</variability-type>
+    <output-name>{InputItemName}-{AppliedReagentLabels}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="AddReagentsImmediately">true</process-type-attribute>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PCR</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="DisplaceInputs">false</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup"/>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ReagentType">N7</process-type-attribute>
+  <process-type-attribute name="ReagentVolume">1.0</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">12</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">8</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>RNA Input quantity</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Date (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Duty Cycle (%) (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Intensity (W) (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cycles per Burst (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Duration (s) (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Sonicator (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Plate Number (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Mode (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Temperature,C (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Target Size (bp) (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Y-dittering (Fragmentation)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>gDNA Input quantity (ng)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Ampure Post-Shear</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Name</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Lot</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Bisulfite Conversion Kit Name</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Bisulfite Conversion Kit Lot</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Enzyme Kit Name</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Enzyme Lot</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Primers Sequence</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Primer Concentration (uM)</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Program</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Number Of Cycles</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Lot Ampure Beads</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Ampure Final Size Selection</name>
+  <attach-to-name>RNASeq</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="42" name="RNASeq Library">
+  <steps>
+    <step name="RNASeq">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>RNASeq</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>IDT UDI UMI no-well</reagent-category>
+        <reagent-category>Illumina Unique Dual Index</reagent-category>
+        <reagent-category>Nextera Dual Index Plate</reagent-category>
+        <reagent-category>TruSeq LT McGill</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits>
+        <reagent-kit name="AMPure XP Beads PROD"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="RNA Input quantity"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Date (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Cycles per Burst (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Duration (s) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Duty Cycle (%) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Mode (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Intensity (W) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Plate Number (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Sonicator (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Target Size (bp) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Temperature,C (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Y-dittering (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Ampure Final Size Selection"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Ampure Post-Shear"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Kit Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Kit Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Lot Ampure Beads"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Number Of Cycles"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Enzyme Kit Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Enzyme Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Program"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Primer Concentration (uM)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Primers Sequence"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Comments"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="column" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Auto Next"/>
+        <epp-trigger type="MANUAL" name="1. Print plate barcodes"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

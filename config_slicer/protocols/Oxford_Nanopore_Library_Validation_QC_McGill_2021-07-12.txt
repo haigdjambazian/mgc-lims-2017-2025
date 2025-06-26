@@ -1,0 +1,27 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Thu Jul 29 02:53:17 GMT 2021
+
+# Manifest was generated with Config Slicer version 3.2.0.7
+ConfigSlicerVersion=3.2.0.7
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Tube
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Comment,\
+Conc. Units,\
+Concentration,\
+Library Quantity (ng),\
+Size (bp)
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (Library Validation) 5.0,\
+Oxford Nanopore Library Validation Profile
+
+# Manifest for Protocols
+Protocols=\
+Oxford Nanopore Library Validation QC McGill 2021-07-12
+

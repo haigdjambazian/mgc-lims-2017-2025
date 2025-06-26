@@ -1,0 +1,151 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Fri Nov 20 00:13:22 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.2.0.7
+ConfigSlicerVersion=3.2.0.7
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate
+
+# Manifest for Reagent Types
+ReagentTypes=\
+MGI01_A01_Barcode_1,\
+MGI02_B01_Barcode_2,\
+MGI03_C01_Barcode_3,\
+MGI04_D01_Barcode_4,\
+MGI05_E01_Barcode_13,\
+MGI06_F01_Barcode_14,\
+MGI07_G01_Barcode_15,\
+MGI08_H01_Barcode_16,\
+MGI09_A02_Barcode_41,\
+MGI10_B02_Barcode_42,\
+MGI11_C02_Barcode_43,\
+MGI12_D02_Barcode_44,\
+MGI13_E02_Barcode_45,\
+MGI14_F02_Barcode_46,\
+MGI15_G02_Barcode_47,\
+MGI16_H02_Barcode_48,\
+MGI17_A03_Barcode_57,\
+MGI18_B03_Barcode_58,\
+MGI19_C03_Barcode_59,\
+MGI20_D03_Barcode_60,\
+MGI21_E03_Barcode_61,\
+MGI22_F03_Barcode_62,\
+MGI23_G03_Barcode_63,\
+MGI24_H03_Barcode_64,\
+MGI25_A04_Barcode_65,\
+MGI26_B04_Barcode_66,\
+MGI27_C04_Barcode_67,\
+MGI28_D04_Barcode_68,\
+MGI29_E04_Barcode_69,\
+MGI30_F04_Barcode_70,\
+MGI31_G04_Barcode_71,\
+MGI32_H04_Barcode_72,\
+MGI33_A05_Barcode_73,\
+MGI34_B05_Barcode_74,\
+MGI35_C05_Barcode_75,\
+MGI36_D05_Barcode_76,\
+MGI37_E05_Barcode_77,\
+MGI38_F05_Barcode_78,\
+MGI39_G05_Barcode_79,\
+MGI40_H05_Barcode_80,\
+MGI41_A06_Barcode_81,\
+MGI42_B06_Barcode_82,\
+MGI43_C06_Barcode_83,\
+MGI44_D06_Barcode_84,\
+MGI45_E06_Barcode_85,\
+MGI46_F06_Barcode_86,\
+MGI47_G06_Barcode_87,\
+MGI48_H06_Barcode_88,\
+MGI49_A07_Barcode_89,\
+MGI50_B07_Barcode_90,\
+MGI51_C07_Barcode_91,\
+MGI52_D07_Barcode_92,\
+MGI53_E07_Barcode_93,\
+MGI54_F07_Barcode_94,\
+MGI55_G07_Barcode_95,\
+MGI56_H07_Barcode_96,\
+MGI57_A08_Barcode_97,\
+MGI58_B08_Barcode_98,\
+MGI59_C08_Barcode_99,\
+MGI60_D08_Barcode_100,\
+MGI61_E08_Barcode_101,\
+MGI62_F08_Barcode_102,\
+MGI63_G08_Barcode_103,\
+MGI64_H08_Barcode_104,\
+MGI65_A09_Barcode_121,\
+MGI66_B09_Barcode_122,\
+MGI67_C09_Barcode_123,\
+MGI68_D09_Barcode_124,\
+MGI69_E09_Barcode_125,\
+MGI70_F09_Barcode_126,\
+MGI71_G09_Barcode_127,\
+MGI72_H09_Barcode_128,\
+MGI73_A10_Barcode_25,\
+MGI74_B10_Barcode_26,\
+MGI75_C10_Barcode_117,\
+MGI76_D10_Barcode_28,\
+MGI77_E10_Barcode_29,\
+MGI78_F10_Barcode_30,\
+MGI79_G10_Barcode_114,\
+MGI80_H10_Barcode_32,\
+MGI81_A11_Barcode_33,\
+MGI82_B11_Barcode_34,\
+MGI83_C11_Barcode_35,\
+MGI84_D11_Barcode_36,\
+MGI85_E11_Barcode_37,\
+MGI86_F11_Barcode_38,\
+MGI87_G11_Barcode_39,\
+MGI88_H11_Barcode_115,\
+MGI89_A12_Barcode_49,\
+MGI90_B12_Barcode_50,\
+MGI91_C12_Barcode_51,\
+MGI92_D12_Barcode_52,\
+MGI93_E12_Barcode_53,\
+MGI94_F12_Barcode_116,\
+MGI95_G12_Barcode_55,\
+MGI96_H12_Barcode_56,\
+SI-MGIPool-C01A.4plex,\
+SI-MGIPool-C01B.4plex,\
+SI-MGIPool-C02.8plex,\
+SI-MGIPool-C03.8plex,\
+SI-MGIPool-C04.8plex,\
+SI-MGIPool-C05.8plex,\
+SI-MGIPool-C06.8plex,\
+SI-MGIPool-C07.8plex,\
+SI-MGIPool-C08.8plex,\
+SI-MGIPool-C09.8plex,\
+SI-MGIPool-C10-11-12.24plex
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Carrier Barcode,\
+Carrier Coordinate
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Area/Room,\
+Conc. Units,\
+Concentration,\
+Floor,\
+Freezer,\
+Go To Next Step,\
+Library Volume (ul),\
+Pooling Group,\
+Shelf,\
+Tray
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+File
+
+# Manifest for Process Types
+ProcessTypes=\
+DNA Samples QC,\
+Sample Normalization Robot,\
+WGBS MGI
+
+# Manifest for Protocols
+Protocols=\
+WGBS MGI Library
+

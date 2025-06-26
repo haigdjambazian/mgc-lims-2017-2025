@@ -1,0 +1,81 @@
+Manifest v3.0.0,Index Name (eg.),Index Pairing (eg.),Comments,Clarity LIMS v3.0.0 (Internal),Previous Manifest v1.1.1
+10x Genomics - Dual Index Kit NN Set A,SI_NN7_A01,SI_NN5_A01,,10x Genomics Dual Index (NN series),
+10x Genomics - Dual Index Kit NT Set A,SI_NT7_A01,SI_NT5_A01,,,10x Genomics Dual index NT series
+10x Genomics - Dual Index Kit TT Set A,SI_TT7_A01,SI_TT5_A01,,10x Genomics Dual Index (TT series),10x Genomics Dual Index
+10x Genomics - Single Index Kit N (SI-NA-...) Set A,SI-NA-A1,,Sequence 16bp for index 2 (for regular scATAC) or 24bp (for multiome scATAC) for the cell barcode / Do not pool with libraries using index 2 for demultiplexing,10X Single Index Kit N Set A,10x Genomics scATAC
+10x Genomics - Single Index Kit T (SI-GA-...) Set A,SI-GA-A1,,,Chromium_SC3_v2,10x Genomics scDNA/10x Genomics scRNA v2/10x Genomics Linked Reads
+Agilent - HaloPlex HS Target Enrichment (blue/orange/yellow/clear color plates),HaloplexHS_Or01_A01,,Sequence 10bp for index 2 for the unique molecular identifier (UMI) / Do not pool with libraries using index 2 for demultiplexing,HaloplexHS_BluePlate/HaloplexHS_OrangePlate/HaloplexHS_ClearPlate/HaloplexHS_YellowPlate,Agilent Haloplex
+Agilent - SureSelect XT (version 1),SSXT701A,,,Agilent SureSelect XT,Agilent SureSelect XT
+Agilent - SureSelect XT HS (high-sensitivity),SSXTHS701,,,,
+Agilent - SureSelect XT HS (high-sensitivity/version 2) - 3 digit,SSXTHSV27001,SSXTHSV25001,,,Agilent SureSelect XT V2 (384)
+Agilent - SureSelect XT LI (low-input),SSXTLI7001,,,,Sure Select HT Low Input
+Broad Institute - sgRNA (guide RNA) index definition,BROAD_sgRNA_A01,,,,
+Broad Institute - SmartSeq2 index (combinatorial dual),BRD701,BRD501|BRD502|...|BRD524,,,
+Dovetail - HiChIP MNase Kit,DT_Set1_UDI_PrimerPair1_i7,DT_Set1_UDI_PrimerPair1_i5,,,
+GenDX -  NGSgo IndX plate I/II/III/IV (GenDX #2342456),GenDx001_I701,I501|I502|...|I516,,,
+GeoMx - DSP index,i7DSP0001,i5DSP0001,,,GeoMx DSP index
+Illumina - Made by IDT for Illumina-Nextera UDP (version 1),ILLUDP70001,ILLUDP50001,,IDT for Illumina-Nextera DNA and RNA UD Indexes (UDP V1 384 10-10 SET A 1-96) 96-192 etc,
+Illumina - Made by IDT for Illumina-Nextera UDP (version 2),UDP70001,UDP50001,,IDT for Illumina-Nextera DNA and RNA UD Indexes (UDP V2 384 10-10),Illumina IDT Nextera UDP V2
+Illumina - Made by IDT for Illumina-Truseq UDI (version 1),ILLUDI70001,ILLUDI50001,,IDT for Illumina-TruSeq DNA and RNA UD Indexes (UDI V1 96 8-8),Illumina IDT TruSeq UDI V1
+Illumina - Made by IDT for Illumina-Truseq UDI (version 2),UDI70001,UDI50001,,IDT for Illumina-TruSeq DNA and RNA UD Indexes (UDI V2 96 8-8),Illumina IDT TruSeq UDI V2
+Illumina - Nextera DNA CD Indexes (combinatorial dual),H701,H501|H502|...|H522,,,
+Illumina - Nextera Rapid Capture Custom Enrichment Kit,N701,E501|E502|...|E522,,Nextera Enrichment & Rapid Capture Adapters (N7-E5),Illumina Nextera Exome
+Illumina - Nextera XT Index Kit,N701,N501|N502|...|N522,,Nextera DNA Adapters (N7-N5  S7-S5),Illumina Nextera
+Illumina - Nextera XT Index Kit v2,N701,S501|S502|...|S522,,,Illumina Nextera XT v2
+Illumina - TruSeq DNA and RNA CD Indexes,D701,D501|D502|...|D508,,TruSeq HT Adapters (D7-D5),Illumina TruSeq HT
+Illumina - TruSeq Single Indexes,Index_1,,,TruSeq LT McGill,Illumina TruSeq DNA
+Illumina - TruSeq Small RNA,RPI1,,,TruSeq Small RNA Adapters (RPI series),Illumina TruSeq smRNA
+Illumina - TruSight Amplicon Panels,A701,A501|A502|...|A508,,TruSeq Custom Amplicon Adapters (A7-A5),Illumina TruSeq Amplicon
+Integrated DNA Technologies (IDT) - xGen Nextera UDI-non-UMI Adapters 8bp - 3 digit,IDTN7001,IDTN5001,,,IDT Nextera Compatible UDI
+Integrated DNA Technologies (IDT) - xGen UDI-non-UMI Adapters 10bp - 3 digit,IDT_10nt_UDI_i7_001,IDT_10nt_UDI_i5_001,,IDT 10nt UDI TruSeq adapter plate 1/plate2/plate3/plate4,
+Integrated DNA Technologies (IDT) - xGen UDI-non-UMI Adapters 8bp - 2 digit,IDT701,IDT501,,IDT UDI non-UMI no-well,IDT non-UMI Unique Dual Index
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Adapters 8bp - 2 digit,IDTU701,IDTU501,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,IDT UDI UMI no-well,IDT UMI Unique Dual Index
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Adapters 8bp - 3 digit,IDTU7001,IDTU5001,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,IDT UDI UMI 384 no-well,IDT 384 UMI Unique Dual Index
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Methylated Adapters 8bp - 2 digit,IDTMU701,IDTMU501,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,IDT UDI UMI METH no-well,
+Lucigen - NxSeq AmpFREE Low DNA Library Kit,NS_Adaptor_1,,,,
+MGI Tech - MGI Easy DNA Adaptors,MGI01_A01_Barcode_1,,,MGI Easy DNA Adaptors (96),
+MGI Tech - MGI UDB dual index barcodes,MGI_Barcode1_UDB_001,MGI_Barcode2_UDB_001,,MGI UDB dual index barcodes (1-96),
+MGI Tech - Single index balanced pools,SI-MGIPool-C01A.4plex,,,MGI Barcode Pools (11),
+New England Biolabs (NEB) - NEBNext Dual index Multiplex Oligos for Illumina Index Primers Set 2 (NEB #E7780S),NEBNextDi701,NEBNextDi501|NEBNextDi502|...|NEBNextDi516,,,
+New England Biolabs (NEB) - NEBNext Enzymatic Methyl-seq,NEBEM701,NEBEM501,,,
+New England Biolabs (NEB) - NEBNext Multiplex Oligos for Illumina (NEB #E6609),NEBNXT_P01,,,,NEBNext Multiplex Oligos for Illumina (NEB #E6609)
+New England Biolabs (NEB) - NEBNext Multiplex Oligos for Illumina Index Primers Set 1/2/3/4 (NEB #E7335/#E7500/#E7710/#E7730),NEBNextSI7Set1_S01,,,,NEBNext Multiplex Oligos for Illumina Index Primers Set 1 2 3 4 (NEB #E7335  #E7500  #E7710  #E7730)
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set1 (NEB #E6440),NEBNextUDI7_A01,NEBNextUDI5_A01,,NEBNext Unique dual index (non UMI) Set1 (NEB #E6440),NEBNext Unique dual index (non UMI) Set1 (NEB #E6440)
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set2 (NEB #E6442),NEBNextUDI7Set2_A01,NEBNextUDI5Set2_A01,,NEBNext Unique dual index (non UMI) Set2 (NEB #E6442),NEBNext Unique dual index (non UMI) Set2 (NEB #E6442)
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set3 (NEB #E6444),NEBNextUDI7Set3_A01,NEBNextUDI5Set3_A01,,NEBNext Unique dual index (non UMI) Set3 (NEB #E6444),NEBNext Unique dual index (non UMI) Set3 (NEB #E6444)
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set4 (NEB #E6446),NEBNextUDI7Set4_A01,NEBNextUDI5Set4_A01,,NEBNext Unique dual index (non UMI) Set4 (NEB #E6446),NEBNext Unique dual index (non UMI) Set4 (NEB #E6446)
+Omixon - HLA Twin Index (Plates A/B/C),OMIXA001,,,,Omixon
+Oxford Nanopore - Native Barcoding Set,BC01,,,Nanopore Native Barcoding Kit:EXP-NBD196 (column 1 contains ID: 01  02  03  04  05  06  07  08),
+Perkin Elmer - BioO NextFlexChIPSeq (NOVA-514120/NOVA-514121/NOVA-514122/NOVA-514123),BioO_NextFlexChIPSeq_01,,,,Perkin Elmer BioO NextFlexChIPSeq (NOVA-514120  NOVA-514121  NOVA-514122  NOVA-514123)
+Perkin Elmer - Bioo Scientific NEXTflex-96 DNA Barcodes,BioOHT_1,,,BioOHT,
+QIAgen - QIASeq Direct UDI Plates A/B/C/D/E/F/G/H,QIAUDI7001,QIAUDI5001,,QIASeq Direct UDI (PlateA 1-96) B C D E F G H,
+QIAgen - QIAseq miRNA NGS 96 Index IL (QIAgen #331565),QIASeq_miRNA_MIHT01,,,QIAseq miRNA NGS 96 Index IL (cat. no. 331565),
+QIAgen - QIAseq miRNA NGS ILM IPD,QIAmiRNA_IDP01,,,QIAseq miRNA,QIAgen miRNA
+seqWell - seqWell Indices (combinatorial dual),SBX_X101,SBX_X007|SBX_X060|...|SBX_X083,,SeqWell SBX96 Set C - X048,SeqWell Indexes
+Swift Biosciences - Swift Normalase Unique Dual Index,SU7001,SU5001,,Swift Normalase Unique Dual Index (set 1-96) ... 384,Switf adapter
+Tecan - Ovation Solo RNASeq index (S02221/S02238/S02574),OvationSolo_RNASeq_BC001,,,,OvationSolo_RNASeq (S02221  S02238  S02574)
+TwinStrand Biosciences - Twin Strand duplex sequencing,TwinSDP701,TwinSDP501,,,TwinStrand index
+Universal Sequencing - TELL-Seq index,T501,,Sequence 18bp for index 1 to use the molecule barcode - do not pool with libraries using index 1 for demultiplexing,,
+Custom index - Institut de biologie integrative et des systemes (IBIS) combinatorial dual index,B701,B501|B502|...|B516,,,IBIS custom combinatorial dual index
+Custom index - Institut de recherches cliniques de Montreal (IRCM),D701rc,D501|D502|...|D508,,,
+Custom index - Kaestner Lab ATAC-seq Index (version 1),Ad2.1,,Ad2.5 and Ad2.24 have a hamming distance of 2 use force mismatch 0 if pooled,Nextera ATAC Series,Nextera ATAC Series
+Custom index - Kaestner Lab ATAC-seq Index (version 2),v2_Ad2.1,v2_Ad1.1,Indexes # 93/94/95/96 are not defined for the i5 side,,
+Custom index - Made by IDT for McGill - xGen UDI-UMI Like Methylated Adapters,Methyl_TS_UDI_UMI_IDT8nt_i7_01,Methyl_TS_UDI_UMI_IDT8nt_i5_01,Do not use index 96 / Do not mix with other IDT Methylated indexes / These have their i7 shifted with respect to i5 as compared to nornal xGen,IDT custom shifted UMI UDI Methylated (use only 1-95) not compatible with other IDT sets,
+Custom index - McGill DAI Genome-wide CRISPR screening,DAIcrisper_R01,,,,
+Custom index - Schloss Lab 16S rRNA adapters index (SA/SB/SC/SD),SA701,SA501|SA502|...|SA508,,,Schloss Indexes
+
+10x Genomics - Single Index Kit 3A (SI-3A-...),SI-3A-A1,,Discontinued,,
+Agilent - HaloPlex HS Target Enrichment (blue/orange/yellow/clear color plates) - ALT1,HaloPlex_Blue_A01,,,HaloPlex_Blue/HaloPlex_Clear/HaloPlex_Orange/HaloPlex_Yellow,
+Agilent - SureSelect XT HS (high-sensitivity/version 2) - 2 digit - ALT1,SSXTHSV2701,SSXTHSV2501,,Agilent SureSelect XT V2,Agilent SureSelect XT V2 (96)
+GeoMx - DSP index - ALT1,DSP70577,DSP50577,,,
+Illumina - Made by IDT for Illumina TruSeq Unique Dual Index (version 1) - ALT1,ILLUDI701,ILLUDI501,,IDT for Illumina-TruSeq DNA and RNA UD Indexes (UDI V1 96 8-8),
+Illumina - Nextera DNA CD Indexes (combinatorial dual) - ALT1,01A_H701,H501|H502|...|H522,,Nextera Dual Index Plate,
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Adapters 8bp - ALT1,IDT701_A01,IDT501_A01,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,IDT UDI non-UMI v.1.0,
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Adapters 8bp - ALT2,IDTSTUB701_A01,IDTSTUB501_A01,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,,
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Adapters 8bp - ALT3,IDTU701_A01,IDTU501_A01,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,IDT UDI UMI,
+Integrated DNA Technologies (IDT) - xGen UDI-UMI Methylated Adapters 8bp - ALT1,IDTMU749_E01,IDTMU549_E01,Sequence 17bp for Index 2 to use UMI - Do not pool with libraries using longer than a 8bp Index 2,IDT UDI UMI METH,
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set1 (NEB #E6440) - ALT1,01_NEBNextUDI7_A01,NEBNextUDI5_A01,,,
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set2 (NEB #E6442) - ALT1,01_NEBNextUDI7Set2_A01,01_NEBNextUDI5Set2_A01,,,
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set3 (NEB #E6444) - ALT1,01_NEBNextUDI7Set3_A01,01_NEBNextUDI5Set3_A01,,,
+New England Biolabs (NEB) - NEBNext Unique dual index non-UMI Set4 (NEB #E6446) - ALT1,01_NEBNextUDI7Set4_A01,01_NEBNextUDI5Set4_A01,,,
+Oxford Nanopore - Native Barcoding Set - ALT1,NP01_A01_BC01,,,Nanopore Native Barcoding Kit (96 index) (column 1 contains ID: 01  13  25  37  49  61  73  85),

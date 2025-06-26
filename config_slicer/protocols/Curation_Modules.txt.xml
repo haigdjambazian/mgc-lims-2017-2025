@@ -1,0 +1,125 @@
+<config ApiVersion="v2,r27" ConfigSlicerVersion="3.2.0.7">
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Data Curation Module">
+  <parameter name="Update metadata">
+    <string>bash -c -l "/usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/update_udf.py -u {username} -p {password} -r {baseURI} -a {processLuid} -f {compoundOutputFileLuid0} &gt;&gt; {compoundOutputFileLuid1}_DataCurationLog.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>2</number-of-outputs>
+    <output-name>{LIST:Meta data update file,Log file}</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">DAT</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">DA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <permitted-containers/>
+  <permitted-reagent-categories/>
+  <required-reagent-kits/>
+  <permitted-control-types/>
+  <permitted-instrument-types/>
+  <queue-fields>
+    <queue-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+  </queue-fields>
+  <ice-bucket-fields>
+    <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+  </ice-bucket-fields>
+  <step-fields/>
+  <sample-fields/>
+  <step-properties>
+    <step-property value="false" name="qcProtocolStep"/>
+    <step-property value="0/{LIST:Meta data update file,Log file}/isAutoAttached=false|1/{LIST:Meta data update file,Log file}/isAutoAttached=true" name="autoAttachFiles"/>
+    <step-property value="false" name="expandContainerGroupsCheckBox"/>
+    <step-property value="false" name="arrangeFieldsHorizontally"/>
+    <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+    <step-property value="same shape" name="placementDefaultPattern"/>
+    <step-property value="projectGroup" name="queueDefaultGrouping"/>
+    <step-property value="column" name="queueMultiwellSortOrder"/>
+    <step-property value="projectGroup" name="iceBucketDefaultGrouping"/>
+    <step-property value="column" name="iceBucketMultiwellSortOrder"/>
+  </step-properties>
+  <epp-triggers>
+    <epp-trigger type="MANUAL" name="Update metadata"/>
+  </epp-triggers>
+</ptp:process-type>
+	</ProcessTypes>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="72" name="Curation Modules">
+  <steps>
+    <step name="Data Curation Module">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>Data Curation Module</process-type>
+      <permitted-containers/>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <permitted-instrument-types/>
+      <transitions/>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </queue-fields>
+      <ice-bucket-fields>
+        <ice-bucket-field detail="false" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </ice-bucket-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="attemptAutoPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="0/{LIST:Meta data update file,Log file}/isAutoAttached=false/locked=true|1/{LIST:Meta data update file,Log file}/isAutoAttached=true/locked=true" name="autoAttachFiles"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+        <step-property value="column" name="recordDetailsMultiwellSortOrder"/>
+        <step-property value="projectGroup" name="queueDefaultGrouping"/>
+        <step-property value="column" name="queueMultiwellSortOrder"/>
+        <step-property value="false" name="placementSkipAlternatingRows"/>
+        <step-property value="false" name="placementSkipAlternatingColumns"/>
+        <step-property value="same shape" name="placementDefaultPattern"/>
+        <step-property value="containerGroup" name="placementDefaultGrouping"/>
+        <step-property value="row" name="placementMultiwellSortOrder"/>
+        <step-property value="containerGroup" name="poolingDefaultGrouping"/>
+        <step-property value="row" name="poolingMultiwellSortOrder"/>
+        <step-property value="projectGroup" name="iceBucketDefaultGrouping"/>
+        <step-property value="column" name="iceBucketMultiwellSortOrder"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="Update metadata"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="1" name="capacity"/>
+    <protocol-property value="other" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

@@ -1,0 +1,1733 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_1">
+  <special-type name="Index">
+    <attribute value="AACGTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_10">
+  <special-type name="Index">
+    <attribute value="ACAAGCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_11">
+  <special-type name="Index">
+    <attribute value="CTGTAGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_12">
+  <special-type name="Index">
+    <attribute value="AGTACAAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_13">
+  <special-type name="Index">
+    <attribute value="AACAACCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_14">
+  <special-type name="Index">
+    <attribute value="AACCGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_15">
+  <special-type name="Index">
+    <attribute value="AACGCTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_16">
+  <special-type name="Index">
+    <attribute value="AAGACGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_17">
+  <special-type name="Index">
+    <attribute value="AAGGTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_18">
+  <special-type name="Index">
+    <attribute value="ACACAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_19">
+  <special-type name="Index">
+    <attribute value="ACAGCAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_2">
+  <special-type name="Index">
+    <attribute value="AAACATCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_20">
+  <special-type name="Index">
+    <attribute value="ACCTCCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_21">
+  <special-type name="Index">
+    <attribute value="ACGCTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_22">
+  <special-type name="Index">
+    <attribute value="ACGTATCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_23">
+  <special-type name="Index">
+    <attribute value="ACTATGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_24">
+  <special-type name="Index">
+    <attribute value="AGAGTCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_25">
+  <special-type name="Index">
+    <attribute value="AGATCGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_26">
+  <special-type name="Index">
+    <attribute value="AGCAGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_27">
+  <special-type name="Index">
+    <attribute value="AGTCACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_28">
+  <special-type name="Index">
+    <attribute value="ATCCTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_29">
+  <special-type name="Index">
+    <attribute value="ATTGAGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_3">
+  <special-type name="Index">
+    <attribute value="ATGCCTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_30">
+  <special-type name="Index">
+    <attribute value="CAACCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_31">
+  <special-type name="Index">
+    <attribute value="GACTAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_32">
+  <special-type name="Index">
+    <attribute value="CAATGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_33">
+  <special-type name="Index">
+    <attribute value="CACTTCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_34">
+  <special-type name="Index">
+    <attribute value="CAGCGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_35">
+  <special-type name="Index">
+    <attribute value="CATACCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_36">
+  <special-type name="Index">
+    <attribute value="CCAGTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_37">
+  <special-type name="Index">
+    <attribute value="CCGAAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_38">
+  <special-type name="Index">
+    <attribute value="CCGTGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_39">
+  <special-type name="Index">
+    <attribute value="CCTCCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_4">
+  <special-type name="Index">
+    <attribute value="AGTGGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_40">
+  <special-type name="Index">
+    <attribute value="CGAACTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_41">
+  <special-type name="Index">
+    <attribute value="CGACTGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_42">
+  <special-type name="Index">
+    <attribute value="CGCATACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_43">
+  <special-type name="Index">
+    <attribute value="CTCAATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_44">
+  <special-type name="Index">
+    <attribute value="CTGAGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_45">
+  <special-type name="Index">
+    <attribute value="CTGGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_46">
+  <special-type name="Index">
+    <attribute value="GAATCTGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_47">
+  <special-type name="Index">
+    <attribute value="CAAGACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_48">
+  <special-type name="Index">
+    <attribute value="GAGCTGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_49">
+  <special-type name="Index">
+    <attribute value="GATAGACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_5">
+  <special-type name="Index">
+    <attribute value="ACCACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_50">
+  <special-type name="Index">
+    <attribute value="GCCACATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_51">
+  <special-type name="Index">
+    <attribute value="GCGAGTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_52">
+  <special-type name="Index">
+    <attribute value="GCTAACGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_53">
+  <special-type name="Index">
+    <attribute value="GCTCGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_54">
+  <special-type name="Index">
+    <attribute value="GGAGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_55">
+  <special-type name="Index">
+    <attribute value="GGTGCGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_56">
+  <special-type name="Index">
+    <attribute value="GTACGCAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_57">
+  <special-type name="Index">
+    <attribute value="GTCGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_58">
+  <special-type name="Index">
+    <attribute value="GTCTGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_59">
+  <special-type name="Index">
+    <attribute value="GTGTTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_6">
+  <special-type name="Index">
+    <attribute value="ACATTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_61">
+  <special-type name="Index">
+    <attribute value="TATCAGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_62">
+  <special-type name="Index">
+    <attribute value="TCCGTCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_63">
+  <special-type name="Index">
+    <attribute value="TCTTCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_64">
+  <special-type name="Index">
+    <attribute value="TGAAGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_65">
+  <special-type name="Index">
+    <attribute value="TGGAACAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_66">
+  <special-type name="Index">
+    <attribute value="TGGCTTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_67">
+  <special-type name="Index">
+    <attribute value="TGGTGGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_68">
+  <special-type name="Index">
+    <attribute value="TTCACGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_69">
+  <special-type name="Index">
+    <attribute value="AACTCACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_7">
+  <special-type name="Index">
+    <attribute value="CAGATCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_70">
+  <special-type name="Index">
+    <attribute value="AAGAGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_71">
+  <special-type name="Index">
+    <attribute value="AAGGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_73">
+  <special-type name="Index">
+    <attribute value="AATGTTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_74">
+  <special-type name="Index">
+    <attribute value="ACACGACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_75">
+  <special-type name="Index">
+    <attribute value="ACAGATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_76">
+  <special-type name="Index">
+    <attribute value="AGATGTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_77">
+  <special-type name="Index">
+    <attribute value="AGCACCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_78">
+  <special-type name="Index">
+    <attribute value="AGCCATGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_79">
+  <special-type name="Index">
+    <attribute value="AGGCTAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_8">
+  <special-type name="Index">
+    <attribute value="CATCAAGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_80">
+  <special-type name="Index">
+    <attribute value="ATAGCGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_81">
+  <special-type name="Index">
+    <attribute value="ATCATTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_82">
+  <special-type name="Index">
+    <attribute value="ATTGGCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_83">
+  <special-type name="Index">
+    <attribute value="CAAGGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_85">
+  <special-type name="Index">
+    <attribute value="CCATCCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_86">
+  <special-type name="Index">
+    <attribute value="CCGACAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_87">
+  <special-type name="Index">
+    <attribute value="CCTAATCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_88">
+  <special-type name="Index">
+    <attribute value="CCTCTATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_89">
+  <special-type name="Index">
+    <attribute value="CGACACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_9">
+  <special-type name="Index">
+    <attribute value="CGCTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_90">
+  <special-type name="Index">
+    <attribute value="CGGATTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_91">
+  <special-type name="Index">
+    <attribute value="CTAAGGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_92">
+  <special-type name="Index">
+    <attribute value="GAACAGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_93">
+  <special-type name="Index">
+    <attribute value="GACAGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_94">
+  <special-type name="Index">
+    <attribute value="GAGTTAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="BioOHT_95">
+  <special-type name="Index">
+    <attribute value="GATGAATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>BioOHT</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<ReagentKits>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>AMPure XP Beads PROD</name>
+  <supplier>Beckman Coulter Genomics</supplier>
+  <catalogue-number>A63881</catalogue-number>
+  <website>https://www.beckmancoulter.com/wsrportal/wsr/research-and-discovery/products-and-services/nucleic-acid-sample-preparation/agencourt-ampure-xp-pcr-purification/index.htm</website>
+  <archived>false</archived>
+</kit:reagent-kit>
+<kit:reagent-kit xmlns:kit="http://genologics.com/ri/reagentkit">
+  <name>NxSeq AmpFREE Low DNA Library Kit</name>
+  <supplier>D-Mark Biosciences Inc.</supplier>
+  <catalogue-number>13308055</catalogue-number>
+  <archived>false</archived>
+</kit:reagent-kit>
+	</ReagentKits>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Billing String</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>True</preset>
+  <preset>False</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Conc. Units</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>ng/uL</preset>
+  <preset>nM</preset>
+  <preset>M</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Boolean">
+  <name>Go To Next Step</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>False</preset>
+  <preset>True</preset>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Pooling Group</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Sample Tag</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ResultFileUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>File</name>
+  <attach-to-name>ResultFile</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</ResultFileUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="DNA Samples QC">
+  <field-definition name="Concentration Threshold (ng/uL)"/>
+  <field-definition name="Criteria 1 - Operator"/>
+  <field-definition name="Criteria 1 - Source Data Field"/>
+  <field-definition name="Criteria 1 - Threshold Value"/>
+  <field-definition name="Criteria 2 - Operator"/>
+  <field-definition name="Criteria 2 - Source Data Field"/>
+  <field-definition name="Criteria 2 - Threshold Value"/>
+  <parameter name="0.Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/SPARK/create_plate_barcode_csv.py  -stepURI_v2={stepURI:v2}   -user_psw={username}:{password}  -labelSTD='1'    &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2.Apply quantified values">
+    <string>bash -l -c  "/usr/bin/python3.5 /opt/gls/clarity/customextensions/SPARK/spark_apply_quant.py  -fileLuid={compoundOutputFileLuid0}  -stepURI_v2={stepURI:v2}   -processURI_v2={processURI:v2}  -user_psw={username}:{password}  &gt; {compoundOutputFileLuid21}.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2.Assign Concentration from Submitted Samples">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'if (submittedSample.hasValue( ::Sample Conc.:: )) {output.::Concentration:: = submittedSample.::Sample Conc.::};  if (submittedSample.hasValue( ::Sample Conc Units:: )) {output.::Conc. Units::=submittedSample.::Sample Conc Units::} ; if (input.hasValue( ::Concentration:: )) {output.::Concentration:: = input.::Concentration::}; if (input.hasValue( ::Conc. Units:: )) {output.::Conc. Units:: = input.::Conc. Units::}; ' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3.Assign QC flags">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'if (output.::Concentration:: &gt;= step.::Concentration Threshold (ng/uL):: ) {output.QC = true} else {output.QC = false}' -log {compoundOutputFileLuid2}" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="4. Tubes AutoPlacement">
+    <string>bash -l -c " /usr/bin/python  /opt/gls/clarity/customextensions/Common/autoplacement_mix_tubes_plates.py -u {username} -p {password} -o 'Analyte' -s {stepURI:v2} -x  '_{processLuid}' &gt; {compoundOutputFileLuid0}_auto-log.txt"
+
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}</output-name>
+    <assign-working-flag>false</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>SharedResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>3</number-of-outputs>
+    <output-name>{LIST:Log file,Assign Report,Assign Log}</output-name>
+    <field-definition name="File"/>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">false</process-type-attribute>
+  <process-type-attribute name="ContextCode">PGD</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">true</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">PG</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">1. DNA Initial QC</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Display the UDF information associated with all the outputs</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="PCR-enriched">
+  <field-definition name="Ampure Final Size Selection"/>
+  <field-definition name="Ampure Post-Shear"/>
+  <field-definition name="Cycles per Burst (Fragmentation)"/>
+  <field-definition name="Date (Fragmentation)"/>
+  <field-definition name="Duration (s) (Fragmentation)"/>
+  <field-definition name="Duty Cycle (%) (Fragmentation)"/>
+  <field-definition name="Fragmentation Technician"/>
+  <field-definition name="Intensity (W) (Fragmentation)"/>
+  <field-definition name="Library Date"/>
+  <field-definition name="Library Kit Lot"/>
+  <field-definition name="Library Kit Name"/>
+  <field-definition name="Library Technician"/>
+  <field-definition name="Lot Ampure Beads"/>
+  <field-definition name="Mode (Fragmentation)"/>
+  <field-definition name="PCR Cycles"/>
+  <field-definition name="PCR Date"/>
+  <field-definition name="PCR Enzyme Kit Name"/>
+  <field-definition name="PCR Enzyme Lot"/>
+  <field-definition name="PCR Program"/>
+  <field-definition name="PCR Technician"/>
+  <field-definition name="Primer Concentration (uM)"/>
+  <field-definition name="Primers Sequence"/>
+  <field-definition name="Shear Date"/>
+  <field-definition name="Shear Technician"/>
+  <field-definition name="Target Size (bp) (Fragmentation)"/>
+  <field-definition name="Temperature (C) (Fragmentation)"/>
+  <field-definition name="Y-dittering (Fragmentation)"/>
+  <field-definition name="gDNA Input quantity (ng)"/>
+  <parameter name="0. Auto Next">
+    <string> bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'nextStep = ::ADVANCE::' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Print plate barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Copy Data from Last step">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'output.::Sample Tag:: =input.::Sample Tag:: '  -logFileName {processLuid}_log.html  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>VariableByInput</variability-type>
+    <output-name>{InputItemName}-{AppliedReagentLabels}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="AddReagentsImmediately">true</process-type-attribute>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PCR</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="DisplaceInputs">false</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup"/>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ReagentType">N7</process-type-attribute>
+  <process-type-attribute name="ReagentVolume">1.0</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">12</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">8</process-type-attribute>
+</ptp:process-type>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="Sample Normalization Robot">
+  <field-definition name="9th plate offset"/>
+  <field-definition name="Concentration from"/>
+  <field-definition name="Controls"/>
+  <field-definition name="Destination Concentration (ng/ul)"/>
+  <field-definition name="Destination Volume (ul)"/>
+  <field-definition name="KapaTag Cycle"/>
+  <field-definition name="KapaTag Randomization Method"/>
+  <field-definition name="Quantity (ng)"/>
+  <field-definition name="Target"/>
+  <field-definition name="Threshold, ng/ul"/>
+  <field-definition name="VolCtrl"/>
+  <parameter name="0. Print barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  " 
+</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Normalize samples">
+    <string>bash -c -l "/usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/concentration_normalization_sorted_robot.py   -stepURI_v2={stepURI:v2}   -user_psw={username}:{password}  -ar=Analyte  -ComponentLuids='{compoundOutputFileLuids}'   &gt; {compoundOutputFileLuid0}_for_robot.csv"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Generate KapaTag file for robot">
+    <string>bash -c -l "/usr/bin/python3.5 /opt/gls/clarity/customextensions/Common/generate_kapatag_csv_file.py -u {username} -p {password} -s {stepURI:v2}  -t /opt/gls/clarity/customextensions/Templates/20161118_96_Spike_in_Tags.csv &gt; {compoundOutputFileLuid4}_kapatag_for_robot.csv"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="2. Route samples">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t true -h false -exp 'nextStep = ::ADVANCE::'  -log {compoundOutputFileLuid2}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="3. Route by python">
+    <string>bash -c "/usr/bin/python /opt/gls/clarity/customextensions/Common/route_by_template.py -u {username} -p {password} -s {stepURI:v2} -r 'Go To Next Step,False,Affymetrix Axiom Genotyping McGill 1.0,DNA Amplification McGill 1.1\nGo To Next Step,True,Sample Normalization,Sample Normalization Extra Plate' -l {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="AutoPlacement">
+    <string>/usr/bin/python /opt/gls/clarity/customextensions/Common/autoplaceSamplesDefaultMulti.py -l {processLuid} -u {username} -p {password} -s {stepURI:v2}</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Control Placement with LeftOver">
+    <string>bash -c -l "/usr/bin/python /opt/gls/clarity/customextensions/Common/autoplace_controls_leftover.py  -u {username} -p {password} -s {stepURI:v2} --placementtemplate /opt/gls/clarity/ai/temp/norm_template.csv --containertype '96 well plate'  &gt; /opt/gls/clarity/ai/temp/sample_normalization_log.txt"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Copy KapaTag Cycle">
+    <string>bash -c -l "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/kapatag_cycle_update.py  -s {stepURI:v2}   -u {username} -p {password} -a read" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="Update KapaTag Cycle">
+    <string>bash -c -l "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/kapatag_cycle_update.py  -s {stepURI:v2}   -u {username} -p {password} -a update" </string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>VariableByInput</variability-type>
+    <output-name>{InputItemName}</output-name>
+    <field-definition name="Pooling Group"/>
+    <field-definition name="Go To Next Step"/>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-output>
+    <artifact-type>ResultFile</artifact-type>
+    <display-name>ResultFile</display-name>
+    <output-generation-type>PerAllInputs</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>5</number-of-outputs>
+    <output-name>{LIST:CSV file for robot,Log file,CSV mapping file,CSV file for manual,KapaTag CSV file for robot }</output-name>
+  </process-output>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">SAM</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples horizontally</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">Configured</process-type-attribute>
+  <process-type-attribute name="IconConstant">LEAF</process-type-attribute>
+  <process-type-attribute name="InheritsQC">false</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">All</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">SA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input LIMS ID</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Configured Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Source Data Field</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 1 - Operator</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 1 - Threshold Value</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Source Data Field</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Conc. Units</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Criteria 2 - Operator</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>&gt;=</preset>
+  <preset>&lt;=</preset>
+  <preset>=</preset>
+  <preset>!=</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Criteria 2 - Threshold Value</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Concentration Threshold (ng/uL)</name>
+  <attach-to-name>DNA Samples QC</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>7</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>gDNA Input quantity (ng)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Ampure Post-Shear</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>0.8x</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Library Date</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Technician</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Janick St-Cyr</preset>
+  <preset>Tony Tyr</preset>
+  <preset>Patrick Willett</preset>
+  <preset>Antoine Paccard</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Name</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>NxSeq AmpFREE Low DNA Library Kit</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Lot</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>PCR Date</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Technician</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Janick St-Cyr</preset>
+  <preset>Tony Tyr</preset>
+  <preset>Patrick Willett</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Enzyme Kit Name</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>KAPA HiFi HotStart Uracil+Polymerase</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Enzyme Lot</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Primers Sequence</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>AAT GAT ACG GCG ACC ACC GAG A, CAA GCA GAA GAC GGC ATA CGA G /5 uM</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Primer Concentration (uM)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>5</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Program</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>2min @ 95C-&gt; (30sec @ 98C -&gt; 30sec @ 60C -&gt; 4min @72C) x 9 cycles -&gt; 10min @ 72C -&gt; keep @ 4C</preset>
+  <preset>3min @ 95C-&gt; (20sec @ 98C -&gt; 15sec @ 60C -&gt; 1min @72C) x 7 cycles -&gt; 10min @ 72C -&gt; keep @ 4C</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>PCR Cycles</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>6</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Lot Ampure Beads</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Ampure Final Size Selection</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>1x</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Date (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Fragmentation Technician</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Janick St-Cyr</preset>
+  <preset>Tony Tyr</preset>
+  <preset>Patrick Willett</preset>
+  <preset>Antoine Paccard</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Cycles per Burst (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Duration (s) (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>49</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Duty Cycle (%) (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Intensity (W) (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>75</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Mode (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Frequency Sweeping</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Target Size (bp) (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>300</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Temperature (C) (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>6.2</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Y-dittering (Fragmentation)</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>0.5mm at 10mm/s</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Date">
+  <name>Shear Date</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Shear Technician</name>
+  <attach-to-name>PCR-enriched</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Janick St-Cyr</preset>
+  <preset>Tony Tyr</preset>
+  <preset>Patrick Willett</preset>
+  <preset>Antoine Paccard</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Concentration from</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Last Protocol</preset>
+  <preset>Submitted Sample</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Target</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Concentration</preset>
+  <preset>Quantity</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Destination Concentration (ng/ul)</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <precision>1</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <preset>100</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Destination Volume (ul)</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Quantity (ng)</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>400</preset>
+  <preset>1000</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>9th plate offset</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <preset>A:1</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Controls</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <preset>4 - Affymetrix</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Threshold, ng/ul</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>7</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>VolCtrl</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>5.8</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>KapaTag Cycle</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>false</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>KapaTag Randomization Method</name>
+  <attach-to-name>Sample Normalization Robot</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>false</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Cycle Shift</preset>
+  <preset>Random</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<ProcessTemplates>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Concentration</name>
+  <type>Sample Normalization Robot</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Concentration from">Last Protocol</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Concentration (ng/ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Volume (ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Target">Concentration</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Threshold, ng/ul">7</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+<ptm:process-template xmlns:ptm="http://genologics.com/ri/processtemplate">
+  <name>Quantity</name>
+  <type>Sample Normalization Robot</type>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Concentration from">Last Protocol</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="Numeric" name="Destination Volume (ul)">20</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Quantity (ng)">400</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Target">Quantity</udf:field>
+  <udf:field xmlns:udf="http://genologics.com/ri/userdefined" type="String" name="Threshold, ng/ul">7</udf:field>
+  <is-default>false</is-default>
+</ptm:process-template>
+	</ProcessTemplates>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="52" name="PCR-enriched">
+  <steps>
+    <step name="DNA Samples QC">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>DNA Samples QC</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="2" name="Sample Normalization Robot"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Concentration Threshold (ng/uL)"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Concentration"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Conc. Units"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="true" name="qcProtocolStep"/>
+        <step-property value="true" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0.Print barcodes"/>
+        <epp-trigger type="UNUSED" name="2.Apply quantified values"/>
+        <epp-trigger type="MANUAL" name="2.Assign Concentration from Submitted Samples"/>
+        <epp-trigger type="MANUAL" name="3.Assign QC flags"/>
+        <epp-trigger status="PLACEMENT" point="BEFORE" type="AUTOMATIC" name="4. Tubes AutoPlacement"/>
+      </epp-triggers>
+    </step>
+    <step name="Sample Normalization Robot">
+      <protocol-step-index>2</protocol-step-index>
+      <process-type>Sample Normalization Robot</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories/>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions>
+        <transition sequence="3" name="PCR-enriched"/>
+      </transitions>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Concentration from"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Quantity (ng)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Destination Concentration (ng/ul)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Target"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="Destination Volume (ul)"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="VolCtrl"/>
+        <step-field style="USER_DEFINED" attach-to="ConfiguredProcess" name="KapaTag Cycle"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Sample Tag"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="true" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Print barcodes"/>
+        <epp-trigger type="MANUAL" name="1. Normalize samples"/>
+        <epp-trigger type="MANUAL" name="2. Generate KapaTag file for robot"/>
+        <epp-trigger type="UNUSED" name="2. Route samples"/>
+        <epp-trigger type="UNUSED" name="3. Route by python"/>
+        <epp-trigger type="UNUSED" name="AutoPlacement"/>
+        <epp-trigger type="UNUSED" name="Control Placement with LeftOver"/>
+        <epp-trigger status="RECORD_DETAILS" point="BEFORE" type="AUTOMATIC" name="Copy KapaTag Cycle"/>
+        <epp-trigger status="COMPLETE" point="BEFORE" type="AUTOMATIC" name="Update KapaTag Cycle"/>
+      </epp-triggers>
+    </step>
+    <step name="PCR-enriched">
+      <protocol-step-index>3</protocol-step-index>
+      <process-type>PCR-enriched</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>BioOHT</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits>
+        <reagent-kit name="AMPure XP Beads PROD"/>
+        <reagent-kit name="NxSeq AmpFREE Low DNA Library Kit"/>
+      </required-reagent-kits>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="gDNA Input quantity (ng)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Ampure Post-Shear"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Date"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Technician"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Kit Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Kit Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Date"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Technician"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Enzyme Kit Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Enzyme Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Primers Sequence"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Primer Concentration (uM)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Program"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Cycles"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Lot Ampure Beads"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Ampure Final Size Selection"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Date (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Fragmentation Technician"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Cycles per Burst (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Duration (s) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Duty Cycle (%) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Intensity (W) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Mode (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Target Size (bp) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Temperature (C) (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Y-dittering (Fragmentation)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Shear Technician"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Sample Tag"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Billing String"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0. Auto Next"/>
+        <epp-trigger type="MANUAL" name="1. Print plate barcodes"/>
+        <epp-trigger status="RECORD_DETAILS" point="BEFORE" type="AUTOMATIC" name="Copy Data from Last step"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

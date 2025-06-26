@@ -1,0 +1,129 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Fri Jul 08 20:34:44 GMT 2022
+
+# Manifest was generated with Config Slicer version 3.2.0.7
+ConfigSlicerVersion=3.2.0.7
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Strip Tube,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+BC01,\
+BC02,\
+BC03,\
+BC04,\
+BC05,\
+BC06,\
+BC07,\
+BC08,\
+BC09,\
+BC10,\
+BC11,\
+BC12,\
+BC13,\
+BC14,\
+BC15,\
+BC16,\
+BC17,\
+BC18,\
+BC19,\
+BC20,\
+BC21,\
+BC22,\
+BC23,\
+BC24,\
+BC25,\
+BC26,\
+BC27,\
+BC28,\
+BC29,\
+BC30,\
+BC31,\
+BC32,\
+BC33,\
+BC34,\
+BC35,\
+BC36,\
+BC37,\
+BC38,\
+BC39,\
+BC40,\
+BC41,\
+BC42,\
+BC43,\
+BC44,\
+BC45,\
+BC46,\
+BC47,\
+BC48,\
+BC49,\
+BC50,\
+BC51,\
+BC52,\
+BC53,\
+BC54,\
+BC55,\
+BC56,\
+BC57,\
+BC58,\
+BC59,\
+BC60,\
+BC61,\
+BC62,\
+BC63,\
+BC64,\
+BC65,\
+BC66,\
+BC67,\
+BC68,\
+BC69,\
+BC70,\
+BC71,\
+BC72,\
+BC73,\
+BC74,\
+BC75,\
+BC76,\
+BC77,\
+BC78,\
+BC79,\
+BC80,\
+BC81,\
+BC82,\
+BC83,\
+BC84,\
+BC85,\
+BC86,\
+BC87,\
+BC88,\
+BC89,\
+BC90,\
+BC91,\
+BC92,\
+BC93,\
+BC94,\
+BC95,\
+BC96,\
+NoIndex
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Final Size selection,\
+Fragment Size (kbp),\
+Go To Next Step,\
+Library Volume (ul),\
+Pooling Group,\
+Short Read Elimination
+
+# Manifest for Process Types
+ProcessTypes=\
+Oxford Nanopore DNASeq,\
+Sample Normalization Robot
+
+# Manifest for Protocols
+Protocols=\
+Oxford Nanopore DNASeq Protocol
+

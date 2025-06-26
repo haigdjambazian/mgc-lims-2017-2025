@@ -1,0 +1,28 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Fri Nov 20 00:13:37 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.2.0.7
+ConfigSlicerVersion=3.2.0.7
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Area/Room,\
+Box,\
+Floor,\
+Freezer,\
+Library Volume (ul),\
+Sample Tag,\
+Shelf,\
+Workflow
+
+# Manifest for Process Types
+ProcessTypes=\
+Library Batch MGI
+
+# Manifest for Protocols
+Protocols=\
+Library Batch MGI
+

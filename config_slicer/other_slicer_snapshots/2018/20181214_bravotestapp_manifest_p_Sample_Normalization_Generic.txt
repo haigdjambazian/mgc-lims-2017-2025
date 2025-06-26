@@ -1,0 +1,57 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Fri Dec 14 14:35:29 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Tube
+
+# Manifest for Control Types
+ControlTypes=\
+Axiom_gDNA103,\
+CEPH1463-02,\
+Negative_Control
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Carrier Coordinate,\
+Carrier Name,\
+LIMS ID (Submitted Sample),\
+Replicate ID
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Conc. Units,\
+Concentration,\
+Go To Next Step,\
+LIMS ID (Derived Sample),\
+Pooling Group,\
+Sample Name,\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+File
+
+# Manifest for Process Types
+ProcessTypes=\
+DNA Samples QC,\
+Sample Normalization Extra Plate,\
+Sample Normalization Generic
+
+# Manifest for Protocols
+Protocols=\
+Sample Normalization Generic
+

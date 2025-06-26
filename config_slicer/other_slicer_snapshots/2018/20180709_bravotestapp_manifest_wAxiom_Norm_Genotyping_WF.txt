@@ -1,0 +1,91 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Mon Jul 09 13:51:56 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Tube
+
+# Manifest for Reagent Kits
+ReagentKits=\
+Axiom 2.0 Reagent Kit - Module 1,\
+Axiom 2.0 Reagent Kit - Module 2-1,\
+Axiom 2.0 Reagent Kit - Module 2-2,\
+Axiom 2.0 Reagent Kit - Module 4-1,\
+Axiom 2.0 Reagent Kit - Module 4-2
+
+# Manifest for Control Types
+ControlTypes=\
+Axiom_gDNA103,\
+CEPH1463-02,\
+Negative_Control
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Carrier Coordinate,\
+Carrier Name,\
+LIMS ID (Submitted Sample),\
+Replicate ID
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+% of passing samples,\
+.arr File Location,\
+Affymetrix Plate Barcode,\
+Affymetrix Plate Peg Wellposition,\
+Average Call Rate Passing Samples,\
+Conc. Units,\
+Concentration,\
+DQC,\
+Go To Next Step,\
+LIMS ID (Derived Sample),\
+Pooling Group,\
+QC Call Rate,\
+QC Computed Gender,\
+QC Het Rate,\
+Sample Name,\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+Conc. Units,\
+Concentration,\
+File,\
+Mass
+
+# Manifest for Process Types
+ProcessTypes=\
+Axiom Analysis QC,\
+Axiom Scanning QC,\
+"Centrifugation,Drying and Resuspension McGill 1.1",\
+DNA Amplification McGill 1.1,\
+DNA Samples QC,\
+Denaturation and Hybridization McGill 1.0,\
+Fragmentation  (Affy) McGill 1.0,\
+GeneTitan Reagent tray Preparation McGill 1.0,\
+Hybridization Preparation McGill 1.0,\
+Hybridization Sample QC McGill 1.0,\
+Sample Normalization Extra Plate,\
+Sample Normalization Generic
+
+# Manifest for Protocols
+Protocols=\
+Affymetrix Axiom Genotyping McGill 1.0,\
+Sample Normalization Generic
+
+# Manifest for Workflows
+Workflows=\
+Axiom Norm Genotyping WF
+

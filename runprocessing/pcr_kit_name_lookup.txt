@@ -1,0 +1,7 @@
+PCR Kit Name	Artic Primer Version	Amplicon Scheme for genpipe ini
+N/A	ARTIC_v4_1	ARTIC_v4.1.ini
+Q5 Hot Start High-Fidelity 2X Master Mix	ARTIC_v3	-
+Artic V3 Primers/Q5 Hot Start High-Fidelity 2X Master Mix	ARTIC_v3	-
+Artic V4 Primers/Q5 Hot Start High-Fidelity 2X Master Mix	ARTIC_v4	ARTIC_v4.ini
+Artic V4.1 Primers/Q5 Hot Start High-Fidelity 2X Master Mix	ARTIC_v4_1	ARTIC_v4.1.ini
+Artic V5.3.2 Primers/Q5 Hot Start High-Fidelity 2X Master Mix	ARTIC_v5_3_2	ARTIC_v5.3.2.ini

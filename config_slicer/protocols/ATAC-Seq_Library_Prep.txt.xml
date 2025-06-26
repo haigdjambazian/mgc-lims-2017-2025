@@ -1,0 +1,1105 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.1">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.10">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.11">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.12">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.13">
+  <special-type name="Index">
+    <attribute value="GTCGTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.14">
+  <special-type name="Index">
+    <attribute value="ACCACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.15">
+  <special-type name="Index">
+    <attribute value="TGGATCTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.16">
+  <special-type name="Index">
+    <attribute value="CCGTTTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.17">
+  <special-type name="Index">
+    <attribute value="TGCTGGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.18">
+  <special-type name="Index">
+    <attribute value="GAGGGGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.19">
+  <special-type name="Index">
+    <attribute value="AGGTTGGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.2">
+  <special-type name="Index">
+    <attribute value="CGTACTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.20">
+  <special-type name="Index">
+    <attribute value="GTGTGGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.21">
+  <special-type name="Index">
+    <attribute value="TGGGTTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.22">
+  <special-type name="Index">
+    <attribute value="TGGTCACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.23">
+  <special-type name="Index">
+    <attribute value="TTGACCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.24">
+  <special-type name="Index">
+    <attribute value="CCACTCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.3">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.4">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.5">
+  <special-type name="Index">
+    <attribute value="GGACTCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.6">
+  <special-type name="Index">
+    <attribute value="TAGGCATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.7">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.8">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="Ad2.9">
+  <special-type name="Index">
+    <attribute value="GCTACGCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera ATAC series</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N501 (TAAGGCGA-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N502 (TAAGGCGA-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N503 (TAAGGCGA-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N504 (TAAGGCGA-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N505 (TAAGGCGA-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N506 (TAAGGCGA-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N507 (TAAGGCGA-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N701-N508 (TAAGGCGA-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="TAAGGCGA-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N501 (CGTACTAG-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N502 (CGTACTAG-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N503 (CGTACTAG-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N504 (CGTACTAG-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N505 (CGTACTAG-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N506 (CGTACTAG-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N507 (CGTACTAG-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N702-N508 (CGTACTAG-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="CGTACTAG-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N501 (AGGCAGAA-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N502 (AGGCAGAA-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N503 (AGGCAGAA-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N504 (AGGCAGAA-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N505 (AGGCAGAA-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N506 (AGGCAGAA-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N507 (AGGCAGAA-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N703-N508 (AGGCAGAA-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="AGGCAGAA-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N501 (TCCTGAGC-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N502 (TCCTGAGC-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N503 (TCCTGAGC-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N504 (TCCTGAGC-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N505 (TCCTGAGC-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N506 (TCCTGAGC-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N507 (TCCTGAGC-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N704-N508 (TCCTGAGC-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="TCCTGAGC-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N501 (GGACTCCT-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N502 (GGACTCCT-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N503 (GGACTCCT-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N504 (GGACTCCT-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N505 (GGACTCCT-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N506 (GGACTCCT-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N507 (GGACTCCT-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N705-N508 (GGACTCCT-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="GGACTCCT-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N501 (TAGGCATG-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N502 (TAGGCATG-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N503 (TAGGCATG-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N504 (TAGGCATG-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N505 (TAGGCATG-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N506 (TAGGCATG-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N507 (TAGGCATG-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N706-N508 (TAGGCATG-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="TAGGCATG-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N501 (CTCTCTAC-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N502 (CTCTCTAC-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N503 (CTCTCTAC-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N504 (CTCTCTAC-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N505 (CTCTCTAC-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N506 (CTCTCTAC-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N507 (CTCTCTAC-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N707-N508 (CTCTCTAC-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="CTCTCTAC-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N501 (CAGAGAGG-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N502 (CAGAGAGG-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N503 (CAGAGAGG-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N504 (CAGAGAGG-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N505 (CAGAGAGG-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N506 (CAGAGAGG-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N507 (CAGAGAGG-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N708-N508 (CAGAGAGG-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="CAGAGAGG-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N501 (GCTACGCT-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N502 (GCTACGCT-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N503 (GCTACGCT-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N504 (GCTACGCT-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N505 (GCTACGCT-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N506 (GCTACGCT-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N507 (GCTACGCT-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N709-N508 (GCTACGCT-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="GCTACGCT-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N501 (CGAGGCTG-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N502 (CGAGGCTG-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N503 (CGAGGCTG-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N504 (CGAGGCTG-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N505 (CGAGGCTG-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N506 (CGAGGCTG-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N507 (CGAGGCTG-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N710-N508 (CGAGGCTG-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="CGAGGCTG-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N501 (AAGAGGCA-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N502 (AAGAGGCA-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N503 (AAGAGGCA-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N504 (AAGAGGCA-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N505 (AAGAGGCA-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N506 (AAGAGGCA-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N507 (AAGAGGCA-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N711-N508 (AAGAGGCA-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="AAGAGGCA-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N501 (GTAGAGGA-TAGATCGC)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-TAGATCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N502 (GTAGAGGA-CTCTCTAT)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-CTCTCTAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N503 (GTAGAGGA-TATCCTCT)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-TATCCTCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N504 (GTAGAGGA-AGAGTAGA)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-AGAGTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N505 (GTAGAGGA-GTAAGGAG)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-GTAAGGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N506 (GTAGAGGA-ACTGCATA)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-ACTGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N507 (GTAGAGGA-AAGGAGTA)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-AAGGAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="N712-N508 (GTAGAGGA-CTAAGCCT)">
+  <special-type name="Index">
+    <attribute value="GTAGAGGA-CTAAGCCT" name="Sequence"/>
+  </special-type>
+  <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="ATAC-Seq Library">
+  <field-definition name="Cell Input Quantity (number of cells)"/>
+  <field-definition name="Cell Lysis by RSB Buffers"/>
+  <field-definition name="Elution Volume (uL)"/>
+  <field-definition name="Final clean-up Zymo DNA clean and concentrator-5 Kit Lot"/>
+  <field-definition name="Library Preparation Zymo DNA clean and concentrator-5 Kit Lot"/>
+  <field-definition name="Nextera Index Number"/>
+  <field-definition name="Nextera Primer Sequence"/>
+  <field-definition name="Number of Cycles Added"/>
+  <field-definition name="PCR Amplification Enzyme Lot"/>
+  <field-definition name="PCR Amplification Enzyme Name"/>
+  <field-definition name="Post-Amplification Program"/>
+  <field-definition name="Pre-Amplification Program"/>
+  <field-definition name="SYBR Green Enzyme Lot"/>
+  <field-definition name="SYBR Green Enzyme Name"/>
+  <field-definition name="Transposase Enzyme Concentration (nM)"/>
+  <field-definition name="Transposase Enzyme Lot"/>
+  <field-definition name="Transposase Enzyme Name"/>
+  <field-definition name="qPCR Program"/>
+  <parameter name="0. Auto Next">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'nextStep = ::ADVANCE::' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Print plate barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>true</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{SubmittedSampleName}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="AddReagentsImmediately">true</process-type-attribute>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PCR</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="DisplaceInputs">false</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">true</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup"/>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ReagentType">N7</process-type-attribute>
+  <process-type-attribute name="ReagentVolume">1.0</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">true</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">12</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">8</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cell Input Quantity (number of cells)</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <precision>0</precision>
+  <unit>cells</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Boolean">
+  <name>Cell Lysis by RSB Buffers</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>True</preset>
+  <preset>False</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Transposase Enzyme Name</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Tn5</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Transposase Enzyme Lot</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Transposase Enzyme Concentration (nM)</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <precision>0</precision>
+  <unit>nM</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>100</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Preparation Zymo DNA clean and concentrator-5 Kit Lot</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Amplification Enzyme Name</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>2X NEBNext Master Mix</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>PCR Amplification Enzyme Lot</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Nextera Primer Sequence</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Nextera Index Number</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Pre-Amplification Program</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>5min @ 72C-&gt; 30 sec@ 98C -&gt;(10sec @ 98C -&gt; 30sec @ 63C -&gt; 1min @72C) x 5 cycles -&gt; 1min @ 72C -&gt; keep @ 4C</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Post-Amplification Program</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>5min @ 72C-&gt; 30 sec@ 98C -&gt;(10sec @ 98C -&gt; 30sec @ 63C -&gt; 1min @72C) x n cycles -&gt; 1min @ 72C -&gt; keep @ 4C</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Number of Cycles Added</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <precision>0</precision>
+  <unit>cycles</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SYBR Green Enzyme Name</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Platinium SYBR Green qPCR SuperMix-UDG</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>SYBR Green Enzyme Lot</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>qPCR Program</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>2min @ 50C-&gt; 30 sec@ 98C -&gt;(10sec @ 98C -&gt; 30sec @ 63C -&gt; 1min @72C) x 20 cycles -&gt; 1min @ 72C -&gt; keep @ 4C</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Final clean-up Zymo DNA clean and concentrator-5 Kit Lot</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Elution Volume (uL)</name>
+  <attach-to-name>ATAC-Seq Library</attach-to-name>
+  <precision>0</precision>
+  <unit>uL</unit>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>true</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>20</preset>
+  <is-required>true</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="29" name="ATAC-Seq Library Prep">
+  <steps>
+    <step name="ATAC-Seq Library">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>ATAC-Seq Library</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>Nextera ATAC series</reagent-category>
+        <reagent-category>Nextera DNA Adapters (N7-N5, S7-S5)</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Cell Input Quantity (number of cells)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Cell Lysis by RSB Buffers"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Transposase Enzyme Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Transposase Enzyme Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Transposase Enzyme Concentration (nM)"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Library Preparation Zymo DNA clean and concentrator-5 Kit Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Amplification Enzyme Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="PCR Amplification Enzyme Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Pre-Amplification Program"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Post-Amplification Program"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Number of Cycles Added"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="SYBR Green Enzyme Name"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="SYBR Green Enzyme Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="qPCR Program"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Final clean-up Zymo DNA clean and concentrator-5 Kit Lot"/>
+        <step-field style="USER_DEFINED" attach-to="AddMultipleReagents" name="Elution Volume (uL)"/>
+      </step-fields>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="row" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="true" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="MANUAL" name="0. Auto Next"/>
+        <epp-trigger type="MANUAL" name="1. Print plate barcodes"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

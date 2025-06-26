@@ -1,0 +1,52 @@
+# Generated from https://bravodevapp.genome.mcgill.ca/ at Thu Mar 12 10:00:34 GMT 2020
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Tube
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Carrier Barcode,\
+Carrier Coordinate
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+Conc. Units,\
+Concentration,\
+Sample Name,\
+Waiting
+
+# Manifest for Result File UDFs
+ResultFileUDFs=\
+Barcode,\
+Comments,\
+Conc. Units,\
+Concentration
+
+# Manifest for Process Types
+ProcessTypes=\
+Aggregate QC (DNA) 5.0,\
+DNA Gel QC McGill 1.0,\
+Femto Pulse QC (DNA) McGill 1.0,\
+Qubit QC (DNA) 5.0,\
+Tapestation QC (DNA) McGill 1.0,\
+Tecan SPARK PicoGreen QC (DNA) McGill 1.0
+
+# Manifest for Protocols
+Protocols=\
+DNA Initial QC McGill
+

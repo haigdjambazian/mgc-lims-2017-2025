@@ -1,0 +1,235 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Tue Jun 19 14:59:21 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Patterned Flow Cell,\
+Strip Tube,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+AD001 (ATCACG),\
+AD002 (CGATGT),\
+AD003 (TTAGGC),\
+AD004 (TGACCA),\
+AD005 (ACAGTG),\
+AD006 (GCCAAT),\
+AD007 (CAGATC),\
+AD008 (ACTTGA),\
+AD009 (GATCAG),\
+AD010 (TAGCTT),\
+AD011 (GGCTAC),\
+AD012 (CTTGTA),\
+AD013 (AGTCAA),\
+AD014 (AGTTCC),\
+AD015 (ATGTCA),\
+AD016 (CCGTCC),\
+AD018 (GTCCGC),\
+AD019 (GTGAAA),\
+AD020 (GTGGCC),\
+AD021 (GTTTCG),\
+AD022 (CGTACG),\
+AD023 (GAGTGG),\
+AD025 (ACTGAT),\
+AD027 (ATTCCT),\
+AR001 (ATCACGAT),\
+AR003 (TTAGGCAT),\
+AR004 (TGACCAAT),\
+AR005 (ACAGTGAT),\
+AR006 (GCCAATAT),\
+AR007 (CAGATCAT),\
+AR008 (ACTTGAAT),\
+AR010 (TAGCTTAT),\
+AR011 (GGCTACAT),\
+AR012 (CTTGTAAT),\
+AR013 (AGTCAACA),\
+AR014 (AGTTCCGT),\
+AR018 (GTCCGCAC),\
+AR019 (GTGAAACG),\
+AR027 (ATTCCTTT),\
+Index_1,\
+Index_10,\
+Index_11,\
+Index_12,\
+Index_13,\
+Index_14,\
+Index_15,\
+Index_16,\
+Index_18,\
+Index_19,\
+Index_2,\
+Index_20,\
+Index_21,\
+Index_22,\
+Index_23,\
+Index_25,\
+Index_27,\
+Index_3,\
+Index_4,\
+Index_5,\
+Index_6,\
+Index_7,\
+Index_8,\
+Index_9,\
+TruSeq DNA LT Adapters (AD series),\
+TruSeq LT McGill
+
+# Manifest for Control Types
+ControlTypes=\
+PhiX v3
+
+# Manifest for Sample UDFs
+SampleUDFs=\
+Application,\
+Pooling,\
+Read Length,\
+Sequencing Coverage,\
+Sequencing Method
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+% Aligned R1,\
+% Aligned R2,\
+% Bases >=Q30 R1,\
+% Bases >=Q30 R2,\
+% Error Rate R1,\
+% Error Rate R2,\
+% Intensity Cycle 20 R1,\
+% Intensity Cycle 20 R2,\
+% Phasing R1,\
+% Phasing R2,\
+% Prephasing R1,\
+% Prephasing R2,\
+%PF R1,\
+%PF R2,\
+Adapter (%),\
+Aligned Bases On Target (%),\
+Aligned Dup. Rate (%),\
+Avg Q Score R1,\
+Avg Q Score R2,\
+Avg. Qual,\
+Bases,\
+Bases Covered at 100x (%),\
+Bases Covered at 10x (%),\
+Bases Covered at 25x (%),\
+Bases Covered at 50x (%),\
+Bases Covered at 75x (%),\
+Bed,\
+Chimeras (%),\
+Cluster Density (K/mm^2) R1,\
+Cluster Density (K/mm^2) R2,\
+Clusters,\
+Clusters PF R1,\
+Clusters PF R2,\
+Clusters Raw R1,\
+Clusters Raw R2,\
+Clusters on Index in Lane (%),\
+Clusters on Index in Lane from Target (%),\
+Data Directory,\
+Denaturation Sample Volume (ul),\
+Diluent Volume (ul),\
+Dup. Rate (%),\
+EB Volume (ul),\
+Expected Sample Tag Name,\
+Flowcell ID,\
+Freemix Number of SNP,\
+Freemix Value,\
+Intensity Cycle 1 R1,\
+Intensity Cycle 1 R2,\
+Library Concentration (nM),\
+Library Volume (ul),\
+Library Volume To Use (ul),\
+Loading Conc. (pM),\
+Mapped Insert Size (mean),\
+Mapped Insert Size (median),\
+Mapped Insert Size (std. dev.),\
+Mean Coverage,\
+Normalized conc. (nM),\
+On Bait Bases from On Target Bases (%),\
+PF Reads Aligned All,\
+PF Reads Aligned All (%),\
+PF Reads Aligned R1 (%),\
+PF Reads Aligned R2 (%),\
+Pooling Group,\
+Processing Folder Name,\
+R1 PhiX Rate from Total (%),\
+R1 Top Blast Hit Name,\
+R1 Top Blast Hit Rate (%),\
+R2 PhiX Rate from Total (%),\
+R2 Top Blast Hit Name,\
+Reagent Name,\
+Reference,\
+Run Count,\
+Run Folder Name,\
+Run ID,\
+Sample Name,\
+Top Sample Tag Name,\
+Top Sample Tag Name Match,\
+Top Sample Tag Rate from All Detected (%),\
+Top Sample Tag Rate from Total (%),\
+Waiting,\
+Workflow,\
+Yield PF (Gb) R1,\
+Yield PF (Gb) R2,\
+cBot Primer Set,\
+cBot Run Recipe,\
+chr1 Normalized Coverage,\
+chr10 Normalized Coverage,\
+chr11 Normalized Coverage,\
+chr12 Normalized Coverage,\
+chr13 Normalized Coverage,\
+chr14 Normalized Coverage,\
+chr15 Normalized Coverage,\
+chr16 Normalized Coverage,\
+chr17 Normalized Coverage,\
+chr18 Normalized Coverage,\
+chr19 Normalized Coverage,\
+chr2 Normalized Coverage,\
+chr20 Normalized Coverage,\
+chr21 Normalized Coverage,\
+chr22 Normalized Coverage,\
+chr3 Normalized Coverage,\
+chr4 Normalized Coverage,\
+chr5 Normalized Coverage,\
+chr6 Normalized Coverage,\
+chr7 Normalized Coverage,\
+chr8 Normalized Coverage,\
+chr9 Normalized Coverage,\
+chrM Normalized Coverage,\
+chrX Normalized Coverage,\
+chrY Normalized Coverage,\
+i5 Adapter,\
+i7 Adapter
+
+# Manifest for Process Types
+ProcessTypes=\
+Cluster Generation (HiSeq X) 1.0 McGill 1.0,\
+Create Strip Tube (HiSeq X) 1.0,\
+Illumina Sequencing (HiSeq X) 1.0 McGill 1.1,\
+Library Normalization (HiSeq X) 1.0 McGill 1.4,\
+Library Pooling (HiSeq X) 1.0,\
+WGBS Lucigen
+
+# Manifest for Protocols
+Protocols=\
+Illumina SBS (HiSeq X) 1.0,\
+WGBS Lucigen Library
+
+# Manifest for Workflows
+Workflows=\
+WGBS_Lucigen_Illumina_X_lib
+

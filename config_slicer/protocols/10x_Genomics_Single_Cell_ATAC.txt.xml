@@ -1,0 +1,775 @@
+<config ApiVersion="v2,r24" ConfigSlicerVersion="3.0.24">
+	<ContainerTypes>
+<ctp:container-type xmlns:ctp="http://genologics.com/ri/containertype" name="96 well plate">
+  <is-tube>false</is-tube>
+  <x-dimension>
+    <is-alpha>false</is-alpha>
+    <offset>1</offset>
+    <size>12</size>
+  </x-dimension>
+  <y-dimension>
+    <is-alpha>true</is-alpha>
+    <offset>0</offset>
+    <size>8</size>
+  </y-dimension>
+</ctp:container-type>
+	</ContainerTypes>
+	<ReagentTypes>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A1">
+  <special-type name="Index">
+    <attribute value="AAACGGCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A10">
+  <special-type name="Index">
+    <attribute value="ACAGCAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A11">
+  <special-type name="Index">
+    <attribute value="ACCAGTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A12">
+  <special-type name="Index">
+    <attribute value="ACTACTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A2">
+  <special-type name="Index">
+    <attribute value="AGCCCTTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A3">
+  <special-type name="Index">
+    <attribute value="AAAGCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A4">
+  <special-type name="Index">
+    <attribute value="AGAACGCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A5">
+  <special-type name="Index">
+    <attribute value="ATTGGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A6">
+  <special-type name="Index">
+    <attribute value="ACGGGACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A7">
+  <special-type name="Index">
+    <attribute value="AGGTCATA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A8">
+  <special-type name="Index">
+    <attribute value="ATGATACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-A9">
+  <special-type name="Index">
+    <attribute value="ACAACTTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B1">
+  <special-type name="Index">
+    <attribute value="AGGCTACC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B10">
+  <special-type name="Index">
+    <attribute value="ACCATTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B11">
+  <special-type name="Index">
+    <attribute value="ATGGTCGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B12">
+  <special-type name="Index">
+    <attribute value="ACGCTTGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B2">
+  <special-type name="Index">
+    <attribute value="AAGTTGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B3">
+  <special-type name="Index">
+    <attribute value="ATTGGACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B4">
+  <special-type name="Index">
+    <attribute value="AGGGACTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B5">
+  <special-type name="Index">
+    <attribute value="ATCGTACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B6">
+  <special-type name="Index">
+    <attribute value="AACGCGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B7">
+  <special-type name="Index">
+    <attribute value="AGGGATGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B8">
+  <special-type name="Index">
+    <attribute value="ACGTTCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-B9">
+  <special-type name="Index">
+    <attribute value="AAGCGTGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C1">
+  <special-type name="Index">
+    <attribute value="AGACTTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C10">
+  <special-type name="Index">
+    <attribute value="ATCTGATC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C11">
+  <special-type name="Index">
+    <attribute value="ACCGAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C12">
+  <special-type name="Index">
+    <attribute value="ATCCGGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C2">
+  <special-type name="Index">
+    <attribute value="AATCACTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C3">
+  <special-type name="Index">
+    <attribute value="ACGTTACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C4">
+  <special-type name="Index">
+    <attribute value="ACATTGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C5">
+  <special-type name="Index">
+    <attribute value="ATGCATTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C6">
+  <special-type name="Index">
+    <attribute value="ACTCAGAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C7">
+  <special-type name="Index">
+    <attribute value="ACACCGGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C8">
+  <special-type name="Index">
+    <attribute value="AGCTCGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-C9">
+  <special-type name="Index">
+    <attribute value="AGATCGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D1">
+  <special-type name="Index">
+    <attribute value="AGCTGCGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D10">
+  <special-type name="Index">
+    <attribute value="AGATAACA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D11">
+  <special-type name="Index">
+    <attribute value="ATATGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D12">
+  <special-type name="Index">
+    <attribute value="AGAAACGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D2">
+  <special-type name="Index">
+    <attribute value="ACATTCCG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D3">
+  <special-type name="Index">
+    <attribute value="ACTTCACT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D4">
+  <special-type name="Index">
+    <attribute value="AAATCGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D5">
+  <special-type name="Index">
+    <attribute value="AGACGGAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D6">
+  <special-type name="Index">
+    <attribute value="ATGCCAAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D7">
+  <special-type name="Index">
+    <attribute value="AACTTAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D8">
+  <special-type name="Index">
+    <attribute value="AATCTTTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-D9">
+  <special-type name="Index">
+    <attribute value="ACCTACTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E1">
+  <special-type name="Index">
+    <attribute value="ACGAAAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E10">
+  <special-type name="Index">
+    <attribute value="ATTGTTTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E11">
+  <special-type name="Index">
+    <attribute value="ATCGCCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E12">
+  <special-type name="Index">
+    <attribute value="ACGCGGAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E2">
+  <special-type name="Index">
+    <attribute value="AGGCTGGT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E3">
+  <special-type name="Index">
+    <attribute value="AACAAGTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E4">
+  <special-type name="Index">
+    <attribute value="AGCTGACG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E5">
+  <special-type name="Index">
+    <attribute value="ATCCAAGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E6">
+  <special-type name="Index">
+    <attribute value="ATTGAAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E7">
+  <special-type name="Index">
+    <attribute value="AAGACGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E8">
+  <special-type name="Index">
+    <attribute value="AGCCTATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-E9">
+  <special-type name="Index">
+    <attribute value="AGTAAGCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F1">
+  <special-type name="Index">
+    <attribute value="ATCGCTCC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F10">
+  <special-type name="Index">
+    <attribute value="ATTCGTGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F11">
+  <special-type name="Index">
+    <attribute value="AGCAGTTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F12">
+  <special-type name="Index">
+    <attribute value="AATTGAAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F2">
+  <special-type name="Index">
+    <attribute value="ATGGTTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F3">
+  <special-type name="Index">
+    <attribute value="AGTCTGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F4">
+  <special-type name="Index">
+    <attribute value="AACGACAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F5">
+  <special-type name="Index">
+    <attribute value="AACACAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F6">
+  <special-type name="Index">
+    <attribute value="ATGCCGGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F7">
+  <special-type name="Index">
+    <attribute value="ACCCGAGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F8">
+  <special-type name="Index">
+    <attribute value="AGTTGGGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-F9">
+  <special-type name="Index">
+    <attribute value="AGTTAGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G1">
+  <special-type name="Index">
+    <attribute value="ATGCGATT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G10">
+  <special-type name="Index">
+    <attribute value="ATACTGAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G11">
+  <special-type name="Index">
+    <attribute value="AGGGCGTT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G12">
+  <special-type name="Index">
+    <attribute value="ACCCGCAC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G2">
+  <special-type name="Index">
+    <attribute value="ATAACCTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G3">
+  <special-type name="Index">
+    <attribute value="ATGTCCAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G4">
+  <special-type name="Index">
+    <attribute value="AGCTTCTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G5">
+  <special-type name="Index">
+    <attribute value="ATGAAGTA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G6">
+  <special-type name="Index">
+    <attribute value="AGCACTGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G7">
+  <special-type name="Index">
+    <attribute value="ATTACCGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G8">
+  <special-type name="Index">
+    <attribute value="AAGTACTC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-G9">
+  <special-type name="Index">
+    <attribute value="AGTCTCAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H1">
+  <special-type name="Index">
+    <attribute value="AAACTCAT" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H10">
+  <special-type name="Index">
+    <attribute value="ATTTCAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H11">
+  <special-type name="Index">
+    <attribute value="AGGATCGA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H12">
+  <special-type name="Index">
+    <attribute value="ACGAGTAG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H2">
+  <special-type name="Index">
+    <attribute value="AACGGTCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H3">
+  <special-type name="Index">
+    <attribute value="ACACCTAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H4">
+  <special-type name="Index">
+    <attribute value="ACTGGAGC" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H5">
+  <special-type name="Index">
+    <attribute value="ATAGTATG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H6">
+  <special-type name="Index">
+    <attribute value="AAGCATAA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H7">
+  <special-type name="Index">
+    <attribute value="AACGGGTG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H8">
+  <special-type name="Index">
+    <attribute value="AAGAGCGG" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+<rtp:reagent-type xmlns:rtp="http://genologics.com/ri/reagenttype" name="SI-NA-H9">
+  <special-type name="Index">
+    <attribute value="ACCTGCCA" name="Sequence"/>
+  </special-type>
+  <reagent-category>10X Single Index Kit N Set A</reagent-category>
+</rtp:reagent-type>
+	</ReagentTypes>
+	<AnalyteUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Cell Viability (%)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Library Volume (ul)</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>2</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>50</preset>
+  <is-required>true</is-required>
+  <attach-to-category/>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="Numeric">
+  <name>Target Cells</name>
+  <attach-to-name>Analyte</attach-to-name>
+  <precision>0</precision>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category/>
+</cnf:field>
+	</AnalyteUDFs>
+	<ProcessTypes>
+<ptp:process-type xmlns:ptp="http://genologics.com/ri/processtype" name="10x Genomics Single Cell ATAC">
+  <field-definition name="Library Kit Lot"/>
+  <field-definition name="Library Kit Name"/>
+  <parameter name="0. Auto Next">
+    <string>bash -l -c "/opt/gls/clarity/bin/java -jar /opt/gls/clarity/extensions/ngs-common/v5/EPP/ngs-extensions.jar -i {stepURI:v2:http} -u {username} -p {password} script:evaluateDynamicExpression -t false -h false -exp 'nextStep = ::ADVANCE::' -log {compoundOutputFileLuid0}"</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <parameter name="1. Print plate barcodes">
+    <string>bash -c "/usr/bin/python3.5  /opt/gls/clarity/customextensions/Common/create_barcodes_csv.py   -stepURI_v2={stepURI:v2}   -user={username} -psw={password}  &gt; /opt/gls/clarity/ai/temp/barcodes_tmp.csv  &amp;&amp;   /usr/bin/python3.5 /opt/gls/clarity/customextensions/print_zebra_test_3_am.py  /opt/gls/clarity/ai/temp/barcodes_tmp.csv &gt;  /opt/gls/clarity/ai/temp/barcodes_print_output.txt  "</string>
+    <run-program-per-event>false</run-program-per-event>
+    <channel>limsserver</channel>
+    <invocation-type>PostProcess</invocation-type>
+  </parameter>
+  <process-input>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <remove-working-flag>false</remove-working-flag>
+  </process-input>
+  <process-output>
+    <artifact-type>Analyte</artifact-type>
+    <display-name>Analyte</display-name>
+    <output-generation-type>PerInput</output-generation-type>
+    <variability-type>Fixed</variability-type>
+    <number-of-outputs>1</number-of-outputs>
+    <output-name>{InputItemName}-{AppliedReagentLabels}</output-name>
+    <assign-working-flag>true</assign-working-flag>
+  </process-output>
+  <process-type-attribute name="AddReagentsImmediately">true</process-type-attribute>
+  <process-type-attribute name="ConsumeVolume">true</process-type-attribute>
+  <process-type-attribute name="ContextCode">PCR</process-type-attribute>
+  <process-type-attribute name="DefaultPlacementPattern">Place samples vertically</process-type-attribute>
+  <process-type-attribute name="DefaultSort">ROW</process-type-attribute>
+  <process-type-attribute name="DisplaceInputs">false</process-type-attribute>
+  <process-type-attribute name="Enabled">true</process-type-attribute>
+  <process-type-attribute name="Family">AddMultipleReagents</process-type-attribute>
+  <process-type-attribute name="IconConstant">DIGEST</process-type-attribute>
+  <process-type-attribute name="ModifyInputOutput">None</process-type-attribute>
+  <process-type-attribute name="OnlyEnableDoneAtLastPanel">false</process-type-attribute>
+  <process-type-attribute name="OpenPostProcess">false</process-type-attribute>
+  <process-type-attribute name="OutputContainerType">96 well plate</process-type-attribute>
+  <process-type-attribute name="OutputContextCode">LA</process-type-attribute>
+  <process-type-attribute name="OutputSorting">Input container and placement</process-type-attribute>
+  <process-type-attribute name="ProcessGroup">Reagent Processes</process-type-attribute>
+  <process-type-attribute name="ProcessTabView">Use the default display</process-type-attribute>
+  <process-type-attribute name="QCAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="ReagentType">N7</process-type-attribute>
+  <process-type-attribute name="ReagentVolume">1.0</process-type-attribute>
+  <process-type-attribute name="ShowInButtonBar">false</process-type-attribute>
+  <process-type-attribute name="ShowInExplorer">false</process-type-attribute>
+  <process-type-attribute name="SkipInputPanel">false</process-type-attribute>
+  <process-type-attribute name="SupportsExternalProgram">true</process-type-attribute>
+  <process-type-attribute name="VolumeAdjustmentType">None</process-type-attribute>
+  <process-type-attribute name="WorkspaceColumns">12</process-type-attribute>
+  <process-type-attribute name="WorkspaceRows">8</process-type-attribute>
+</ptp:process-type>
+	</ProcessTypes>
+	<ProcessTypeUDFs>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Name</name>
+  <attach-to-name>10x Genomics Single Cell ATAC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <preset>Single Cell ATAC Reagent Kits [v1.0]</preset>
+  <preset>Next GEM Single Cell ATAC Reagent Kits [v1.1]</preset>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+<cnf:field xmlns:cnf="http://genologics.com/ri/configuration" type="String">
+  <name>Library Kit Lot</name>
+  <attach-to-name>10x Genomics Single Cell ATAC</attach-to-name>
+  <show-in-lablink>true</show-in-lablink>
+  <allow-non-preset-values>true</allow-non-preset-values>
+  <first-preset-is-default-value>false</first-preset-is-default-value>
+  <is-editable>true</is-editable>
+  <is-required>false</is-required>
+  <attach-to-category>ProcessType</attach-to-category>
+</cnf:field>
+	</ProcessTypeUDFs>
+	<Protocols>
+<protcnf:protocol xmlns:protcnf="http://genologics.com/ri/protocolconfiguration" index="21" name="10x Genomics Single Cell ATAC">
+  <steps>
+    <step name="10x Genomics Single Cell ATAC">
+      <protocol-step-index>1</protocol-step-index>
+      <process-type>10x Genomics Single Cell ATAC</process-type>
+      <permitted-containers>
+        <container-type>96 well plate</container-type>
+      </permitted-containers>
+      <permitted-reagent-categories>
+        <reagent-category>10X Single Index Kit N Set A</reagent-category>
+      </permitted-reagent-categories>
+      <required-reagent-kits/>
+      <permitted-control-types/>
+      <transitions/>
+      <default-grouping>containerGroup</default-grouping>
+      <queue-fields>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Well"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Project" name="Project Name"/>
+        <queue-field detail="true" style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <queue-field detail="false" style="BUILT_IN" attach-to="Analyte" name="Waiting"/>
+      </queue-fields>
+      <step-fields/>
+      <sample-fields>
+        <sample-field style="BUILT_IN" attach-to="Analyte" name="Sample Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Container Name"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="Well"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Library Volume (ul)"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Target Cells"/>
+        <sample-field style="USER_DEFINED" attach-to="Analyte" name="Cell Viability (%)"/>
+        <sample-field style="BUILT_IN" attach-to="Container" name="LIMS ID (Container)"/>
+        <sample-field style="BUILT_IN" attach-to="Project" name="Project Name"/>
+      </sample-fields>
+      <step-properties>
+        <step-property value="false" name="qcProtocolStep"/>
+        <step-property value="false" name="qcWithPlacement"/>
+        <step-property value="false" name="eSignatureRequired"/>
+        <step-property value="false" name="measurementWithFile"/>
+        <step-property value="false" name="eppLocksNextSteps"/>
+        <step-property value="false" name="autoStartNextStep"/>
+        <step-property value="column" name="multiwellSortOrder"/>
+        <step-property value="" name="stepDetailsHeading"/>
+        <step-property value="" name="sampleDetailsHeading"/>
+        <step-property value="false" name="expandContainerGroupsCheckBox"/>
+        <step-property value="false" name="arrangeFieldsHorizontally"/>
+      </step-properties>
+      <epp-triggers>
+        <epp-trigger type="UNUSED" name="0. Auto Next"/>
+        <epp-trigger type="MANUAL" name="1. Print plate barcodes"/>
+      </epp-triggers>
+    </step>
+  </steps>
+  <protocol-properties>
+    <protocol-property value="false" name="hidden"/>
+    <protocol-property value="0" name="capacity"/>
+    <protocol-property value="libraryPrep" name="type"/>
+  </protocol-properties>
+</protcnf:protocol>
+	</Protocols>
+</config>

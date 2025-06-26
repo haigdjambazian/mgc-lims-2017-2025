@@ -1,0 +1,247 @@
+# Generated from https://bravotestapp.genome.mcgill.ca/ at Tue Sep 18 15:34:15 GMT 2018
+
+# Manifest was generated with Config Slicer version 3.0.24
+ConfigSlicerVersion=3.0.24
+
+# Manifest for Container Types
+ContainerTypes=\
+96 well plate,\
+Patterned Flow Cell,\
+Strip Tube,\
+Tube
+
+# Manifest for Reagent Types
+ReagentTypes=\
+IDT UDI UMI,\
+IDTU701_A01-IDTU501_A01,\
+IDTU702_A02-IDTU502_A02,\
+IDTU703_A03-IDTU503_A03,\
+IDTU704_A04-IDTU504_A04,\
+IDTU705_A05-IDTU505_A05,\
+IDTU706_A06-IDTU506_A06,\
+IDTU707_A07-IDTU507_A07,\
+IDTU708_A08-IDTU508_A08,\
+IDTU709_A09-IDTU509_A09,\
+IDTU710_A10-IDTU510_A10,\
+IDTU711_A11-IDTU511_A11,\
+IDTU712_A12-IDTU512_A12,\
+IDTU713_B01-IDTU513_B01,\
+IDTU714_B02-IDTU514_B02,\
+IDTU715_B03-IDTU515_B03,\
+IDTU716_B04-IDTU516_B04,\
+IDTU717_B05-IDTU517_B05,\
+IDTU718_B06-IDTU518_B06,\
+IDTU719_B07-IDTU519_B07,\
+IDTU720_B08-IDTU520_B08,\
+IDTU721_B09-IDTU521_B09,\
+IDTU722_B10-IDTU522_B10,\
+IDTU723_B11-IDTU523_B11,\
+IDTU724_B12-IDTU524_B12,\
+IDTU725_C01-IDTU525_C01,\
+IDTU726_C02-IDTU526_C02,\
+IDTU727_C03-IDTU527_C03,\
+IDTU728_C04-IDTU528_C04,\
+IDTU729_C05-IDTU529_C05,\
+IDTU730_C06-IDTU530_C06,\
+IDTU731_C07-IDTU531_C07,\
+IDTU732_C08-IDTU532_C08,\
+IDTU733_C09-IDTU533_C09,\
+IDTU734_C10-IDTU534_C10,\
+IDTU735_C11-IDTU535_C11,\
+IDTU736_C12-IDTU536_C12,\
+IDTU737_D01-IDTU537_D01,\
+IDTU738_D02-IDTU538_D02,\
+IDTU739_D03-IDTU539_D03,\
+IDTU740_D04-IDTU540_D04,\
+IDTU741_D05-IDTU541_D05,\
+IDTU742_D06-IDTU542_D06,\
+IDTU743_D07-IDTU543_D07,\
+IDTU744_D08-IDTU544_D08,\
+IDTU745_D09-IDTU545_D09,\
+IDTU746_D10-IDTU546_D10,\
+IDTU747_D11-IDTU547_D11,\
+IDTU748_D12-IDTU548_D12,\
+IDTU749_E01-IDTU549_E01,\
+IDTU750_E02-IDTU550_E02,\
+IDTU751_E03-IDTU551_E03,\
+IDTU752_E04-IDTU552_E04,\
+IDTU753_E05-IDTU553_E05,\
+IDTU754_E06-IDTU554_E06,\
+IDTU755_E07-IDTU555_E07,\
+IDTU756_E08-IDTU556_E08,\
+IDTU757_E09-IDTU557_E09,\
+IDTU758_E10-IDTU558_E10,\
+IDTU759_E11-IDTU559_E11,\
+IDTU760_E12-IDTU560_E12,\
+IDTU761_F01-IDTU561_F01,\
+IDTU762_F02-IDTU562_F02,\
+IDTU763_F03-IDTU563_F03,\
+IDTU764_F04-IDTU564_F04,\
+IDTU765_F05-IDTU565_F05,\
+IDTU766_F06-IDTU566_F06,\
+IDTU767_F07-IDTU567_F07,\
+IDTU768_F08-IDTU568_F08,\
+IDTU769_F09-IDTU569_F09,\
+IDTU770_F10-IDTU570_F10,\
+IDTU771_F11-IDTU571_F11,\
+IDTU772_F12-IDTU572_F12,\
+IDTU773_G01-IDTU573_G01,\
+IDTU774_G02-IDTU574_G02,\
+IDTU775_G03-IDTU575_G03,\
+IDTU776_G04-IDTU576_G04,\
+IDTU777_G05-IDTU577_G05,\
+IDTU778_G06-IDTU578_G06,\
+IDTU779_G07-IDTU579_G07,\
+IDTU780_G08-IDTU580_G08,\
+IDTU781_G09-IDTU581_G09,\
+IDTU782_G10-IDTU582_G10,\
+IDTU783_G11-IDTU583_G11,\
+IDTU784_G12-IDTU584_G12,\
+IDTU785_H01-IDTU585_H01,\
+IDTU786_H02-IDTU586_H02,\
+IDTU787_H03-IDTU587_H03,\
+IDTU788_H04-IDTU588_H04,\
+IDTU789_H05-IDTU589_H05,\
+IDTU790_H06-IDTU590_H06,\
+IDTU791_H07-IDTU591_H07,\
+IDTU792_H08-IDTU592_H08,\
+IDTU793_H09-IDTU593_H09,\
+IDTU794_H10-IDTU594_H10,\
+IDTU795_H11-IDTU595_H11,\
+IDTU796_H12-IDTU596_H12
+
+# Manifest for Container UDFs
+ContainerUDFs=\
+Container Name,\
+LIMS ID (Container),\
+Well
+
+# Manifest for Project UDFs
+ProjectUDFs=\
+Project Name
+
+# Manifest for Analyte UDFs
+AnalyteUDFs=\
+% Aligned R1,\
+% Aligned R2,\
+% Bases >=Q30 R1,\
+% Bases >=Q30 R2,\
+% Error Rate R1,\
+% Error Rate R2,\
+% Intensity Cycle 20 R1,\
+% Intensity Cycle 20 R2,\
+% Phasing R1,\
+% Phasing R2,\
+% Prephasing R1,\
+% Prephasing R2,\
+%PF R1,\
+%PF R2,\
+Adapter (%),\
+Aligned Bases On Target (%),\
+Aligned Dup. Rate (%),\
+Avg Q Score R1,\
+Avg Q Score R2,\
+Avg. Qual,\
+Bases,\
+Bases Covered at 100x (%),\
+Bases Covered at 10x (%),\
+Bases Covered at 25x (%),\
+Bases Covered at 50x (%),\
+Bases Covered at 75x (%),\
+Bed,\
+Chimeras (%),\
+Cluster Density (K/mm^2) R1,\
+Cluster Density (K/mm^2) R2,\
+Clusters,\
+Clusters PF R1,\
+Clusters PF R2,\
+Clusters Raw R1,\
+Clusters Raw R2,\
+Clusters on Index in Lane (%),\
+Clusters on Index in Lane from Target (%),\
+Dup. Rate (%),\
+Expected Sample Tag Name,\
+Flowcell ID,\
+Freemix Number of SNP,\
+Freemix Value,\
+Intensity Cycle 1 R1,\
+Intensity Cycle 1 R2,\
+Library Volume (ul),\
+Loading Conc. (pM),\
+Mapped Insert Size (mean),\
+Mapped Insert Size (median),\
+Mapped Insert Size (std. dev.),\
+Mean Coverage,\
+Normalized conc. (nM),\
+On Bait Bases from On Target Bases (%),\
+PF Reads Aligned All,\
+PF Reads Aligned All (%),\
+PF Reads Aligned R1 (%),\
+PF Reads Aligned R2 (%),\
+Processing Folder Name,\
+R1 PhiX Rate from Total (%),\
+R1 Top Blast Hit Name,\
+R1 Top Blast Hit Rate (%),\
+R2 PhiX Rate from Total (%),\
+R2 Top Blast Hit Name,\
+Reference,\
+Run Count,\
+Run Folder Name,\
+Run ID,\
+Sample Name,\
+Top Sample Tag Name,\
+Top Sample Tag Name Match,\
+Top Sample Tag Rate from All Detected (%),\
+Top Sample Tag Rate from Total (%),\
+Waiting,\
+Workflow,\
+Yield PF (Gb) R1,\
+Yield PF (Gb) R2,\
+cBot Primer Set,\
+cBot Run Recipe,\
+chr1 Normalized Coverage,\
+chr10 Normalized Coverage,\
+chr11 Normalized Coverage,\
+chr12 Normalized Coverage,\
+chr13 Normalized Coverage,\
+chr14 Normalized Coverage,\
+chr15 Normalized Coverage,\
+chr16 Normalized Coverage,\
+chr17 Normalized Coverage,\
+chr18 Normalized Coverage,\
+chr19 Normalized Coverage,\
+chr2 Normalized Coverage,\
+chr20 Normalized Coverage,\
+chr21 Normalized Coverage,\
+chr22 Normalized Coverage,\
+chr3 Normalized Coverage,\
+chr4 Normalized Coverage,\
+chr5 Normalized Coverage,\
+chr6 Normalized Coverage,\
+chr7 Normalized Coverage,\
+chr8 Normalized Coverage,\
+chr9 Normalized Coverage,\
+chrM Normalized Coverage,\
+chrX Normalized Coverage,\
+chrY Normalized Coverage,\
+i5 Adapter,\
+i7 Adapter
+
+# Manifest for Process Types
+ProcessTypes=\
+Cluster Generation (NovaSeq) 1.0 McGill 1.0,\
+Create Strip Tube (NovaSeq) 1.0 McGill 1.0,\
+Illumina Sequencing (NovaSeq) 1.0 McGill 1.0,\
+Library Normalization (NovaSeq) 1.0 McGill 1.4,\
+Library Pooling (NovaSeq) 1.0 McGill 1.0,\
+RNASeq
+
+# Manifest for Protocols
+Protocols=\
+Illumina SBS (NovaSeq) McGill 1.0,\
+RNASeq Library
+
+# Manifest for Workflows
+Workflows=\
+RNA-Seq_NovaSeq_lib
+

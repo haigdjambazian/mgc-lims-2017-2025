@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<art:details xmlns:art="http://genologics.com/ri/artifact" xmlns:udf="http://genologics.com/ri/userdefined">
+    <art:artifact limsid="92-474321" uri="https://bravotestapp.genome.mcgill.ca/api/v2/artifacts/92-474321?state=287997">
+        <name>735 PicoGreen</name>
+        <type>ResultFile</type>
+        <output-type>ResultFile</output-type>
+        <parent-process limsid="24-87690" uri="https://bravotestapp.genome.mcgill.ca/api/v2/processes/24-87690" />
+        <qc-flag>UNKNOWN</qc-flag>
+        <location>
+            <container limsid="27-22438" uri="https://bravotestapp.genome.mcgill.ca/api/v2/containers/27-22438" />
+            <value>A:1</value>
+        </location>
+        <sample limsid="RIC954A1" uri="https://bravotestapp.genome.mcgill.ca/api/v2/samples/RIC954A1" />
+        <udf:field name="Concentration" type="Numeric">741.82</udf:field>
+<udf:field name="Conc. Units" type="String">ng/uL</udf:field>
+        <workflow-stages />
+    </art:artifact>
+    <art:artifact limsid="92-474322" uri="https://bravotestapp.genome.mcgill.ca/api/v2/artifacts/92-474322?state=287998">
+        <name>800 PicoGreen</name>
+        <type>ResultFile</type>
+        <output-type>ResultFile</output-type>
+        <parent-process limsid="24-87690" uri="https://bravotestapp.genome.mcgill.ca/api/v2/processes/24-87690" />
+        <qc-flag>UNKNOWN</qc-flag>
+        <location>
+            <container limsid="27-22438" uri="https://bravotestapp.genome.mcgill.ca/api/v2/containers/27-22438" />
+            <value>B:1</value>
+        </location>
+        <sample limsid="RIC954A2" uri="https://bravotestapp.genome.mcgill.ca/api/v2/samples/RIC954A2" />
+        <udf:field name="Concentration" type="Numeric">1336.62</udf:field>
+<udf:field name="Conc. Units" type="String">ng/uL</udf:field>
+        <workflow-stages />
+    </art:artifact>
+    <art:artifact limsid="92-474323" uri="https://bravotestapp.genome.mcgill.ca/api/v2/artifacts/92-474323?state=287999">
+        <name>832 PicoGreen</name>
+        <type>ResultFile</type>
+        <output-type>ResultFile</output-type>
+        <parent-process limsid="24-87690" uri="https://bravotestapp.genome.mcgill.ca/api/v2/processes/24-87690" />
+        <qc-flag>UNKNOWN</qc-flag>
+        <location>
+            <container limsid="27-22438" uri="https://bravotestapp.genome.mcgill.ca/api/v2/containers/27-22438" />
+            <value>C:1</value>
+        </location>
+        <sample limsid="RIC954A3" uri="https://bravotestapp.genome.mcgill.ca/api/v2/samples/RIC954A3" />
+        <udf:field name="Concentration" type="Numeric">454.84</udf:field>
+<udf:field name="Conc. Units" type="String">ng/uL</udf:field>
+        <workflow-stages />
+    </art:artifact>
+    <art:artifact limsid="92-474324" uri="https://bravotestapp.genome.mcgill.ca/api/v2/artifacts/92-474324?state=288000">
+        <name>838 PicoGreen</name>
+        <type>ResultFile</type>
+        <output-type>ResultFile</output-type>
+        <parent-process limsid="24-87690" uri="https://bravotestapp.genome.mcgill.ca/api/v2/processes/24-87690" />
+        <qc-flag>UNKNOWN</qc-flag>
+        <location>
+            <container limsid="27-22438" uri="https://bravotestapp.genome.mcgill.ca/api/v2/containers/27-22438" />
+            <value>D:1</value>
+        </location>
+        <sample limsid="RIC954A4" uri="https://bravotestapp.genome.mcgill.ca/api/v2/samples/RIC954A4" />
+        <udf:field name="Concentration" type="Numeric">787.90</udf:field>
+<udf:field name="Conc. Units" type="String">ng/uL</udf:field>
+        <workflow-stages />
+    </art:artifact>
+    <art:artifact limsid="92-474325" uri="https://bravotestapp.genome.mcgill.ca/api/v2/artifacts/92-474325?state=288001">
+        <name>853 PicoGreen</name>
+        <type>ResultFile</type>
+        <output-type>ResultFile</output-type>
+        <parent-process limsid="24-87690" uri="https://bravotestapp.genome.mcgill.ca/api/v2/processes/24-87690" />
+        <qc-flag>UNKNOWN</qc-flag>
+        <location>
+            <container limsid="27-22438" uri="https://bravotestapp.genome.mcgill.ca/api/v2/containers/27-22438" />
+            <value>E:1</value>
+        </location>
+        <sample limsid="RIC954A5" uri="https://bravotestapp.genome.mcgill.ca/api/v2/samples/RIC954A5" />
+        <udf:field name="Concentration" type="Numeric">287.01</udf:field>
+<udf:field name="Conc. Units" type="String">ng/uL</udf:field>
+        <workflow-stages />
+    </art:artifact>
+    <art:artifact limsid="92-474326" uri="https://bravotestapp.genome.mcgill.ca/api/v2/artifacts/92-474326?state=288002">
+        <name>937 PicoGreen</name>
+        <type>ResultFile</type>
+        <output-type>ResultFile</output-type>
+        <parent-process limsid="24-87690" uri="https://bravotestapp.genome.mcgill.ca/api/v2/processes/24-87690" />
+        <qc-flag>UNKNOWN</qc-flag>
+        <location>
+            <container limsid="27-22438" uri="https://bravotestapp.genome.mcgill.ca/api/v2/containers/27-22438" />
+            <value>F:1</value>
+        </location>
+        <sample limsid="RIC954A6" uri="https://bravotestapp.genome.mcgill.ca/api/v2/samples/RIC954A6" />
+        <udf:field name="Concentration" type="Numeric">706.12</udf:field>
+<udf:field name="Conc. Units" type="String">ng/uL</udf:field>
+        <workflow-stages />
+    </art:artifact>
+</art:details>
